@@ -51,7 +51,8 @@ def recv_commands(conn):
         #Xu ly du lieu tu client gui len
         msg = conn.recv(1024)
         from_client = msg.decode("utf-8")
-        if from_client == "exit":
+        if from_client == "disconnect":
+            conn.send(bytes("Disconnected!","utf-8"))
             break
         command = from_client.split()
        
