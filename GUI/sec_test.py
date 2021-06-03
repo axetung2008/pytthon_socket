@@ -71,6 +71,7 @@ class Ui_MainWindow(object):
         self.textEdit.setFocusPolicy(QtCore.Qt.NoFocus)
         self.textEdit.setObjectName("textEdit")
         self.lineEdit_3 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_3.setEnabled(False)
         self.lineEdit_3.setGeometry(QtCore.QRect(110, 30, 591, 31))
         self.lineEdit_3.setObjectName("lineEdit_3")
         self.label_4 = QtWidgets.QLabel(self.groupBox_2)
@@ -78,7 +79,7 @@ class Ui_MainWindow(object):
         self.label_4.setObjectName("label_4")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 18))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -87,55 +88,11 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        self.toolButton.clicked.connect(self.scan)
-        self.toolButton_2.clicked.connect(self.connect)    
-        self.lineEdit_3.returnPressed.connect(self.submit)
+
+        self.toolButton_2.clicked.connect(self.connect)
     def connect(self):
-        try:
-
-            global s 
-            s = socket.socket()
-
-            ip = self.lineEdit.text()
-            port = int(self.lineEdit_2.text())
-
-            s.connect((ip,port))
-            self.textEdit.append("Connection success!")
-        except ConnectionRefusedError as e:
-            self.textEdit.append("No connection!")
-    def submit(self):
-        msg = self.lineEdit_3.text()
-        s.send(bytes(msg,"utf-8"))
-        from_server = s.recv(2048)
-        self.textEdit.append(from_server.decode())
-        self.lineEdit_3.clear()
-
-    def scan(self):
-        try:
-            ip = self.lineEdit.text()
-            port = int(self.lineEdit_2.text())
-
-            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            result = s.connect_ex((ip,port))
-            if result == 0:
-                self.label_5.setText("Open")
-                palette = QtGui.QPalette()
-                brush = QtGui.QBrush(QtGui.QColor(0, 255, 0))
-                brush.setStyle(QtCore.Qt.SolidPattern)
-                palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
-                brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
-                self.label_5.setPalette(palette)
-            else:
-                self.label_5.setText("Close")
-                palette = QtGui.QPalette()
-                brush = QtGui.QBrush(QtGui.QColor(255, 0, 0))
-                brush.setStyle(QtCore.Qt.SolidPattern)
-                palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
-                brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
-                self.label_5.setPalette(palette)
-            s.close()
-        except ValueError as e:
-            self.label_5.setText("None")
+        self.lineEdit_3.setEnabled(True)
+        pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -144,7 +101,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Port"))
         self.toolButton.setText(_translate("MainWindow", "Scan"))
         self.toolButton_2.setText(_translate("MainWindow", "Connect"))
-        self.toolButton_3.setText(_translate("MainWindow", "Log out"))
+        self.toolButton_3.setText(_translate("MainWindow", "Disconnect"))
         self.label_3.setText(_translate("MainWindow", "Status"))
         self.groupBox_2.setTitle(_translate("MainWindow", "Command"))
         self.label_4.setText(_translate("MainWindow", "From Server"))

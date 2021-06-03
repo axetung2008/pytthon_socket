@@ -71,6 +71,7 @@ class Ui_MainWindow(object):
         self.textEdit.setFocusPolicy(QtCore.Qt.NoFocus)
         self.textEdit.setObjectName("textEdit")
         self.lineEdit_3 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_3.setEnabled(False)
         self.lineEdit_3.setGeometry(QtCore.QRect(110, 30, 591, 31))
         self.lineEdit_3.setObjectName("lineEdit_3")
         self.label_4 = QtWidgets.QLabel(self.groupBox_2)
@@ -93,8 +94,10 @@ class Ui_MainWindow(object):
         self.toolButton_2.clicked.connect(self.connect)
         
         self.lineEdit_3.returnPressed.connect(self.submit)
+        self.toolButton_3.clicked.connect(self.disconnect)
 
     #============================================
+
     def connect(self):
         try:
 
@@ -105,11 +108,12 @@ class Ui_MainWindow(object):
             port = int(self.lineEdit_2.text())
 
             s.connect((ip,port))
+            self.lineEdit_3.setEnabled(True)
             self.textEdit.append("Connection success!")
             
-    
         except ConnectionRefusedError as e:
             self.textEdit.append("No connection!")
+
     def submit(self):
         msg = self.lineEdit_3.text()
         s.send(bytes(msg,"utf-8"))
@@ -118,8 +122,7 @@ class Ui_MainWindow(object):
         self.lineEdit_3.clear()
             
         # s.close()
-        
-        
+            
     def scan(self):
         try:
             ip = self.lineEdit.text()
@@ -147,6 +150,13 @@ class Ui_MainWindow(object):
         except ValueError as e:
             self.label_5.setText("None")
 
+    def disconnect(self):
+        s.send(bytes("disconnect","utf-8"))
+        from_server = s.recv(2048)
+        self.textEdit.append(from_server.decode())
+        s.close()
+        self.lineEdit_3.setEnabled(False)
+        pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -155,7 +165,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Port"))
         self.toolButton.setText(_translate("MainWindow", "Scan"))
         self.toolButton_2.setText(_translate("MainWindow", "Connect"))
-        self.toolButton_3.setText(_translate("MainWindow", "Log out"))
+        self.toolButton_3.setText(_translate("MainWindow", "Disconnect"))
         self.label_3.setText(_translate("MainWindow", "Status"))
         self.groupBox_2.setTitle(_translate("MainWindow", "Command"))
         self.label_4.setText(_translate("MainWindow", "From Server"))
