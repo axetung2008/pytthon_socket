@@ -53,6 +53,7 @@ class Ui_MainWindow(object):
         self.toolButton_2.setGeometry(QtCore.QRect(350, 100, 81, 41))
         self.toolButton_2.setObjectName("toolButton_2")
         self.toolButton_3 = QtWidgets.QToolButton(self.groupBox)
+        self.toolButton_3.setEnabled(False)
         self.toolButton_3.setGeometry(QtCore.QRect(460, 100, 81, 41))
         self.toolButton_3.setObjectName("toolButton_3")
         self.label_3 = QtWidgets.QLabel(self.groupBox)
@@ -109,6 +110,7 @@ class Ui_MainWindow(object):
 
             s.connect((ip,port))
             self.lineEdit_3.setEnabled(True)
+            self.toolButton_3.setEnabled(True)
             self.textEdit.append("Connection success!")
             
         except ConnectionRefusedError as e:
@@ -156,6 +158,7 @@ class Ui_MainWindow(object):
         self.textEdit.append(from_server.decode())
         s.close()
         self.lineEdit_3.setEnabled(False)
+        self.toolButton_3.setEnabled(False)
         pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
