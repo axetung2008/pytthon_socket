@@ -55,8 +55,12 @@ class Ui_MainWindow(object):
         self.toolButton_2.setObjectName("toolButton_2")
         self.toolButton_3 = QtWidgets.QToolButton(self.groupBox)
         self.toolButton_3.setEnabled(False)
-        self.toolButton_3.setGeometry(QtCore.QRect(460, 100, 81, 41))
+        self.toolButton_3.setGeometry(QtCore.QRect(570, 100, 81, 41))
         self.toolButton_3.setObjectName("toolButton_3")
+        self.toolButton_4 = QtWidgets.QToolButton(self.groupBox)
+        self.toolButton_4.setGeometry(QtCore.QRect(460, 100, 81, 41))
+        self.toolButton_4.setObjectName("toolButton_4")
+        self.toolButton_4.setEnabled(False)
         self.label_3 = QtWidgets.QLabel(self.groupBox)
         self.label_3.setGeometry(QtCore.QRect(120, 160, 61, 20))
         self.label_3.setObjectName("label_3")
@@ -114,6 +118,7 @@ class Ui_MainWindow(object):
             self.toolButton_3.setEnabled(True)
             self.textEdit.append("Connection success!")
             self.toolButton_2.setEnabled(False)
+            self.toolButton_4.setEnabled(True)
             
         except ConnectionRefusedError as e:
             self.textEdit.append("No connection!")
@@ -164,6 +169,7 @@ class Ui_MainWindow(object):
         self.lineEdit_3.setEnabled(False)
         self.toolButton_3.setEnabled(False)
         self.toolButton_2.setEnabled(True)
+        self.toolButton_4.setEnabled(False)
         pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -174,6 +180,7 @@ class Ui_MainWindow(object):
         self.toolButton.setText(_translate("MainWindow", "Scan"))
         self.toolButton_2.setText(_translate("MainWindow", "Connect"))
         self.toolButton_3.setText(_translate("MainWindow", "Disconnect"))
+        self.toolButton_4.setText(_translate("MainWindow", "Upload"))
         self.label_3.setText(_translate("MainWindow", "Status"))
         self.groupBox_2.setTitle(_translate("MainWindow", "Command"))
         self.label_4.setText(_translate("MainWindow", "From Server"))
