@@ -50,6 +50,7 @@ class Ui_MainWindow(object):
         self.toolButton.setAutoRaise(False)
         self.toolButton.setObjectName("toolButton")
         self.toolButton_2 = QtWidgets.QToolButton(self.groupBox)
+        self.toolButton_2.setEnabled(True)
         self.toolButton_2.setGeometry(QtCore.QRect(350, 100, 81, 41))
         self.toolButton_2.setObjectName("toolButton_2")
         self.toolButton_3 = QtWidgets.QToolButton(self.groupBox)
@@ -112,9 +113,12 @@ class Ui_MainWindow(object):
             self.lineEdit_3.setEnabled(True)
             self.toolButton_3.setEnabled(True)
             self.textEdit.append("Connection success!")
+            self.toolButton_2.setEnabled(False)
             
         except ConnectionRefusedError as e:
             self.textEdit.append("No connection!")
+        except ValueError as e:
+            self.textEdit.append("Please type IP address and port!")
 
     def submit(self):
         msg = self.lineEdit_3.text()
@@ -159,6 +163,7 @@ class Ui_MainWindow(object):
         s.close()
         self.lineEdit_3.setEnabled(False)
         self.toolButton_3.setEnabled(False)
+        self.toolButton_2.setEnabled(True)
         pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
