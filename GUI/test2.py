@@ -167,7 +167,7 @@ class Ui_MainWindow(object):
         pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "SocketPython"))
         self.groupBox.setTitle(_translate("MainWindow", "Connection"))
         self.label.setText(_translate("MainWindow", "IP address"))
         self.label_2.setText(_translate("MainWindow", "Port"))
