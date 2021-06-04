@@ -10,8 +10,26 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import socket
+# from anotherWindow import Ui_Form
+# class Ui_Form(object):
+#     def setupUi(self, Form):
+#         Form.setObjectName("Form")
+#         Form.resize(418, 341)
+
+#         self.retranslateUi(Form)
+#         QtCore.QMetaObject.connectSlotsByName(Form)
+
+#     def retranslateUi(self, Form):
+#         _translate = QtCore.QCoreApplication.translate
+#         Form.setWindowTitle(_translate("Form", "Form"))
 
 class Ui_MainWindow(object):
+    def openwindow(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_Form()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        pass
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
@@ -60,7 +78,7 @@ class Ui_MainWindow(object):
         self.toolButton_4 = QtWidgets.QToolButton(self.groupBox)
         self.toolButton_4.setGeometry(QtCore.QRect(460, 100, 81, 41))
         self.toolButton_4.setObjectName("toolButton_4")
-        self.toolButton_4.setEnabled(False)
+        self.toolButton_4.setEnabled(True)
         self.label_3 = QtWidgets.QLabel(self.groupBox)
         self.label_3.setGeometry(QtCore.QRect(120, 160, 61, 20))
         self.label_3.setObjectName("label_3")
@@ -102,6 +120,7 @@ class Ui_MainWindow(object):
         self.lineEdit_3.returnPressed.connect(self.submit)
         self.toolButton_3.clicked.connect(self.disconnect)
 
+        # self.toolButton_4.clicked.connect(self.openwindow)
     #============================================
 
     def connect(self):
@@ -170,6 +189,15 @@ class Ui_MainWindow(object):
         self.toolButton_3.setEnabled(False)
         self.toolButton_2.setEnabled(True)
         self.toolButton_4.setEnabled(False)
+        pass
+
+    def upload(self):
+        Form = QtWidgets.QMainWindow()
+        ui_form = Ui_Form()
+        ui_form.setupUi(Form)
+        Form.show()
+
+
         pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
