@@ -10,18 +10,27 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import socket
-# from anotherWindow import Ui_Form
-# class Ui_Form(object):
-#     def setupUi(self, Form):
-#         Form.setObjectName("Form")
-#         Form.resize(418, 341)
+from anotherWindow import Ui_Form
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(600, 600)
+        Form.setMinimumSize(QtCore.QSize(600, 600))
+        Form.setMaximumSize(QtCore.QSize(600, 600))
+        self.lineEdit = QtWidgets.QLineEdit(Form)
+        self.lineEdit.setGeometry(QtCore.QRect(110, 80, 201, 31))
+        self.lineEdit.setObjectName("lineEdit")
+        self.pushButton = QtWidgets.QPushButton(Form)
+        self.pushButton.setGeometry(QtCore.QRect(350, 80, 71, 31))
+        self.pushButton.setObjectName("pushButton")
 
-#         self.retranslateUi(Form)
-#         QtCore.QMetaObject.connectSlotsByName(Form)
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
 
-#     def retranslateUi(self, Form):
-#         _translate = QtCore.QCoreApplication.translate
-#         Form.setWindowTitle(_translate("Form", "Form"))
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.pushButton.setText(_translate("Form", "PushButton"))
 
 class Ui_MainWindow(object):
     def openwindow(self):
@@ -120,7 +129,7 @@ class Ui_MainWindow(object):
         self.lineEdit_3.returnPressed.connect(self.submit)
         self.toolButton_3.clicked.connect(self.disconnect)
 
-        # self.toolButton_4.clicked.connect(self.openwindow)
+        self.toolButton_4.clicked.connect(self.openwindow)
     #============================================
 
     def connect(self):
