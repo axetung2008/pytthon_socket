@@ -47,25 +47,34 @@ def socket_accept():
     conn.close()
 
 def recv_file(conn):
-	received = conn.recv(BUFFER_SIZE).decode()
-	filename, filesize = received.split(SEPARATOR)
-	# remove absolute path if there is
-	filename = os.path.basename(filename)
-	# convert to integer
-	filesize = int(filesize)
-	progress = tqdm.tqdm(range(filesize), f"Receiving {filename}", unit="B", unit_scale=True, unit_divisor=1024)
-	with open(filename, "wb") as f:
-		while True:
-		# read 1024 bytes from the socket (receive)
-			bytes_read = conn.recv(BUFFER_SIZE)
-			if not bytes_read:    
-            # nothing is received
-            # file transmitting is done
-				break
-        # write to the file the bytes we just received
-			f.write(bytes_read)
-        # update the progress bar
-			progress.update(len(bytes_read))
+
+        
+    received = conn.recv(BUFFER_SIZE).decode()
+    # print(received)
+    filename, filesize = received.split(SEPARATOR)
+    # filename = received()
+    print(filename)
+    print(filesize)
+    # remove absolute path if there is
+    filename = os.path.basename(filename)
+    print("os.path.basename:",filename)
+    # convert to integer
+    # filesize = int(filesize)
+    # progress = tqdm.tqdm(range(filesize), f"Receiving {filename}", unit="B", unit_scale=True, unit_divisor=1024)
+    with open(filename, "wb") as f:
+        while True:
+            # read 1024 bytes from the socket (receive)
+            bytes_read = conn.recv(BUFFER_SIZE)
+            if not bytes_read:    
+                # nothing is received
+                # file transmitting is done
+                print("transmitting is done")
+                break
+            # write to the file the bytes we just received
+            f.write(bytes_read)
+            # update the progress bar
+            # progress.update(len(bytes_read))
+
 
 def main():
     create_socket()

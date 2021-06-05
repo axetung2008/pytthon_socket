@@ -44,7 +44,26 @@ def socket_accept():
     #recv_commands(conn)
     recv_commands(conn)
     conn.close()
-
+# def recv_file(conn):
+#     BUFFER_SIZE = 4096
+#     SEPARATOR = "<SEPARATOR>"
+#     received = conn.recv(BUFFER_SIZE).decode()
+#     filename, filesize = received.split(SEPARATOR)
+#     # remove absolute path if there is
+#     filename = os.path.basename(filename)
+#     # convert to integer
+#     filesize = int(filesize)
+#     with open(filename, "wb") as f:
+#         while True:
+#         # read 1024 bytes from the socket (receive)
+#             bytes_read = conn.recv(BUFFER_SIZE)
+#             if not bytes_read:    
+#             # nothing is received
+#             # file transmitting is done
+#                 break
+#         # write to the file the bytes we just received
+#             f.write(bytes_read)
+#     pass
 #Debug
 def recv_commands(conn):
     while True:

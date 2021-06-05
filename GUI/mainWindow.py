@@ -245,8 +245,6 @@ class Ui_MainWindow(object):
         ui_form = Ui_Form()
         ui_form.setupUi(Form)
         Form.show()
-
-
         pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
