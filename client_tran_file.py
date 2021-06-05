@@ -9,14 +9,17 @@ port = 8888
 SEPARATOR = "<SEPARATOR>"
 BUFFER_SIZE = 4096 # send 4096 bytes each time step
 s.connect((host, port))
-# while True:
+
+
+
     
 filename = input()
-# filename = "D:/ca_lia_thia_1.png"
+
 filesize = os.path.getsize(filename)
 
-s.send(f"{filename}{SEPARATOR}{filesize}".encode())
-# s.send(filename.decode())
+s.send(bytes(filename,"utf-8"))
+
+
 # progress = tqdm.tqdm(range(filesize), f"Sending {filename}", unit="B", unit_scale=True, unit_divisor=1024)
 with open(filename, "rb") as f:
     while True:
@@ -30,6 +33,8 @@ with open(filename, "rb") as f:
         s.sendall(bytes_read)
         # update the progress bar
         # progress.update(len(bytes_read))
-# close the socket
+#============================================
+
+
 
 s.close()
