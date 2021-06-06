@@ -51,28 +51,41 @@ def recv_file(conn):
         
         # filename = conn.recv(BUFFER_SIZE).decode("utf-8")
         from_client = conn.recv(BUFFER_SIZE)
-        filename = from_client.decode("utf-8")
-        print(filename)
-        if filename == "":
+        path = from_client.decode("utf-8")
+        print(path)
+        if path == "":
             print("Co chuoi rong!")
             break
         # remove absolute path if there is
-        filename = os.path.basename(filename)
-        print("os.path.basename:",filename)
-        # convert to integer
-        
-        with open(filename, "wb") as f:
-            while True:
-                bytes_read = conn.recv(BUFFER_SIZE)
-                if not bytes_read:    
-                    # nothing is received
-                    # file transmitting is done
-                    print("transmitting is done")
-                    break
-                
-                f.write(bytes_read)
-            
+        filename = os.path.basename(path)
+        # print("os.path.basename:",filename)
 
+        conn.send(bytes("Da nhan file!","utf-8"))
+        # convert to integer
+        getFile(conn, filename)
+        # with open(filename, "wb") as f:
+        #     while True:
+        #         bytes_read = conn.recv(BUFFER_SIZE)
+        #         if not bytes_read:    
+        #             # nothing is received
+        #             # file transmitting is done
+        #             print("transmitting is done")
+        #             break
+                
+        #         f.write(bytes_read)
+def getFile(conn, filename):
+    with open(filename, "wb") as f:
+        while True:
+            bytes_read = conn.recv(BUFFER_SIZE)
+            print(bytes_read)
+            if not bytes_read:    
+                # nothing is received
+                # file transmitting is done
+                print("transmitting is done")
+                break
+            
+            f.write(bytes_read)
+            print("in while")
 
 def main():
     create_socket()
