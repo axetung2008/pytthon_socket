@@ -59,8 +59,8 @@ def recv_file(conn):
         # remove absolute path if there is
         filename = os.path.basename(path)
         # print("os.path.basename:",filename)
-
-        conn.send(bytes("Da nhan file!","utf-8"))
+        print(filename)
+        conn.send(bytes("Da nhan ten file!","utf-8"))
         # convert to integer
         getFile(conn, filename)
         # with open(filename, "wb") as f:
@@ -79,6 +79,8 @@ def getFile(conn, filename):
         while True:
             bytes_read = conn.recv(BUFFER_SIZE)
             print(bytes_read)
+            # eof = conn.recv(1024).decode("utf-8")
+
             if not bytes_read:    
                 # nothing is received
                 # file transmitting is done
