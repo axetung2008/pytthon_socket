@@ -26,13 +26,15 @@ while True:
         while True:
             # read the bytes from the file
             bytes_read = f.read(BUFFER_SIZE)
-            print(type(bytes_read))
-            a = str(bytes_read)
-            print(type(a))
-            print(a == "b''")
+            # print(bytes_read)
+            # a = str(bytes_read)
+            # print(type(a))
+            # print(a == "b''")
             # print(bytes_read.decode())
             if not bytes_read:
                 # file transmitting is done
+                # print("not bytes_read")
+                s.sendall(bytes_read)
                 break
             # we use sendall to assure transimission in 
             # busy networks
@@ -40,7 +42,7 @@ while True:
             #     print("true")
             #     break
             s.sendall(bytes_read)
-            print("SEND!")
+            # print("SEND!")
 
             # s.send(bytes(bytes_read),"utf-8")
             # update the progress bar

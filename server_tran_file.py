@@ -74,6 +74,7 @@ def recv_file(conn):
                 
         #         f.write(bytes_read)
 def getFile(conn, filename):
+        
     with open(filename, "wb") as f:
         while True:
             bytes_read = conn.recv(BUFFER_SIZE)
@@ -86,6 +87,7 @@ def getFile(conn, filename):
             
             f.write(bytes_read)
             print("in while")
+            # break
 
 def main():
     create_socket()
