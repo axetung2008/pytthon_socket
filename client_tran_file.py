@@ -19,9 +19,9 @@ while True:
 
     s.send(bytes(filename,"utf-8"))
 
-    txt = s.recv(BUFFER_SIZE).decode()
-    print(txt)
-    # print(filename)
+    # txt = s.recv(BUFFER_SIZE).decode()
+    # print(txt)
+    print(filename)
 
     with open(filename, "rb") as f:
         while True:
@@ -32,11 +32,12 @@ while True:
             # print(type(a))
             # print(a == "b''")
             # print(bytes_read.decode())
+            s.sendall(bytes_read)
             if not bytes_read:
                 # file transmitting is done
                 # print("not bytes_read")
                 # s.send(bytes("eof","utf-8"))
-                s.sendall(bytes_read)
+                # s.sendall(bytes_read)
                 # print(bytes_read)
                 break
             # we use sendall to assure transimission in 
@@ -44,7 +45,6 @@ while True:
             # if a == "b''":
             #     print("true")
             #     break
-            s.sendall(bytes_read)
             # print("SEND!")
 
             # s.send(bytes(bytes_read),"utf-8")
