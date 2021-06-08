@@ -3,6 +3,7 @@ import sys
 import subprocess
 import os
 import tqdm
+import re
 
 BUFFER_SIZE = 4096
 SEPARATOR = "<SEPARATOR>"
@@ -77,10 +78,12 @@ def getFile(conn, filename):
         
     with open(filename, "wb") as f:
         while True:
+            print("trong while cua with open ")
             bytes_read = conn.recv(BUFFER_SIZE)
             print(bytes_read)
             # eof = conn.recv(1024).decode("utf-8")
-            
+
+    
             if not bytes_read:    
                 # nothing is received
                 # file transmitting is done
@@ -88,6 +91,7 @@ def getFile(conn, filename):
                 break
             
             f.write(bytes_read)
+
             print("in while")
             # break
 
