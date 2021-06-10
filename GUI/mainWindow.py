@@ -13,7 +13,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import os
 import socket
 
+ip = ""
 class Ui_Form(QDialog): #QDiaLog to run window 
+    
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(600, 400)
@@ -49,7 +51,9 @@ class Ui_Form(QDialog): #QDiaLog to run window
         pass
     def upload(self):
         
-        self.lineEdit.setText(a)
+        print(ip == "")
+
+
         pass
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
@@ -59,9 +63,10 @@ class Ui_Form(QDialog): #QDiaLog to run window
         self.pushButton_2.setText(_translate("Form", "Clear"))
 
 class Ui_MainWindow(object):
+
     def openwindow(self):
         self.window = QtWidgets.QMainWindow()
-        self.ui = Ui_Form()
+        self.ui = Ui_Form() #them 
         self.ui.setupUi(self.window)
         self.window.show()
         pass
@@ -162,12 +167,11 @@ class Ui_MainWindow(object):
         try:
 
             global s 
-            global ip
             s = socket.socket()
 
             ip = self.lineEdit.text()
             port = int(self.lineEdit_2.text())
-
+            
             s.connect((ip,port))
             self.lineEdit_3.setEnabled(True)
             self.toolButton_3.setEnabled(True)
