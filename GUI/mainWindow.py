@@ -37,34 +37,20 @@ class Ui_Form(QDialog): #QDiaLog to run window
         QtCore.QMetaObject.connectSlotsByName(Form)
 
         self.toolButton.clicked.connect(self.chooseFile)
-        # self.pushButton.clicked.connect(self.upload)
-    # def upload(self):
-    #     SEPARATOR = "<SEPARATOR>"
-    #     BUFFER_SIZE = 4096
-    #     filename = self.lineEdit.text()
-    #     filesize = os.path.getsize(filename)
-    #     s.send(f"{filename}{SEPARATOR}{filesize}".encode())
-    #     with open(filename, "rb") as f:
-    #         while True:
-    #             # read the bytes from the file
-    #             bytes_read = f.read(BUFFER_SIZE)
-    #             if not bytes_read:
-    #                 # file transmitting is done
-    #                 break
-    #             # we use sendall to assure transimission in 
-    #             # busy networks
-    #             s.sendall(bytes_read)
-    #     s.close()
-    #     pass
+        self.pushButton.clicked.connect(self.upload)
 
+    #Button choose file in new window
     def chooseFile(self):
         fname=QFileDialog.getOpenFileName(self, 
             'Open file', 
-            'D:\codefirst.io\PyQt5 tutorials\Browse Files', 
+            'D:\\', 
             'All files (*)')
         self.lineEdit.setText(fname[0])
         pass
-
+    def upload(self):
+        
+        self.lineEdit.setText(a)
+        pass
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
@@ -176,6 +162,7 @@ class Ui_MainWindow(object):
         try:
 
             global s 
+            global ip
             s = socket.socket()
 
             ip = self.lineEdit.text()

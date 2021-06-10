@@ -24,10 +24,10 @@ while True:
     connbuf = buffer.Buffer(conn)
 
     while True:
-        hash_type = connbuf.get_utf8()
-        if not hash_type:
-            break
-        print('hash type: ', hash_type)
+        # hash_type = connbuf.get_utf8()
+        # if not hash_type:
+        #     break
+        # print('hash type: ', hash_type)
 
         file_name = connbuf.get_utf8()
         if not file_name:

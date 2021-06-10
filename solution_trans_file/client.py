@@ -13,14 +13,14 @@ s.connect((HOST, PORT))
 with s:
     sbuf = buffer.Buffer(s)
 
-    hash_type = input('Enter hash type: ')
+    # hash_type = input('Enter hash type: ')
 
     files = input('Enter file(s) to send: ')
     files_to_send = files.split()
 
     for file_name in files_to_send:
         print(file_name)
-        sbuf.put_utf8(hash_type)
+        # sbuf.put_utf8(hash_type)
         sbuf.put_utf8(file_name)
 
         file_size = os.path.getsize(file_name)
