@@ -49,11 +49,10 @@ class Ui_Form(QDialog): #QDiaLog to run window
             'All files (*)')
         self.lineEdit.setText(fname[0])
         pass
-    def upload(self):
-        
-        print(ip == "")
 
-
+    # @QtCore.pyqtSlot(str)
+    def upload(self, ip):
+        self.lineEdit.setText(ip)
         pass
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
@@ -63,7 +62,7 @@ class Ui_Form(QDialog): #QDiaLog to run window
         self.pushButton_2.setText(_translate("Form", "Clear"))
 
 class Ui_MainWindow(object):
-
+    # submitted = QtCore.pyqtSignal(str)
     def openwindow(self):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_Form() #them 
@@ -171,7 +170,7 @@ class Ui_MainWindow(object):
 
             ip = self.lineEdit.text()
             port = int(self.lineEdit_2.text())
-            
+            # self.submitted.emit(self.lineEdit.text())
             s.connect((ip,port))
             self.lineEdit_3.setEnabled(True)
             self.toolButton_3.setEnabled(True)
