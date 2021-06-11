@@ -12,6 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 import os
 import socket
+import buffer
 
 class Ui_Form(QDialog): #QDiaLog to run window 
     
@@ -38,7 +39,8 @@ class Ui_Form(QDialog): #QDiaLog to run window
         QtCore.QMetaObject.connectSlotsByName(Form)
 
         self.toolButton.clicked.connect(self.chooseFile)
-        self.pushButton.clicked.connect(self.windowUpload)
+        self.pushButton.clicked.connect(self.upload)
+
 
     #Button choose file in new window
     def chooseFile(self):
@@ -50,8 +52,34 @@ class Ui_Form(QDialog): #QDiaLog to run window
         pass
 
     # @QtCore.pyqtSlot(str)
-    def windowUpload(self, ip):
-        pass
+    def passDataFromMain(self, ip):
+        global HOST
+        global PORT 
+        HOST = ip
+        PORT = 8989
+    def upload(self):
+
+        s = socket.socket()
+        s.connect((HOST,PORT))
+
+        with s:
+            sbuf = buffer.Buffer(s)
+
+            files = self.lineEdit.text()
+            files_to_send = files.split()
+
+            for file_name in files_to_send:
+                print(file_name)
+                # sbuf.put_utf8(hash_type)
+                sbuf.put_utf8(file_name)
+
+                file_size = os.path.getsize(file_name)
+                sbuf.put_utf8(str(file_size))
+
+                with open(file_name, 'rb') as f:
+                    sbuf.put_bytes(f.read())
+                # print('File Sent')
+        
         
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
@@ -67,7 +95,7 @@ class Ui_MainWindow(object):
         self.ui = Ui_Form() 
         #them
         self.ui.setupUi(self.window)
-        self.ui.windowUpload(self.lineEdit.text())
+        self.ui.passDataFromMain(self.lineEdit.text())
         self.window.show()
         pass
     def setupUi(self, MainWindow):
@@ -171,7 +199,6 @@ class Ui_MainWindow(object):
 
             ip = self.lineEdit.text()
             port = int(self.lineEdit_2.text())
-            # self.submitted.emit(self.lineEdit.text())
 
             s.connect((ip,port))
             self.lineEdit_3.setEnabled(True)
@@ -191,8 +218,6 @@ class Ui_MainWindow(object):
         from_server = s.recv(2048)
         self.textEdit.append(from_server.decode())
         self.lineEdit_3.clear()
-            
-        # s.close()
             
     def scan(self):
         try:
@@ -232,14 +257,14 @@ class Ui_MainWindow(object):
         self.toolButton_4.setEnabled(False)
         pass
 
-    def upload(self):
-        Form = QtWidgets.QMainWindow()
-        ui_form = Ui_Form()
-        # ip = self.lineEdit.text()
-        # ui_form.upload().lineEdit.setText(ip)
-        ui_form.setupUi(Form)
-        Form.show()
-        pass
+    # def upload(self):
+    #     Form = QtWidgets.QMainWindow()
+    #     ui_form = Ui_Form()
+    #     # ip = self.lineEdit.text()
+    #     # ui_form.upload().lineEdit.setText(ip)
+    #     ui_form.setupUi(Form)
+    #     Form.show()
+    #     pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "SocketPython"))

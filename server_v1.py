@@ -41,7 +41,6 @@ def bind_socket():
 def socket_accept():
     conn, address = s.accept()
     print("Connection has been established! |" + " IP " + address[0] + " | Port" + str(address[1]))
-    #recv_commands(conn)
     recv_commands(conn)
     conn.close()
 def recv_file(conn):
