@@ -13,7 +13,6 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import os
 import socket
 
-ip = ""
 class Ui_Form(QDialog): #QDiaLog to run window 
     
     def setupUi(self, Form):
@@ -39,7 +38,7 @@ class Ui_Form(QDialog): #QDiaLog to run window
         QtCore.QMetaObject.connectSlotsByName(Form)
 
         self.toolButton.clicked.connect(self.chooseFile)
-        self.pushButton.clicked.connect(self.upload)
+        self.pushButton.clicked.connect(self.windowUpload)
 
     #Button choose file in new window
     def chooseFile(self):
@@ -51,9 +50,9 @@ class Ui_Form(QDialog): #QDiaLog to run window
         pass
 
     # @QtCore.pyqtSlot(str)
-    def upload(self, ip):
-        self.lineEdit.setText(ip)
+    def windowUpload(self, ip):
         pass
+        
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
@@ -65,8 +64,10 @@ class Ui_MainWindow(object):
     # submitted = QtCore.pyqtSignal(str)
     def openwindow(self):
         self.window = QtWidgets.QMainWindow()
-        self.ui = Ui_Form() #them 
+        self.ui = Ui_Form() 
+        #them
         self.ui.setupUi(self.window)
+        self.ui.windowUpload(self.lineEdit.text())
         self.window.show()
         pass
     def setupUi(self, MainWindow):
@@ -171,6 +172,7 @@ class Ui_MainWindow(object):
             ip = self.lineEdit.text()
             port = int(self.lineEdit_2.text())
             # self.submitted.emit(self.lineEdit.text())
+
             s.connect((ip,port))
             self.lineEdit_3.setEnabled(True)
             self.toolButton_3.setEnabled(True)
@@ -233,6 +235,8 @@ class Ui_MainWindow(object):
     def upload(self):
         Form = QtWidgets.QMainWindow()
         ui_form = Ui_Form()
+        # ip = self.lineEdit.text()
+        # ui_form.upload().lineEdit.setText(ip)
         ui_form.setupUi(Form)
         Form.show()
         pass
