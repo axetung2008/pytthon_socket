@@ -51,7 +51,6 @@ class Ui_Form(QDialog): #QDiaLog to run window
         self.lineEdit.setText(fname[0])
         pass
 
-    # @QtCore.pyqtSlot(str)
     def passDataFromMain(self, ip):
         global HOST
         global PORT 
