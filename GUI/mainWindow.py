@@ -96,6 +96,7 @@ class Ui_MainWindow(object):
         self.ui.setupUi(self.window)
         self.ui.passDataFromMain(self.lineEdit.text())
         self.window.show()
+        self.lineEdit.setEnabled(False)
         pass
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -145,7 +146,7 @@ class Ui_MainWindow(object):
         self.toolButton_4 = QtWidgets.QToolButton(self.groupBox)
         self.toolButton_4.setGeometry(QtCore.QRect(460, 100, 81, 41))
         self.toolButton_4.setObjectName("toolButton_4")
-        self.toolButton_4.setEnabled(True)
+        self.toolButton_4.setEnabled(False)
         self.label_3 = QtWidgets.QLabel(self.groupBox)
         self.label_3.setGeometry(QtCore.QRect(120, 160, 61, 20))
         self.label_3.setObjectName("label_3")

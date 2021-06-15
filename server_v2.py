@@ -40,18 +40,14 @@ def bind_socket():
         #======bind for upload file==========
         global port_file
         global s_file
+        print("Binding the Port(s): " + str(port_file))
+        s_file.bind((host,port_file))
+        s_file.listen(10)
         #====================================
         print("Binding the Port(s): " + str(port))
-        print("Binding the Port(s): " + str(port_file))
-
-        
 
         s.bind((host, port))
         s.listen(5)
-
-        #========file==========
-        s_file.bind((host,port_file))
-        s_file.listen(10)
 
 
     except socket.error as msg:
