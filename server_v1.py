@@ -39,29 +39,35 @@ def bind_socket():
 # Establish connection with a client (socket must be listening)
 
 def socket_accept():
-    conn, address = s.accept()
-    print("Connection has been established! |" + " IP " + address[0] + " | Port" + str(address[1]))
-    #recv_commands(conn)
-    recv_commands(conn)
-    conn.close()
+    while True:
+        conn, address = s.accept()
+        print("Connection has been established! |" + " IP " + address[0] + " | Port" + str(address[1]))
+        #recv_commands(conn)
+        recv_commands(conn)
+        conn.close()
+
 
 #Debug
 def recv_commands(conn):
     while True:
-        #Xu ly du lieu tu client gui len
-        msg = conn.recv(1024)
-        from_client = msg.decode("utf-8")
-        if from_client == "disconnect":
-            conn.send(bytes("Disconnected!","utf-8"))
+        try:
+            #Xu ly du lieu tu client gui len
+            msg = conn.recv(1024)
+            from_client = msg.decode("utf-8")
+            if from_client == "disconnect":
+                conn.send(bytes("Disconnected!","utf-8"))
+                break
+            command = from_client.split()
+           
+            #Xu ly cd
+            if command[0] == "cd":
+                cd(conn,command)
+                continue
+            #Xu lu cac command khac
+            all_command(conn,command)
+            
+        except IndexError as e:
             break
-        command = from_client.split()
-       
-        #Xu ly cd
-        if command[0] == "cd":
-            cd(conn,command)
-            continue
-        #Xu lu cac command khac
-        all_command(conn,command)
 
 
 def cd(conn,command):

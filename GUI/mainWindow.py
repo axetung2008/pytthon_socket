@@ -96,7 +96,6 @@ class Ui_MainWindow(object):
         self.ui.setupUi(self.window)
         self.ui.passDataFromMain(self.lineEdit.text())
         self.window.show()
-        self.lineEdit.setEnabled(False)
         pass
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -257,14 +256,6 @@ class Ui_MainWindow(object):
         self.toolButton_4.setEnabled(False)
         pass
 
-    # def upload(self):
-    #     Form = QtWidgets.QMainWindow()
-    #     ui_form = Ui_Form()
-    #     # ip = self.lineEdit.text()
-    #     # ui_form.upload().lineEdit.setText(ip)
-    #     ui_form.setupUi(Form)
-    #     Form.show()
-    #     pass
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "SocketPython"))
