@@ -1,16 +1,18 @@
-def ping(host):
-    """
-    Returns True if host responds to a ping request
-    """
-    import subprocess, platform
+import os
 
-    # Ping parameters as function of OS
-    ping_str = "-n 1" if  platform.system().lower()=="windows" else "-c 1"
-    args = "ping " + " " + ping_str + " " + host
-    need_sh = False if  platform.system().lower()=="windows" else True
-
-    # Ping
-    return subprocess.call(args, shell=need_sh) == 0
-
-# test call
-print(ping("168.138.53.102")==True)
+with open("D:\\mylist\\iplist.txt") as file:
+	dump = file.read()
+	dump = dump.splitlines()
+print(dump)
+for i in dump:
+	ip = i.split()[0]
+	host = i.split()[0]
+	print(ip)
+	res = os.popen(f"ping {ip} -n 2").read()
+	if "Request timed out" in res:
+		print(res)
+	elif "Destination host unreachable" in res:
+		print(res)
+	else:
+		print(res)
+	
