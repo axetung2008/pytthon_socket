@@ -14,7 +14,7 @@ import os
 import socket
 import buffer
 
-class Ui_Form(QDialog): #QDiaLog to run window 
+class UI_Upload(QDialog): #QDiaLog to run window 
     
     def setupUi(self, Form):
         Form.setObjectName("Form")
@@ -91,7 +91,7 @@ class Ui_MainWindow(object):
     # submitted = QtCore.pyqtSignal(str)
     def openwindow(self):
         self.window = QtWidgets.QMainWindow()
-        self.ui = Ui_Form() 
+        self.ui = UI_Upload() 
         #them
         self.ui.setupUi(self.window)
         self.ui.passDataFromMain(self.lineEdit.text())

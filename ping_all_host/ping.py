@@ -10,9 +10,9 @@ for i in dump:
 	print(ip)
 	res = os.popen(f"ping {ip} -n 2").read()
 	if "Request timed out" in res:
-		print(res)
+		print("down")
 	elif "Destination host unreachable" in res:
-		print(res)
+		print("down")
 	else:
-		print(res)
+		print("up")
 	
