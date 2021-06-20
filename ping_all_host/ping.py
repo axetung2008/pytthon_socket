@@ -1,6 +1,6 @@
 import os
 
-with open("D:\\mylist\\iplist.txt") as file:
+with open("list_ip.txt") as file:
 	dump = file.read()
 	dump = dump.splitlines()
 print(dump)
