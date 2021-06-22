@@ -1,21 +1,24 @@
-from tkinter import *
-root = Tk()
-frame = Frame(root)
-frame.pack()
+from PyQt5.QtWidgets import QDialog, QApplication, QFileDialog
+from PyQt5 import QtCore, QtGui, QtWidgets
+def __init__(self, inMsg=' Loading...', inMaxStep=1):
+        """
+        """
+        # Save reference to the QGIS interface
+        # initialize progressBar
+        # QApplication.processEvents() # Help to keep UI alive
+        self.iface = iface
 
-bottomframe = Frame(root)
-bottomframe.pack( side = BOTTOM )
+        widget = iface.messageBar().createMessage('Please wait  ', inMsg)
 
-redbutton = Button(frame, text="Red", fg="red")
-redbutton.pack( side = LEFT)
+        prgBar = QProgressBar()
+        self.prgBar = prgBar
 
-greenbutton = Button(frame, text="Brown", fg="brown")
-greenbutton.pack( side = LEFT )
+        widget.layout().addWidget(self.prgBar)
+        iface.messageBar().pushWidget(widget)
+        QApplication.setOverrideCursor(QCursor(Qt.WaitCursor))
 
-bluebutton = Button(frame, text="Blue", fg="blue")
-bluebutton.pack( side = LEFT )
-
-blackbutton = Button(bottomframe, text="Black", fg="black")
-blackbutton.pack( side = BOTTOM)
-
-root.mainloop()
+        # if Max 0 and value 0, no progressBar, only cursor loading
+        # default is set to 0
+        prgBar.setValue(1)
+        # set Maximum for progressBar
+        prgBar.setMaximum(inMaxStep) 

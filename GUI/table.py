@@ -11,6 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QFileDialog
 import os
+import socket
 
 class Ui_Table(QDialog):
     def setupUi(self, Form):
@@ -67,13 +68,14 @@ class Ui_Table(QDialog):
         except FileNotFoundError as e:
             pass
     def scan(self):
+        s = socket.socket()
         try:
-
+            listport = [23,43,80]
             global dump
             row = 0
             for i in dump:
                 ip = i.split()[0]
-                # print(ip)
+                print(ip)
                 res = os.popen(f"ping {ip} -n 2").read()
                 if "Request timed out" in res:
                     self.tableWidget.setItem(row, 1, QtWidgets.QTableWidgetItem("Down"))
@@ -84,6 +86,19 @@ class Ui_Table(QDialog):
                 else:
                     self.tableWidget.setItem(row, 1, QtWidgets.QTableWidgetItem("Up"))
                     # print("up")
+                col = 2
+                for p in listport:
+                    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    result = s.connect_ex((ip,p))
+                    print(ip)
+                    if result == 0:
+                        self.tableWidget.setItem(row, col, QtWidgets.QTableWidgetItem("Open"))
+                        # print("Open")
+                    else:
+                        self.tableWidget.setItem(row, col, QtWidgets.QTableWidgetItem("Close"))
+                        # print("Close")
+                    col = col + 1
+                    s.close()
                 row = row + 1
         except NameError as e:
             pass
