@@ -70,7 +70,7 @@ class Ui_Table(QDialog):
     def scan(self):
         s = socket.socket()
         try:
-            listport = [23,43,80]
+            listport = [25,43,80]
             global dump
             row = 0
             for i in dump:
@@ -114,7 +114,7 @@ class Ui_Table(QDialog):
         item = self.tableWidget.horizontalHeaderItem(1)
         item.setText(_translate("Form", "Status"))
         item = self.tableWidget.horizontalHeaderItem(2)
-        item.setText(_translate("Form", "23"))
+        item.setText(_translate("Form", "25"))
         item = self.tableWidget.horizontalHeaderItem(3)
         item.setText(_translate("Form", "43"))
         item = self.tableWidget.horizontalHeaderItem(4)
