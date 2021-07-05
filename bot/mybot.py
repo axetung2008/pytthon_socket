@@ -30,15 +30,6 @@ def display_disk_space(message):
 	result = subprocess.check_output(commands,stderr=subprocess.STDOUT)
 	bot.reply_to(message, result.decode())
 
-# def stock_request(message):
-# 	request = message.text.split()
-# 	if len(request) < 2 or request[0].lower() not in "test":
-# 		return False
-# 	else:
-# 		return True
-# @bot.message_handler(func=stock_request)
-# def send_price(message):
-# 	request = message.text.split()
-# 	print(request)
+
 
 bot.polling()
