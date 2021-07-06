@@ -40,7 +40,7 @@ def tree_dir(message):
 @bot.message_handler(func=tree_dir)
 def res_tree(message):
 	directory = message.text.split()[1]
-	request = ['tree',directory,'-o','direc_tree.txt']
+	request = ['tree',directory,'-f','-pug','-h','-D','-o','direc_tree.txt']
 	result = subprocess.check_output(request,stderr=subprocess.STDOUT)
 	doc = open('direc_tree.txt','rb')
 	bot.send_document(chat_id, doc)
