@@ -1,0 +1,1261 @@
+/etc
+├── [drwxr-xr-x root     root      101 Mar 16 23:06]  /etc/abrt
+│   ├── [-rw-r--r-- root     root      850 Oct  1  2020]  /etc/abrt/abrt-action-save-package-data.conf
+│   ├── [-rw-r--r-- root     root     2.1K Oct  1  2020]  /etc/abrt/abrt.conf
+│   ├── [-rw-r--r-- root     root       31 Oct  1  2020]  /etc/abrt/gpg_keys.conf
+│   └── [drwxr-xr-x root     root       95 Mar 16 23:06]  /etc/abrt/plugins
+│       ├── [-rw-r--r-- root     root     2.1K Oct  1  2020]  /etc/abrt/plugins/CCpp.conf
+│       ├── [-rw-r--r-- root     root      263 Oct  1  2020]  /etc/abrt/plugins/oops.conf
+│       ├── [-rw-r--r-- root     root      204 Oct  1  2020]  /etc/abrt/plugins/python.conf
+│       ├── [-rw-r--r-- root     root      160 Oct  1  2020]  /etc/abrt/plugins/vmcore.conf
+│       └── [-rw-r--r-- root     root      175 Oct  1  2020]  /etc/abrt/plugins/xorg.conf
+├── [-rw-r--r-- root     root       44 Apr 16 20:38]  /etc/adjtime
+├── [-rw-r--r-- root     root     1.5K Apr  1  2020]  /etc/aliases
+├── [-rw-r--r-- root     root      12K Apr 16 16:39]  /etc/aliases.db
+├── [drwxr-xr-x root     root      224 May 26 14:13]  /etc/alternatives
+│   ├── [lrwxrwxrwx root     root       39 Mar 16 23:12]  /etc/alternatives/cifs-idmap-plugin -> /usr/lib64/cifs-utils/cifs_idmap_sss.so
+│   ├── [lrwxrwxrwx root     root       15 Mar 16 23:05]  /etc/alternatives/ld -> /usr/bin/ld.bfd
+│   ├── [lrwxrwxrwx root     root       34 May 26 14:12]  /etc/alternatives/libnssckbi.so.x86_64 -> /usr/lib64/pkcs11/p11-kit-trust.so
+│   ├── [lrwxrwxrwx root     root       23 May 26 14:13]  /etc/alternatives/mta -> /usr/sbin/sendmail.exim
+│   ├── [lrwxrwxrwx root     root       19 May 26 14:13]  /etc/alternatives/mta-mailq -> /usr/bin/mailq.exim
+│   ├── [lrwxrwxrwx root     root       29 May 26 14:13]  /etc/alternatives/mta-mailqman -> /usr/share/man/man8/exim.8.gz
+│   ├── [lrwxrwxrwx root     root       24 May 26 14:13]  /etc/alternatives/mta-newaliases -> /usr/bin/newaliases.exim
+│   ├── [lrwxrwxrwx root     root       15 May 26 14:13]  /etc/alternatives/mta-pam -> /etc/pam.d/exim
+│   ├── [lrwxrwxrwx root     root       19 May 26 14:13]  /etc/alternatives/mta-rmail -> /usr/bin/rmail.exim
+│   ├── [lrwxrwxrwx root     root       19 May 26 14:13]  /etc/alternatives/mta-rsmtp -> /usr/bin/rsmtp.exim
+│   ├── [lrwxrwxrwx root     root       18 May 26 14:13]  /etc/alternatives/mta-runq -> /usr/bin/runq.exim
+│   └── [lrwxrwxrwx root     root       22 May 26 14:13]  /etc/alternatives/mta-sendmail -> /usr/lib/sendmail.exim
+├── [-rw------- root     root      541 Aug  9  2019]  /etc/anacrontab
+├── [-rw-r--r-- root     root       55 Aug  8  2019]  /etc/asound.conf
+├── [-rw-r--r-- root     root        1 Oct 31  2018]  /etc/at.deny
+├── [drwxr-x--- root     root       43 Mar 16 23:06]  /etc/audisp [error opening dir]
+├── [drwxr-x--- root     root       83 Apr 16 16:38]  /etc/audit [error opening dir]
+├── [drwxr-xr-x root     root      128 May 26 14:13]  /etc/bash_completion.d
+│   ├── [-rw-r--r-- root     root      15K Apr 29  5:00]  /etc/bash_completion.d/bpftool
+│   ├── [-rw-r--r-- root     root     3.2K Dec 18  2019]  /etc/bash_completion.d/cloud-init
+│   ├── [-rw-r--r-- root     root      55K May 29  2020]  /etc/bash_completion.d/git
+│   ├── [-rw-r--r-- root     root      829 Feb  5  2020]  /etc/bash_completion.d/iprutils
+│   ├── [-rw-r--r-- root     root     1.4K Nov 27  2019]  /etc/bash_completion.d/redefine_filedir
+│   ├── [-rw-r--r-- root     root     1.5K Oct 31  2018]  /etc/bash_completion.d/scl.bash
+│   └── [-rw-r--r-- root     root      11K May 12  2020]  /etc/bash_completion.d/yum-utils.bash
+├── [-rw-r--r-- root     root     2.8K Apr  1  2020]  /etc/bashrc
+├── [drwxr-xr-x root     root        6 Feb  2 23:34]  /etc/binfmt.d
+├── [-rw-r--r-- root     root       37 Nov 23  2020]  /etc/centos-release
+├── [-rw-r--r-- root     root       51 Nov 23  2020]  /etc/centos-release-upstream
+├── [drwxr-xr-x root     root        6 Oct 13  2020]  /etc/chkconfig.d
+├── [-rw-r--r-- root     root     1.1K Mar 16 23:17]  /etc/chrony.conf
+├── [-rw-r----- root     chrony    481 Aug  8  2019]  /etc/chrony.keys
+├── [drwxr-xr-x root     root       26 Mar 16 23:12]  /etc/cifs-utils
+│   └── [lrwxrwxrwx root     root       35 Mar 16 23:12]  /etc/cifs-utils/idmap-plugin -> /etc/alternatives/cifs-idmap-plugin
+├── [drwxr-xr-x root     root       59 Mar 16 23:17]  /etc/cloud
+│   ├── [-rw-r--r-- root     root     1.5K Mar 16 23:20]  /etc/cloud/cloud.cfg
+│   ├── [drwxr-xr-x root     root       86 Apr 16 20:29]  /etc/cloud/cloud.cfg.d
+│   │   ├── [-rw-r--r-- root     root     1.8K Mar 16 22:25]  /etc/cloud/cloud.cfg.d/05_logging.cfg
+│   │   ├── [-rw-r--r-- root     root       28 Mar 16 23:20]  /etc/cloud/cloud.cfg.d/99-disable-network-configuration.cfg
+│   │   └── [-rw-r--r-- root     root      167 Dec 18  2019]  /etc/cloud/cloud.cfg.d/README
+│   └── [drwxr-xr-x root     root     4.0K Apr 16 20:29]  /etc/cloud/templates
+│       ├── [-rw-r--r-- root     root     1.6K Dec 18  2019]  /etc/cloud/templates/chef_client.rb.tmpl
+│       ├── [-rw-r--r-- root     root     1.1K Dec 18  2019]  /etc/cloud/templates/chrony.conf.debian.tmpl
+│       ├── [-rw-r--r-- root     root     1.2K Dec 18  2019]  /etc/cloud/templates/chrony.conf.fedora.tmpl
+│       ├── [-rw-r--r-- root     root      991 Dec 18  2019]  /etc/cloud/templates/chrony.conf.opensuse.tmpl
+│       ├── [-rw-r--r-- root     root     1.2K Dec 18  2019]  /etc/cloud/templates/chrony.conf.rhel.tmpl
+│       ├── [-rw-r--r-- root     root      991 Dec 18  2019]  /etc/cloud/templates/chrony.conf.sles.tmpl
+│       ├── [-rw-r--r-- root     root     1.2K Dec 18  2019]  /etc/cloud/templates/chrony.conf.ubuntu.tmpl
+│       ├── [-rw-r--r-- root     root      901 Dec 18  2019]  /etc/cloud/templates/hosts.debian.tmpl
+│       ├── [-rw-r--r-- root     root      914 Dec 18  2019]  /etc/cloud/templates/hosts.freebsd.tmpl
+│       ├── [-rw-r--r-- root     root      912 Dec 18  2019]  /etc/cloud/templates/hosts.redhat.tmpl
+│       ├── [-rw-r--r-- root     root     1.0K Dec 18  2019]  /etc/cloud/templates/hosts.suse.tmpl
+│       ├── [-rw-r--r-- root     root     2.1K Dec 18  2019]  /etc/cloud/templates/ntp.conf.debian.tmpl
+│       ├── [-rw-r--r-- root     root     2.0K Dec 18  2019]  /etc/cloud/templates/ntp.conf.fedora.tmpl
+│       ├── [-rw-r--r-- root     root     2.7K Dec 18  2019]  /etc/cloud/templates/ntp.conf.opensuse.tmpl
+│       ├── [-rw-r--r-- root     root     1.8K Dec 18  2019]  /etc/cloud/templates/ntp.conf.rhel.tmpl
+│       ├── [-rw-r--r-- root     root     2.7K Dec 18  2019]  /etc/cloud/templates/ntp.conf.sles.tmpl
+│       ├── [-rw-r--r-- root     root     2.5K Dec 18  2019]  /etc/cloud/templates/ntp.conf.ubuntu.tmpl
+│       ├── [-rw-r--r-- root     root      812 Dec 18  2019]  /etc/cloud/templates/resolv.conf.tmpl
+│       ├── [-rw-r--r-- root     root     1.3K Dec 18  2019]  /etc/cloud/templates/sources.list.debian.tmpl
+│       ├── [-rw-r--r-- root     root     2.8K Dec 18  2019]  /etc/cloud/templates/sources.list.ubuntu.tmpl
+│       └── [-rw-r--r-- root     root      203 Dec 18  2019]  /etc/cloud/templates/timesyncd.conf.tmpl
+├── [drwxr-xr-x root     root       54 May 26 14:13]  /etc/cron.d
+│   ├── [-rw-r--r-- root     root      128 Aug  9  2019]  /etc/cron.d/0hourly
+│   ├── [-rw-r--r-- root     root      108 Sep 30  2020]  /etc/cron.d/raid-check
+│   └── [-rw------- root     root      235 Apr  1  2020]  /etc/cron.d/sysstat
+├── [drwxr-xr-x root     root       76 May 26 14:12]  /etc/cron.daily
+│   ├── [-rwxr-xr-x root     root      232 May  5  1:40]  /etc/cron.daily/exim-tidydb
+│   ├── [-rwx------ root     root      219 Apr  1  2020]  /etc/cron.daily/logrotate
+│   ├── [-rwxr-xr-x root     root      618 Oct 30  2018]  /etc/cron.daily/man-db.cron
+│   └── [-rwx------ root     root      208 Apr 11  2018]  /etc/cron.daily/mlocate
+├── [-rw------- root     root        0 Aug  9  2019]  /etc/cron.deny
+├── [drwxr-xr-x root     root       22 Mar 16 23:05]  /etc/cron.hourly
+│   └── [-rwxr-xr-x root     root      392 Aug  9  2019]  /etc/cron.hourly/0anacron
+├── [drwxr-xr-x root     root        6 Jun 10  2014]  /etc/cron.monthly
+├── [-rw-r--r-- root     root      451 Apr 16 16:39]  /etc/crontab
+├── [drwxr-xr-x root     root        6 Jun 10  2014]  /etc/cron.weekly
+├── [-rw------- root     root        0 Mar 16 23:04]  /etc/crypttab
+├── [-rw-r--r-- root     root     1.6K Apr  1  2020]  /etc/csh.cshrc
+├── [-rw-r--r-- root     root     1.1K Apr  1  2020]  /etc/csh.login
+├── [drwxr-xr-x root     root       78 Mar 16 23:05]  /etc/dbus-1
+│   ├── [-rw-r--r-- root     root      838 Sep 30  2020]  /etc/dbus-1/session.conf
+│   ├── [drwxr-xr-x root     root        6 Sep 30  2020]  /etc/dbus-1/session.d
+│   ├── [-rw-r--r-- root     root      833 Sep 30  2020]  /etc/dbus-1/system.conf
+│   └── [drwxr-xr-x root     root     4.0K May 26 14:12]  /etc/dbus-1/system.d
+│       ├── [-rw-r--r-- root     root      587 Mar 22  2019]  /etc/dbus-1/system.d/com.redhat.tuned.conf
+│       ├── [-rw-r--r-- root     root     1.1K Oct  1  2020]  /etc/dbus-1/system.d/dbus-abrt.conf
+│       ├── [-rw-r--r-- root     root     1.1K Apr 28 20:31]  /etc/dbus-1/system.d/FirewallD.conf
+│       ├── [-rw-r--r-- root     root      544 Oct 31  2018]  /etc/dbus-1/system.d/net.reactivated.Fprint.conf
+│       ├── [-rw-r--r-- root     root      465 Nov 16  2020]  /etc/dbus-1/system.d/nm-dispatcher.conf
+│       ├── [-rw-r--r-- root     root      387 Nov 16  2020]  /etc/dbus-1/system.d/nm-ifcfg-rh.conf
+│       ├── [-rw-r--r-- root     root      947 Feb  2 23:34]  /etc/dbus-1/system.d/org.freedesktop.hostname1.conf
+│       ├── [-rw-r--r-- root     root     2.5K Feb  2 23:34]  /etc/dbus-1/system.d/org.freedesktop.import1.conf
+│       ├── [-rw-r--r-- root     root      937 Feb  2 23:34]  /etc/dbus-1/system.d/org.freedesktop.locale1.conf
+│       ├── [-rw-r--r-- root     root     8.3K Feb  2 23:34]  /etc/dbus-1/system.d/org.freedesktop.login1.conf
+│       ├── [-rw-r--r-- root     root     3.6K Feb  2 23:34]  /etc/dbus-1/system.d/org.freedesktop.machine1.conf
+│       ├── [-rw-r--r-- root     root     9.5K Nov 16  2020]  /etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf
+│       ├── [-rw-r--r-- root     root      638 Apr  1  2020]  /etc/dbus-1/system.d/org.freedesktop.PolicyKit1.conf
+│       ├── [-rw-r--r-- root     root     9.9K Feb  2 23:34]  /etc/dbus-1/system.d/org.freedesktop.systemd1.conf
+│       ├── [-rw-r--r-- root     root      947 Feb  2 23:34]  /etc/dbus-1/system.d/org.freedesktop.timedate1.conf
+│       ├── [-rw-r--r-- root     root      535 Apr  1  2020]  /etc/dbus-1/system.d/org.selinux.conf
+│       ├── [-rw-r--r-- root     root      409 Dec  9  2018]  /etc/dbus-1/system.d/teamd.conf
+│       └── [-rw-r--r-- root     root     1.1K Mar 16 22:26]  /etc/dbus-1/system.d/wpa_supplicant.conf
+├── [drwxr-xr-x root     root       44 May 26 14:12]  /etc/default
+│   ├── [-rw-r--r-- root     root      577 Mar 16 23:20]  /etc/default/grub
+│   ├── [-rw-r--r-- root     root     1.7K Apr 28 20:30]  /etc/default/nss
+│   └── [-rw-r--r-- root     root      119 Aug  6  2019]  /etc/default/useradd
+├── [drwxr-xr-x root     root       40 Mar 16 23:06]  /etc/depmod.d
+│   ├── [-rw-r--r-- root     root      116 Apr  1  2020]  /etc/depmod.d/dist.conf
+│   └── [-rw-r--r-- root     root      117 Sep 30  2020]  /etc/depmod.d/kvdo.conf
+├── [drwxr-x--- root     root      100 Mar 16 23:20]  /etc/dhcp [error opening dir]
+├── [-rw-r--r-- root     root     5.0K Nov 16  2020]  /etc/DIR_COLORS
+├── [-rw-r--r-- root     root     5.6K Nov 16  2020]  /etc/DIR_COLORS.256color
+├── [-rw-r--r-- root     root     4.6K Nov 16  2020]  /etc/DIR_COLORS.lightbgcolor
+├── [-rw-r--r-- root     root     1.4K Mar 16 23:11]  /etc/dracut.conf
+├── [drwxr-xr-x root     root       27 Mar 16 23:11]  /etc/dracut.conf.d
+│   └── [-rw-r--r-- root     root       80 Mar 16 23:11]  /etc/dracut.conf.d/99-local.conf
+├── [-rw-r--r-- root     root      112 Sep 30  2020]  /etc/e2fsck.conf
+├── [-rw-r--r-- root     root        0 Apr  1  2020]  /etc/environment
+├── [-rw-r--r-- root     root     1.3K Apr 11  2018]  /etc/ethertypes
+├── [drwxr-xr-x root     root       46 May 26 14:12]  /etc/exim
+│   ├── [-rw-r--r-- root     root      49K May  5  1:40]  /etc/exim/exim.conf
+│   └── [-rw-r--r-- root     root      343 May  5  1:40]  /etc/exim/trusted-configs
+├── [-rw-r--r-- root     root        0 Jun  7  2013]  /etc/exports
+├── [drwxr-xr-x root     root        6 Oct  1  2020]  /etc/exports.d
+├── [drwxr-xr-x root     root      176 Apr 16 20:38]  /etc/fail2ban
+│   ├── [drwxr-xr-x root     root     4.0K Apr 16 20:37]  /etc/fail2ban/action.d
+│   │   ├── [-rw-r--r-- root     root     3.8K Jan 11  2020]  /etc/fail2ban/action.d/abuseipdb.conf
+│   │   ├── [-rw-r--r-- root     root      587 Jan 11  2020]  /etc/fail2ban/action.d/apf.conf
+│   │   ├── [-rw-r--r-- root     root      629 Jan 11  2020]  /etc/fail2ban/action.d/badips.conf
+│   │   ├── [-rw-r--r-- root     root      11K Jan 11  2020]  /etc/fail2ban/action.d/badips.py
+│   │   ├── [-rw-r--r-- root     root      13K Aug 28  2020]  /etc/fail2ban/action.d/badips.pyc
+│   │   ├── [-rw-r--r-- root     root      13K Aug 28  2020]  /etc/fail2ban/action.d/badips.pyo
+│   │   ├── [-rw-r--r-- root     root     2.7K Jan 11  2020]  /etc/fail2ban/action.d/blocklist_de.conf
+│   │   ├── [-rw-r--r-- root     root     2.7K Jan 11  2020]  /etc/fail2ban/action.d/cloudflare.conf
+│   │   ├── [-rw-r--r-- root     root     7.5K Jan 11  2020]  /etc/fail2ban/action.d/dshield.conf
+│   │   ├── [-rw-r--r-- root     root     1.7K Jan 11  2020]  /etc/fail2ban/action.d/dummy.conf
+│   │   ├── [-rw-r--r-- root     root     1.5K Jan 11  2020]  /etc/fail2ban/action.d/firewallcmd-allports.conf
+│   │   ├── [-rw-r--r-- root     root     2.6K Jan 11  2020]  /etc/fail2ban/action.d/firewallcmd-common.conf
+│   │   ├── [-rw-r--r-- root     root     2.2K Jan 11  2020]  /etc/fail2ban/action.d/firewallcmd-ipset.conf
+│   │   ├── [-rw-r--r-- root     root     1.2K Jan 11  2020]  /etc/fail2ban/action.d/firewallcmd-multiport.conf
+│   │   ├── [-rw-r--r-- root     root     1.9K Jan 11  2020]  /etc/fail2ban/action.d/firewallcmd-new.conf
+│   │   ├── [-rw-r--r-- root     root     2.3K Jan 11  2020]  /etc/fail2ban/action.d/firewallcmd-rich-logging.conf
+│   │   ├── [-rw-r--r-- root     root     1.7K Jan 11  2020]  /etc/fail2ban/action.d/firewallcmd-rich-rules.conf
+│   │   ├── [-rw-r--r-- root     root      592 Jan 11  2020]  /etc/fail2ban/action.d/helpers-common.conf
+│   │   ├── [-rw-r--r-- root     root     1.5K Jan 11  2020]  /etc/fail2ban/action.d/iptables-allports.conf
+│   │   ├── [-rw-r--r-- root     root     2.7K Jan 11  2020]  /etc/fail2ban/action.d/iptables-common.conf
+│   │   ├── [-rw-r--r-- root     root     1.4K Jan 11  2020]  /etc/fail2ban/action.d/iptables.conf
+│   │   ├── [-rw-r--r-- root     root     2.0K Jan 11  2020]  /etc/fail2ban/action.d/iptables-ipset-proto4.conf
+│   │   ├── [-rw-r--r-- root     root     2.3K Jan 11  2020]  /etc/fail2ban/action.d/iptables-ipset-proto6-allports.conf
+│   │   ├── [-rw-r--r-- root     root     2.3K Jan 11  2020]  /etc/fail2ban/action.d/iptables-ipset-proto6.conf
+│   │   ├── [-rw-r--r-- root     root     1.5K Jan 11  2020]  /etc/fail2ban/action.d/iptables-multiport.conf
+│   │   ├── [-rw-r--r-- root     root     2.1K Jan 11  2020]  /etc/fail2ban/action.d/iptables-multiport-log.conf
+│   │   ├── [-rw-r--r-- root     root     1.5K Jan 11  2020]  /etc/fail2ban/action.d/iptables-new.conf
+│   │   ├── [-rw-r--r-- root     root     2.6K Jan 11  2020]  /etc/fail2ban/action.d/iptables-xt_recent-echo.conf
+│   │   ├── [-rw-r--r-- root     root     1.0K Jan 11  2020]  /etc/fail2ban/action.d/mail-whois-common.conf
+│   │   ├── [-rw-r--r-- root     root     5.2K Jan 11  2020]  /etc/fail2ban/action.d/mynetwatchman.conf
+│   │   ├── [-rw-r--r-- root     root     1.5K Jan 11  2020]  /etc/fail2ban/action.d/netscaler.conf
+│   │   ├── [-rw-r--r-- root     root      383 Jan 11  2020]  /etc/fail2ban/action.d/nftables-allports.conf
+│   │   ├── [-rw-r--r-- root     root     6.2K Aug 28  2020]  /etc/fail2ban/action.d/nftables.conf
+│   │   ├── [-rw-r--r-- root     root      384 Jan 11  2020]  /etc/fail2ban/action.d/nftables-multiport.conf
+│   │   ├── [-rw-r--r-- root     root     3.7K Aug 28  2020]  /etc/fail2ban/action.d/nginx-block-map.conf
+│   │   ├── [-rw-r--r-- root     root     1.5K Jan 11  2020]  /etc/fail2ban/action.d/npf.conf
+│   │   ├── [-rw-r--r-- root     root     3.2K Jan 11  2020]  /etc/fail2ban/action.d/nsupdate.conf
+│   │   ├── [-rw-r--r-- root     root     1023 Jan 11  2020]  /etc/fail2ban/action.d/route.conf
+│   │   ├── [-rw-r--r-- root     root     2.7K Jan 11  2020]  /etc/fail2ban/action.d/sendmail-buffered.conf
+│   │   ├── [-rw-r--r-- root     root     1.9K Jan 11  2020]  /etc/fail2ban/action.d/sendmail-common.conf
+│   │   ├── [-rw-r--r-- root     root      829 Jan 11  2020]  /etc/fail2ban/action.d/sendmail.conf
+│   │   ├── [-rw-r--r-- root     root     1.7K Jan 11  2020]  /etc/fail2ban/action.d/sendmail-geoip-lines.conf
+│   │   ├── [-rw-r--r-- root     root      950 Jan 11  2020]  /etc/fail2ban/action.d/sendmail-whois.conf
+│   │   ├── [-rw-r--r-- root     root     1.0K Jan 11  2020]  /etc/fail2ban/action.d/sendmail-whois-ipjailmatches.conf
+│   │   ├── [-rw-r--r-- root     root     1.0K Jan 11  2020]  /etc/fail2ban/action.d/sendmail-whois-ipmatches.conf
+│   │   ├── [-rw-r--r-- root     root     1.3K Jan 11  2020]  /etc/fail2ban/action.d/sendmail-whois-lines.conf
+│   │   ├── [-rw-r--r-- root     root     1000 Jan 11  2020]  /etc/fail2ban/action.d/sendmail-whois-matches.conf
+│   │   ├── [-rw-r--r-- root     root     3.0K Jan 11  2020]  /etc/fail2ban/action.d/shorewall-ipset-proto6.conf
+│   │   ├── [-rw-r--r-- root     root     6.1K Jan 11  2020]  /etc/fail2ban/action.d/smtp.py
+│   │   ├── [-rw-r--r-- root     root     6.0K Aug 28  2020]  /etc/fail2ban/action.d/smtp.pyc
+│   │   ├── [-rw-r--r-- root     root     6.0K Aug 28  2020]  /etc/fail2ban/action.d/smtp.pyo
+│   │   ├── [-rw-r--r-- root     root     1.4K Jan 11  2020]  /etc/fail2ban/action.d/symbiosis-blacklist-allports.conf
+│   │   └── [-rw-r--r-- root     root     6.3K Jan 11  2020]  /etc/fail2ban/action.d/xarf-login-attack.conf
+│   ├── [-rw-r--r-- root     root     2.8K Jan 11  2020]  /etc/fail2ban/fail2ban.conf
+│   ├── [drwxr-xr-x root     root        6 Aug 28  2020]  /etc/fail2ban/fail2ban.d
+│   ├── [drwxr-xr-x root     root     4.0K Apr 16 20:37]  /etc/fail2ban/filter.d
+│   │   ├── [-rw-r--r-- root     root      467 Jan 11  2020]  /etc/fail2ban/filter.d/3proxy.conf
+│   │   ├── [-rw-r--r-- root     root     3.2K Jan 11  2020]  /etc/fail2ban/filter.d/apache-auth.conf
+│   │   ├── [-rw-r--r-- root     root     2.8K Jan 11  2020]  /etc/fail2ban/filter.d/apache-badbots.conf
+│   │   ├── [-rw-r--r-- root     root     1.2K Jan 11  2020]  /etc/fail2ban/filter.d/apache-botsearch.conf
+│   │   ├── [-rw-r--r-- root     root     1.6K Jan 11  2020]  /etc/fail2ban/filter.d/apache-common.conf
+│   │   ├── [-rw-r--r-- root     root      324 Jan 11  2020]  /etc/fail2ban/filter.d/apache-fakegooglebot.conf
+│   │   ├── [-rw-r--r-- root     root      511 Jan 11  2020]  /etc/fail2ban/filter.d/apache-modsecurity.conf
+│   │   ├── [-rw-r--r-- root     root      596 Jan 11  2020]  /etc/fail2ban/filter.d/apache-nohome.conf
+│   │   ├── [-rw-r--r-- root     root     1.2K Jan 11  2020]  /etc/fail2ban/filter.d/apache-noscript.conf
+│   │   ├── [-rw-r--r-- root     root     2.1K Jan 11  2020]  /etc/fail2ban/filter.d/apache-overflows.conf
+│   │   ├── [-rw-r--r-- root     root      362 Jan 11  2020]  /etc/fail2ban/filter.d/apache-pass.conf
+│   │   ├── [-rw-r--r-- root     root     1020 Jan 11  2020]  /etc/fail2ban/filter.d/apache-shellshock.conf
+│   │   ├── [-rw-r--r-- root     root     3.4K Jan 11  2020]  /etc/fail2ban/filter.d/assp.conf
+│   │   ├── [-rw-r--r-- root     root     2.3K Jan 11  2020]  /etc/fail2ban/filter.d/asterisk.conf
+│   │   ├── [-rw-r--r-- root     root      205 Jan 11  2020]  /etc/fail2ban/filter.d/bitwarden.conf
+│   │   ├── [-rw-r--r-- root     root      522 Jan 11  2020]  /etc/fail2ban/filter.d/botsearch-common.conf
+│   │   ├── [-rw-r--r-- root     root      307 Jan 11  2020]  /etc/fail2ban/filter.d/centreon.conf
+│   │   ├── [-rw-r--r-- root     root     2.7K Jan 11  2020]  /etc/fail2ban/filter.d/common.conf
+│   │   ├── [-rw-r--r-- root     root      244 Jan 11  2020]  /etc/fail2ban/filter.d/counter-strike.conf
+│   │   ├── [-rw-r--r-- root     root      429 Jan 11  2020]  /etc/fail2ban/filter.d/courier-auth.conf
+│   │   ├── [-rw-r--r-- root     root      498 Jan 11  2020]  /etc/fail2ban/filter.d/courier-smtp.conf
+│   │   ├── [-rw-r--r-- root     root      444 Jan 11  2020]  /etc/fail2ban/filter.d/cyrus-imap.conf
+│   │   ├── [-rw-r--r-- root     root      338 Jan 11  2020]  /etc/fail2ban/filter.d/directadmin.conf
+│   │   ├── [-rw-r--r-- root     root     2.1K Jan 11  2020]  /etc/fail2ban/filter.d/domino-smtp.conf
+│   │   ├── [-rw-r--r-- root     root     2.3K Jan 11  2020]  /etc/fail2ban/filter.d/dovecot.conf
+│   │   ├── [-rw-r--r-- root     root     1.7K Jan 11  2020]  /etc/fail2ban/filter.d/dropbear.conf
+│   │   ├── [-rw-r--r-- root     root      557 Jan 11  2020]  /etc/fail2ban/filter.d/drupal-auth.conf
+│   │   ├── [-rw-r--r-- root     root     1.5K Jan 11  2020]  /etc/fail2ban/filter.d/ejabberd-auth.conf
+│   │   ├── [-rw-r--r-- root     root      516 Jan 11  2020]  /etc/fail2ban/filter.d/exim-common.conf
+│   │   ├── [-rw-r--r-- root     root     2.8K Jan 11  2020]  /etc/fail2ban/filter.d/exim.conf
+│   │   ├── [-rw-r--r-- root     root     2.1K Jan 11  2020]  /etc/fail2ban/filter.d/exim-spam.conf
+│   │   ├── [-rw-r--r-- root     root     1.9K Jan 11  2020]  /etc/fail2ban/filter.d/freeswitch.conf
+│   │   ├── [-rw-r--r-- root     root     1.2K Jan 11  2020]  /etc/fail2ban/filter.d/froxlor-auth.conf
+│   │   ├── [-rw-r--r-- root     root      236 Jan 11  2020]  /etc/fail2ban/filter.d/groupoffice.conf
+│   │   ├── [-rw-r--r-- root     root      322 Jan 11  2020]  /etc/fail2ban/filter.d/gssftpd.conf
+│   │   ├── [-rw-r--r-- root     root      603 Jan 11  2020]  /etc/fail2ban/filter.d/guacamole.conf
+│   │   ├── [-rw-r--r-- root     root     1.1K Jan 11  2020]  /etc/fail2ban/filter.d/haproxy-http-auth.conf
+│   │   ├── [-rw-r--r-- root     root      404 Jan 11  2020]  /etc/fail2ban/filter.d/horde.conf
+│   │   ├── [drwxr-xr-x root     root       34 Apr 16 20:37]  /etc/fail2ban/filter.d/ignorecommands
+│   │   │   └── [-rwxr-xr-x root     root     1.0K Jan 11  2020]  /etc/fail2ban/filter.d/ignorecommands/apache-fakegooglebot
+│   │   ├── [-rw-r--r-- root     root      938 Jan 11  2020]  /etc/fail2ban/filter.d/kerio.conf
+│   │   ├── [-rw-r--r-- root     root      333 Jan 11  2020]  /etc/fail2ban/filter.d/lighttpd-auth.conf
+│   │   ├── [-rw-r--r-- root     root     2.2K Jan 11  2020]  /etc/fail2ban/filter.d/mongodb-auth.conf
+│   │   ├── [-rw-r--r-- root     root      767 Jan 11  2020]  /etc/fail2ban/filter.d/monit.conf
+│   │   ├── [-rw-r--r-- root     root      927 Jan 11  2020]  /etc/fail2ban/filter.d/murmur.conf
+│   │   ├── [-rw-r--r-- root     root      936 Jan 11  2020]  /etc/fail2ban/filter.d/mysqld-auth.conf
+│   │   ├── [-rw-r--r-- root     root      400 Jan 11  2020]  /etc/fail2ban/filter.d/nagios.conf
+│   │   ├── [-rw-r--r-- root     root     1.5K Jan 11  2020]  /etc/fail2ban/filter.d/named-refused.conf
+│   │   ├── [-rw-r--r-- root     root      681 Jan 11  2020]  /etc/fail2ban/filter.d/nginx-botsearch.conf
+│   │   ├── [-rw-r--r-- root     root      485 Jan 11  2020]  /etc/fail2ban/filter.d/nginx-http-auth.conf
+│   │   ├── [-rw-r--r-- root     root     1.4K Jan 11  2020]  /etc/fail2ban/filter.d/nginx-limit-req.conf
+│   │   ├── [-rw-r--r-- root     root      760 Jan 11  2020]  /etc/fail2ban/filter.d/nsd.conf
+│   │   ├── [-rw-r--r-- root     root      452 Jan 11  2020]  /etc/fail2ban/filter.d/openhab.conf
+│   │   ├── [-rw-r--r-- root     root      495 Jan 11  2020]  /etc/fail2ban/filter.d/openwebmail.conf
+│   │   ├── [-rw-r--r-- root     root     1.9K Jan 11  2020]  /etc/fail2ban/filter.d/oracleims.conf
+│   │   ├── [-rw-r--r-- root     root      947 Jan 11  2020]  /etc/fail2ban/filter.d/pam-generic.conf
+│   │   ├── [-rw-r--r-- root     root      568 Jan 11  2020]  /etc/fail2ban/filter.d/perdition.conf
+│   │   ├── [-rw-r--r-- root     root      278 Jan 11  2020]  /etc/fail2ban/filter.d/phpmyadmin-syslog.conf
+│   │   ├── [-rw-r--r-- root     root      891 Jan 11  2020]  /etc/fail2ban/filter.d/php-url-fopen.conf
+│   │   ├── [-rw-r--r-- root     root      242 Jan 11  2020]  /etc/fail2ban/filter.d/portsentry.conf
+│   │   ├── [-rw-r--r-- root     root     3.0K Jan 11  2020]  /etc/fail2ban/filter.d/postfix.conf
+│   │   ├── [-rw-r--r-- root     root     1.1K Jan 11  2020]  /etc/fail2ban/filter.d/proftpd.conf
+│   │   ├── [-rw-r--r-- root     root     2.4K Jan 11  2020]  /etc/fail2ban/filter.d/pure-ftpd.conf
+│   │   ├── [-rw-r--r-- root     root      795 Jan 11  2020]  /etc/fail2ban/filter.d/qmail.conf
+│   │   ├── [-rw-r--r-- root     root     1.3K Jan 11  2020]  /etc/fail2ban/filter.d/recidive.conf
+│   │   ├── [-rw-r--r-- root     root     1.5K Jan 11  2020]  /etc/fail2ban/filter.d/roundcube-auth.conf
+│   │   ├── [-rw-r--r-- root     root      821 Jan 11  2020]  /etc/fail2ban/filter.d/screensharingd.conf
+│   │   ├── [-rw-r--r-- root     root      538 Jan 11  2020]  /etc/fail2ban/filter.d/selinux-common.conf
+│   │   ├── [-rw-r--r-- root     root      570 Jan 11  2020]  /etc/fail2ban/filter.d/selinux-ssh.conf
+│   │   ├── [-rw-r--r-- root     root      522 Jan 11  2020]  /etc/fail2ban/filter.d/sendmail-auth.conf
+│   │   ├── [-rw-r--r-- root     root     3.0K Jan 11  2020]  /etc/fail2ban/filter.d/sendmail-reject.conf
+│   │   ├── [-rw-r--r-- root     root      371 Jan 11  2020]  /etc/fail2ban/filter.d/sieve.conf
+│   │   ├── [-rw-r--r-- root     root      706 Jan 11  2020]  /etc/fail2ban/filter.d/slapd.conf
+│   │   ├── [-rw-r--r-- root     root      722 Jan 11  2020]  /etc/fail2ban/filter.d/sogo-auth.conf
+│   │   ├── [-rw-r--r-- root     root     1.1K Jan 11  2020]  /etc/fail2ban/filter.d/solid-pop3d.conf
+│   │   ├── [-rw-r--r-- root     root      260 Jan 11  2020]  /etc/fail2ban/filter.d/squid.conf
+│   │   ├── [-rw-r--r-- root     root      191 Jan 11  2020]  /etc/fail2ban/filter.d/squirrelmail.conf
+│   │   ├── [-rw-r--r-- root     root     6.5K Jan 11  2020]  /etc/fail2ban/filter.d/sshd.conf
+│   │   ├── [-rw-r--r-- root     root      363 Jan 11  2020]  /etc/fail2ban/filter.d/stunnel.conf
+│   │   ├── [-rw-r--r-- root     root      649 Jan 11  2020]  /etc/fail2ban/filter.d/suhosin.conf
+│   │   ├── [-rw-r--r-- root     root      890 Jan 11  2020]  /etc/fail2ban/filter.d/tine20.conf
+│   │   ├── [-rw-r--r-- root     root     1.7K Jan 11  2020]  /etc/fail2ban/filter.d/traefik-auth.conf
+│   │   ├── [-rw-r--r-- root     root      374 Jan 11  2020]  /etc/fail2ban/filter.d/uwimap-auth.conf
+│   │   ├── [-rw-r--r-- root     root      637 Jan 11  2020]  /etc/fail2ban/filter.d/vsftpd.conf
+│   │   ├── [-rw-r--r-- root     root      444 Jan 11  2020]  /etc/fail2ban/filter.d/webmin-auth.conf
+│   │   ├── [-rw-r--r-- root     root      520 Jan 11  2020]  /etc/fail2ban/filter.d/wuftpd.conf
+│   │   ├── [-rw-r--r-- root     root      521 Jan 11  2020]  /etc/fail2ban/filter.d/xinetd-fail.conf
+│   │   ├── [-rw-r--r-- root     root      912 Jan 11  2020]  /etc/fail2ban/filter.d/znc-adminlog.conf
+│   │   └── [-rw-r--r-- root     root      524 Jan 11  2020]  /etc/fail2ban/filter.d/zoneminder.conf
+│   ├── [-rw-r--r-- root     root      25K Aug 28  2020]  /etc/fail2ban/jail.conf
+│   ├── [drwxr-xr-x root     root       31 Apr 16 20:37]  /etc/fail2ban/jail.d
+│   │   └── [-rw-r--r-- root     root      366 Aug 28  2020]  /etc/fail2ban/jail.d/00-firewalld.conf
+│   ├── [-rw-r--r-- root     root      341 Apr 16 20:38]  /etc/fail2ban/jail.local
+│   ├── [-rw-r--r-- root     root     2.8K Jan 11  2020]  /etc/fail2ban/paths-common.conf
+│   └── [-rw-r--r-- root     root      930 Jan 11  2020]  /etc/fail2ban/paths-fedora.conf
+├── [lrwxrwxrwx root     root       56 Mar 16 23:05]  /etc/favicon.png -> /usr/share/icons/hicolor/16x16/apps/fedora-logo-icon.png
+├── [-rw-r--r-- root     root       70 Apr  1  2020]  /etc/filesystems
+├── [drwxr-x--- root     root      151 May 26 14:12]  /etc/firewalld [error opening dir]
+├── [drwxr-xr-x root     root       38 Apr 16 20:35]  /etc/fonts
+│   ├── [drwxr-xr-x root     root     4.0K Apr 16 20:35]  /etc/fonts/conf.d
+│   │   ├── [lrwxrwxrwx root     root       55 Apr 16 20:35]  /etc/fonts/conf.d/10-hinting-slight.conf -> /usr/share/fontconfig/conf.avail/10-hinting-slight.conf
+│   │   ├── [lrwxrwxrwx root     root       59 Apr 16 20:35]  /etc/fonts/conf.d/10-scale-bitmap-fonts.conf -> /usr/share/fontconfig/conf.avail/10-scale-bitmap-fonts.conf
+│   │   ├── [lrwxrwxrwx root     root       65 Apr 16 20:35]  /etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf -> /usr/share/fontconfig/conf.avail/20-unhint-small-dejavu-sans.conf
+│   │   ├── [lrwxrwxrwx root     root       58 Apr 16 20:35]  /etc/fonts/conf.d/20-unhint-small-vera.conf -> /usr/share/fontconfig/conf.avail/20-unhint-small-vera.conf
+│   │   ├── [-rw-r--r-- root     root     1.1K Oct 30  2018]  /etc/fonts/conf.d/25-no-bitmap-fedora.conf
+│   │   ├── [lrwxrwxrwx root     root       56 Apr 16 20:35]  /etc/fonts/conf.d/25-unhint-nonlatin.conf -> /usr/share/fontconfig/conf.avail/25-unhint-nonlatin.conf
+│   │   ├── [lrwxrwxrwx root     root       55 Apr 16 20:35]  /etc/fonts/conf.d/30-metric-aliases.conf -> /usr/share/fontconfig/conf.avail/30-metric-aliases.conf
+│   │   ├── [lrwxrwxrwx root     root       52 Apr 16 20:35]  /etc/fonts/conf.d/30-urw-aliases.conf -> /usr/share/fontconfig/conf.avail/30-urw-aliases.conf
+│   │   ├── [lrwxrwxrwx root     root       49 Apr 16 20:35]  /etc/fonts/conf.d/40-nonlatin.conf -> /usr/share/fontconfig/conf.avail/40-nonlatin.conf
+│   │   ├── [lrwxrwxrwx root     root       48 Apr 16 20:35]  /etc/fonts/conf.d/45-generic.conf -> /usr/share/fontconfig/conf.avail/45-generic.conf
+│   │   ├── [lrwxrwxrwx root     root       46 Apr 16 20:35]  /etc/fonts/conf.d/45-latin.conf -> /usr/share/fontconfig/conf.avail/45-latin.conf
+│   │   ├── [lrwxrwxrwx root     root       50 Apr 16 20:35]  /etc/fonts/conf.d/49-sansserif.conf -> /usr/share/fontconfig/conf.avail/49-sansserif.conf
+│   │   ├── [lrwxrwxrwx root     root       45 Apr 16 20:35]  /etc/fonts/conf.d/50-user.conf -> /usr/share/fontconfig/conf.avail/50-user.conf
+│   │   ├── [lrwxrwxrwx root     root       46 Apr 16 20:35]  /etc/fonts/conf.d/51-local.conf -> /usr/share/fontconfig/conf.avail/51-local.conf
+│   │   ├── [lrwxrwxrwx root     root       52 Apr 16 20:35]  /etc/fonts/conf.d/57-dejavu-sans.conf -> /usr/share/fontconfig/conf.avail/57-dejavu-sans.conf
+│   │   ├── [lrwxrwxrwx root     root       48 Apr 16 20:35]  /etc/fonts/conf.d/60-generic.conf -> /usr/share/fontconfig/conf.avail/60-generic.conf
+│   │   ├── [lrwxrwxrwx root     root       46 Apr 16 20:35]  /etc/fonts/conf.d/60-latin.conf -> /usr/share/fontconfig/conf.avail/60-latin.conf
+│   │   ├── [lrwxrwxrwx root     root       54 Apr 16 20:35]  /etc/fonts/conf.d/65-fonts-persian.conf -> /usr/share/fontconfig/conf.avail/65-fonts-persian.conf
+│   │   ├── [lrwxrwxrwx root     root       49 Apr 16 20:35]  /etc/fonts/conf.d/65-nonlatin.conf -> /usr/share/fontconfig/conf.avail/65-nonlatin.conf
+│   │   ├── [lrwxrwxrwx root     root       48 Apr 16 20:35]  /etc/fonts/conf.d/69-unifont.conf -> /usr/share/fontconfig/conf.avail/69-unifont.conf
+│   │   ├── [lrwxrwxrwx root     root       50 Apr 16 20:35]  /etc/fonts/conf.d/80-delicious.conf -> /usr/share/fontconfig/conf.avail/80-delicious.conf
+│   │   ├── [lrwxrwxrwx root     root       50 Apr 16 20:35]  /etc/fonts/conf.d/90-synthetic.conf -> /usr/share/fontconfig/conf.avail/90-synthetic.conf
+│   │   └── [-rw-r--r-- root     root      978 Feb 19  2018]  /etc/fonts/conf.d/README
+│   └── [-rw-r--r-- root     root     2.4K Oct 31  2018]  /etc/fonts/fonts.conf
+├── [-rw-r--r-- root     root       20 Oct 31  2018]  /etc/fprintd.conf
+├── [-rw-r--r-- root     root     1.1K Mar 16 23:20]  /etc/fstab
+├── [drwxr-xr-x root     root        6 Aug  2  2017]  /etc/gcrypt
+├── [-rw-r--r-- root     root      265 Sep 30  2020]  /etc/gdbinit
+├── [drwxr-xr-x root     root        6 Sep 30  2020]  /etc/gdbinit.d
+├── [-rw-r--r-- root     root     1.7K Aug 13  2019]  /etc/GeoIP.conf
+├── [drwxr-xr-x root     root        6 Jul 13  2018]  /etc/gnupg
+├── [-rw-r--r-- root     root       94 Mar 24  2017]  /etc/GREP_COLORS
+├── [drwxr-xr-x root     root       40 Mar 16 23:05]  /etc/groff
+│   ├── [drwxr-xr-x root     root        6 Jun 10  2014]  /etc/groff/site-font
+│   └── [drwxr-xr-x root     root       41 Mar 16 23:05]  /etc/groff/site-tmac
+│       ├── [-rw-r--r-- root     root       96 Jun 10  2014]  /etc/groff/site-tmac/man.local
+│       └── [-rw-r--r-- root     root       90 Jun 10  2014]  /etc/groff/site-tmac/mdoc.local
+├── [-rw-r--r-- root     root      847 May 26 14:56]  /etc/group
+├── [-rw-r--r-- root     root      842 May 26 14:51]  /etc/group-
+├── [lrwxrwxrwx root     root       22 Apr 16 20:29]  /etc/grub2.cfg -> ../boot/grub2/grub.cfg
+├── [lrwxrwxrwx root     root       31 Apr 16 20:29]  /etc/grub2-efi.cfg -> ../boot/efi/EFI/centos/grub.cfg
+├── [drwx------ root     root      182 Apr 16 20:29]  /etc/grub.d [error opening dir]
+├── [---------- root     root      700 May 26 14:56]  /etc/gshadow
+├── [---------- root     root      695 May 26 14:51]  /etc/gshadow-
+├── [drwxr-xr-x root     root       20 Mar 16 23:05]  /etc/gss
+│   └── [drwxr-xr-x root     root       27 Mar 16 23:06]  /etc/gss/mech.d
+│       └── [-rw-r--r-- root     root      189 Sep 30  2020]  /etc/gss/mech.d/gssproxy.conf
+├── [drwxr-xr-x root     root       79 Mar 16 23:06]  /etc/gssproxy
+│   ├── [-rw------- root     root      152 Oct  1  2020]  /etc/gssproxy/24-nfs-server.conf
+│   ├── [-rw------- root     root      276 Sep 30  2020]  /etc/gssproxy/99-nfs-client.conf
+│   └── [-rw------- root     root       11 Sep 30  2020]  /etc/gssproxy/gssproxy.conf
+├── [drwxr-xr-x root     root       38 Apr 16 20:38]  /etc/hocvps
+│   ├── [drwxr-xr-x root     root     4.0K Apr 27 19:56]  /etc/hocvps/menu
+│   │   ├── [-rwxr-xr-x root     root      128 Apr 13  2017]  /etc/hocvps/menu/cap-nhat-mariadb
+│   │   ├── [-rwxr-xr-x root     root      102 Apr 13  2017]  /etc/hocvps/menu/cap-nhat-nginx
+│   │   ├── [-rwxr-xr-x root     root      156 Apr 13  2017]  /etc/hocvps/menu/cap-nhat-php
+│   │   ├── [-rwxr-xr-x root     root      284 Jul  9  2016]  /etc/hocvps/menu/doi-pass-vps
+│   │   ├── [-rwxr-xr-x root     root     1.4K Jun  1  2018]  /etc/hocvps/menu/doi-port-admin
+│   │   ├── [-rwxr-xr-x root     root     1.4K Jul 11  2017]  /etc/hocvps/menu/forward-domain
+│   │   ├── [-rwxr-xr-x root     root     1.5K Apr 12  2017]  /etc/hocvps/menu/kiem-tra-cap-nhat
+│   │   ├── [-rwxr-xr-x root     root      300 Apr 25  2017]  /etc/hocvps/menu/liet-ke-domain
+│   │   ├── [-rwxr-xr-x root     root      981 Apr 13  2017]  /etc/hocvps/menu/nang-cap-server
+│   │   ├── [-rwxr-xr-x root     root     3.3K Dec 10  2017]  /etc/hocvps/menu/park-domain
+│   │   ├── [-rwxr-xr-x root     root      645 Apr 11  2017]  /etc/hocvps/menu/phan-quyen-webserver
+│   │   ├── [-rwxr-xr-x root     root     1.5K Feb  8  2018]  /etc/hocvps/menu/sao-luu-code
+│   │   ├── [-rwxr-xr-x root     root     1.4K Apr 13  2017]  /etc/hocvps/menu/sao-luu-data
+│   │   ├── [-rwxr-xr-x root     root     1.6K Apr 26  2017]  /etc/hocvps/menu/tao-database
+│   │   ├── [-rwxr-xr-x root     root      754 Jul  9  2016]  /etc/hocvps/menu/tat-tu-dong-sao-luu
+│   │   ├── [-rwxr-xr-x root     root     3.0K Dec 10  2017]  /etc/hocvps/menu/them-domain
+│   │   ├── [-rwxr-xr-x root     root     2.2K Apr 18  2017]  /etc/hocvps/menu/tu-dong-sao-luu
+│   │   ├── [-rwxr-xr-x root     root     1.3K May  3  2017]  /etc/hocvps/menu/xoa-database
+│   │   └── [-rwxr-xr-x root     root      980 Apr 25  2017]  /etc/hocvps/menu/xoa-domain
+│   └── [-rw------- root     root      168 Apr 16 20:38]  /etc/hocvps/scripts.conf
+├── [-rw-r--r-- root     root        9 Jun  7  2013]  /etc/host.conf
+├── [-rw-r--r-- root     root       18 Apr 16 16:39]  /etc/hostname
+├── [-rw-r--r-- root     root      229 Jul  9 11:01]  /etc/hosts
+├── [-rw-r--r-- root     root      370 Jun  7  2013]  /etc/hosts.allow
+├── [-rw-r--r-- root     root      460 Jun  7  2013]  /etc/hosts.deny
+├── [-rw-r--r-- root     root     4.7K Apr 11  2018]  /etc/idmapd.conf
+├── [lrwxrwxrwx root     root       11 Mar 16 23:04]  /etc/init.d -> rc.d/init.d
+├── [-rw-r--r-- root     root      511 Nov 16  2020]  /etc/inittab
+├── [-rw-r--r-- root     root      942 Jun  7  2013]  /etc/inputrc
+├── [drwxr-xr-x root     root      159 Mar 16 23:05]  /etc/iproute2
+│   ├── [-rw-r--r-- root     root       85 Sep 30  2020]  /etc/iproute2/bpf_pinning
+│   ├── [-rw-r--r-- root     root       75 Sep 30  2020]  /etc/iproute2/ematch_map
+│   ├── [-rw-r--r-- root     root       31 Sep 30  2020]  /etc/iproute2/group
+│   ├── [-rw-r--r-- root     root      262 Sep 30  2020]  /etc/iproute2/nl_protos
+│   ├── [-rw-r--r-- root     root      735 Sep 30  2020]  /etc/iproute2/rt_dsfield
+│   ├── [-rw-r--r-- root     root      326 Sep 30  2020]  /etc/iproute2/rt_protos
+│   ├── [-rw-r--r-- root     root      112 Sep 30  2020]  /etc/iproute2/rt_realms
+│   ├── [-rw-r--r-- root     root       92 Sep 30  2020]  /etc/iproute2/rt_scopes
+│   └── [-rw-r--r-- root     root       87 Sep 30  2020]  /etc/iproute2/rt_tables
+├── [drwxr-xr-x root     root       52 Mar 16 23:20]  /etc/iscsi
+│   ├── [-rwxr-xr-x root     root       72 Mar 16 23:04]  /etc/iscsi/initiatorname.iscsi
+│   └── [-rw------- root     root      12K Mar 16 23:20]  /etc/iscsi/iscsid.conf
+├── [-rw-r--r-- root     root       23 Nov 23  2020]  /etc/issue
+├── [-rw-r--r-- root     root       22 Nov 23  2020]  /etc/issue.net
+├── [-rw-r--r-- root     root     7.1K May 26 14:13]  /etc/kdump.conf
+├── [drwxr-xr-x root     root       24 Mar 16 23:06]  /etc/kernel
+│   └── [drwxr-xr-x root     root       42 Mar 16 23:06]  /etc/kernel/postinst.d
+│       └── [-rwxr-xr-x root     root     1.6K Sep 30  2020]  /etc/kernel/postinst.d/51-dracut-rescue-postinst.sh
+├── [-rw-r--r-- root     root      646 Sep 30  2020]  /etc/krb5.conf
+├── [drwxr-xr-x root     root        6 Sep 30  2020]  /etc/krb5.conf.d
+├── [-rw-r--r-- root     root      30K May 26 14:13]  /etc/ld.so.cache
+├── [-rw-r--r-- root     root       28 Feb 28  2013]  /etc/ld.so.conf
+├── [drwxr-xr-x root     root      247 May 26 14:13]  /etc/ld.so.conf.d
+│   ├── [-rw-r--r-- root     root       26 Apr 29 21:06]  /etc/ld.so.conf.d/bind-export-x86_64.conf
+│   ├── [-rw-r--r-- root     root       19 Aug  9  2019]  /etc/ld.so.conf.d/dyninst-x86_64.conf
+│   ├── [-r--r--r-- root     root       63 Feb  3 22:10]  /etc/ld.so.conf.d/kernel-3.10.0-1160.15.2.el7.x86_64.conf
+│   ├── [-r--r--r-- root     root       63 Apr  9  2:55]  /etc/ld.so.conf.d/kernel-3.10.0-1160.24.1.el7.x86_64.conf
+│   ├── [-r--r--r-- root     root       63 Apr 29  4:53]  /etc/ld.so.conf.d/kernel-3.10.0-1160.25.1.el7.x86_64.conf
+│   └── [-r--r--r-- root     root       63 Oct 19  2020]  /etc/ld.so.conf.d/kernel-3.10.0-1160.el7.x86_64.conf
+├── [-rw-r----- root     root      191 Mar  2  2019]  /etc/libaudit.conf
+├── [drwxr-xr-x root     root       35 Mar 16 23:05]  /etc/libnl
+│   ├── [-rw-r--r-- root     root     1.1K Aug  4  2017]  /etc/libnl/classid
+│   └── [-rw-r--r-- root     root     1.5K Aug  4  2017]  /etc/libnl/pktloc
+├── [drwxr-xr-x root     root      187 Mar 16 23:06]  /etc/libreport
+│   ├── [-rw------- root     root     4.5K Apr  2  2020]  /etc/libreport/cert-api.access.redhat.com.pem
+│   ├── [drwxr-xr-x root     root       42 Mar 16 23:05]  /etc/libreport/events
+│   │   └── [-rw-r--r-- root     root      107 Apr  2  2020]  /etc/libreport/events/report_CentOSBugTracker.conf
+│   ├── [drwxr-xr-x root     root     4.0K May 26 14:13]  /etc/libreport/events.d
+│   │   ├── [-rw-r--r-- root     root     4.8K Oct  1  2020]  /etc/libreport/events.d/abrt_event.conf
+│   │   ├── [-rw-r--r-- root     root     4.7K Oct  1  2020]  /etc/libreport/events.d/ccpp_event.conf
+│   │   ├── [-rw-r--r-- root     root      153 Oct  1  2020]  /etc/libreport/events.d/ccpp_retrace_event.conf
+│   │   ├── [-rw-r--r-- root     root     1.8K Apr  2  2020]  /etc/libreport/events.d/centos_report_event.conf
+│   │   ├── [-rw-r--r-- root     root      476 Oct  1  2020]  /etc/libreport/events.d/gconf_event.conf
+│   │   ├── [-rw-r--r-- root     root     1.6K Oct  1  2020]  /etc/libreport/events.d/koops_event.conf
+│   │   ├── [-rw-r--r-- root     root      203 Apr  2  2020]  /etc/libreport/events.d/mailx_event.conf
+│   │   ├── [-rw-r--r-- root     root      157 Apr 28 20:30]  /etc/libreport/events.d/mdadm_event.conf
+│   │   ├── [-rw-r--r-- root     root     1.2K Oct  1  2020]  /etc/libreport/events.d/python_event.conf
+│   │   ├── [-rw-r--r-- root     root      243 Apr  2  2020]  /etc/libreport/events.d/rhtsupport_event.conf
+│   │   ├── [-rw-r--r-- root     root      969 Oct  1  2020]  /etc/libreport/events.d/smart_event.conf
+│   │   ├── [-rw-r--r-- root     root     1.4K Oct  1  2020]  /etc/libreport/events.d/vimrc_event.conf
+│   │   ├── [-rw-r--r-- root     root     2.3K Oct  1  2020]  /etc/libreport/events.d/vmcore_event.conf
+│   │   └── [-rw-r--r-- root     root      974 Oct  1  2020]  /etc/libreport/events.d/xorg_event.conf
+│   ├── [-rw-r--r-- root     root      212 Apr  2  2020]  /etc/libreport/forbidden_words.conf
+│   ├── [-rw-r--r-- root     root      115 Apr  2  2020]  /etc/libreport/ignored_words.conf
+│   ├── [drwxr-xr-x root     root      244 Mar 16 23:06]  /etc/libreport/plugins
+│   │   ├── [-rw-r--r-- root     root      331 Apr  2  2020]  /etc/libreport/plugins/mailx.conf
+│   │   ├── [-rw-r--r-- root     root      221 Apr  2  2020]  /etc/libreport/plugins/mantisbt.conf
+│   │   ├── [-rw-r--r-- root     root     2.0K Apr  2  2020]  /etc/libreport/plugins/mantisbt_format_analyzer_libreport.conf
+│   │   ├── [-rw-r--r-- root     root     2.1K Apr  2  2020]  /etc/libreport/plugins/mantisbt_format.conf
+│   │   ├── [-rw-r--r-- root     root     2.0K Apr  2  2020]  /etc/libreport/plugins/mantisbt_formatdup_analyzer_libreport.conf
+│   │   ├── [-rw-r--r-- root     root     2.4K Apr  2  2020]  /etc/libreport/plugins/mantisbt_formatdup.conf
+│   │   ├── [-rw-r--r-- root     root      417 Apr  2  2020]  /etc/libreport/plugins/rhtsupport.conf
+│   │   └── [-rw-r--r-- root     root     1.3K Apr  2  2020]  /etc/libreport/plugins/ureport.conf
+│   ├── [-rw-r--r-- root     root     2.2K Apr  2  2020]  /etc/libreport/report_event.conf
+│   └── [drwxr-xr-x root     root       57 Mar 16 23:06]  /etc/libreport/workflows.d
+│       ├── [-rw-r--r-- root     root     1.2K Apr  2  2020]  /etc/libreport/workflows.d/report_centos.conf
+│       └── [-rw-r--r-- root     root      218 Apr  2  2020]  /etc/libreport/workflows.d/report_mailx.conf
+├── [-rw-r--r-- root     root     2.3K Oct 13  2013]  /etc/libuser.conf
+├── [-rw-r--r-- root     root       17 Apr 16 16:39]  /etc/locale.conf
+├── [lrwxrwxrwx root     root       36 Apr 16 20:27]  /etc/localtime -> /usr/share/zoneinfo/Asia/Ho_Chi_Minh
+├── [-rw-r--r-- root     root     2.0K Aug  6  2019]  /etc/login.defs
+├── [-rw-r--r-- root     root      662 Jul 31  2013]  /etc/logrotate.conf
+├── [drwxr-xr-x root     root      201 May 26 14:12]  /etc/logrotate.d
+│   ├── [-rw-r--r-- root     root       91 Sep 30  2020]  /etc/logrotate.d/bootlog
+│   ├── [-rw-r--r-- root     root      160 Sep 19  2018]  /etc/logrotate.d/chrony
+│   ├── [-rw-r--r-- root     root      147 May  5  1:40]  /etc/logrotate.d/exim
+│   ├── [-rw-r--r-- root     root      363 Jan 11  2020]  /etc/logrotate.d/fail2ban
+│   ├── [-rw-r--r-- root     root       93 Apr 28 20:31]  /etc/logrotate.d/firewalld
+│   ├── [-rw-r--r-- root     root      172 Sep 30  2016]  /etc/logrotate.d/iscsiuiolog
+│   ├── [-rw-r--r-- root     root      413 Apr 16 20:38]  /etc/logrotate.d/mysql
+│   ├── [-rw-r--r-- root     root      382 Apr 16 20:38]  /etc/logrotate.d/nginx
+│   ├── [-rw-r--r-- root     root      315 Apr 16 20:38]  /etc/logrotate.d/php-fpm
+│   ├── [-rw-r--r-- root     root      408 Aug  3  2017]  /etc/logrotate.d/psacct
+│   ├── [-rw-r--r-- root     root      224 Dec 31  2015]  /etc/logrotate.d/syslog
+│   ├── [-rw-r--r-- root     root      100 Mar 16 22:26]  /etc/logrotate.d/wpa_supplicant
+│   └── [-rw-r--r-- root     root      103 Oct  2  2020]  /etc/logrotate.d/yum
+├── [drwxr-xr-x root     root       43 Apr 16 20:29]  /etc/lsm
+│   ├── [-rw-r--r-- root     root       36 Mar 16 22:26]  /etc/lsm/lsmd.conf
+│   └── [drwxr-xr-x root     root       22 Mar 16 22:26]  /etc/lsm/pluginconf.d
+│       └── [-rw-r--r-- root     root       32 Mar 16 22:26]  /etc/lsm/pluginconf.d/sim.conf
+├── [drwxr-xr-x root     root      100 May 26 14:12]  /etc/lvm
+│   ├── [drwx------ root     root        6 Apr 28 20:31]  /etc/lvm/archive [error opening dir]
+│   ├── [drwx------ root     root        6 Apr 28 20:31]  /etc/lvm/backup [error opening dir]
+│   ├── [drwx------ root     root        6 Apr 28 20:31]  /etc/lvm/cache [error opening dir]
+│   ├── [-rw-r--r-- root     root      94K Apr 28 20:31]  /etc/lvm/lvm.conf
+│   ├── [-rw-r--r-- root     root     2.2K Apr 28 20:31]  /etc/lvm/lvmlocal.conf
+│   └── [drwxr-xr-x root     root      220 May 26 14:12]  /etc/lvm/profile
+│       ├── [-r--r--r-- root     root      531 Mar 25  2020]  /etc/lvm/profile/cache-mq.profile
+│       ├── [-r--r--r-- root     root      339 Mar 25  2020]  /etc/lvm/profile/cache-smq.profile
+│       ├── [-r--r--r-- root     root     2.9K Apr 28 20:31]  /etc/lvm/profile/command_profile_template.profile
+│       ├── [-r--r--r-- root     root     2.3K Mar 25  2020]  /etc/lvm/profile/lvmdbusd.profile
+│       ├── [-r--r--r-- root     root      828 Apr 28 20:31]  /etc/lvm/profile/metadata_profile_template.profile
+│       ├── [-r--r--r-- root     root       76 Mar 25  2020]  /etc/lvm/profile/thin-generic.profile
+│       └── [-r--r--r-- root     root       80 Mar 25  2020]  /etc/lvm/profile/thin-performance.profile
+├── [-r--r--r-- root     root       33 Apr 16 16:38]  /etc/machine-id
+├── [-rw-r--r-- root     root      111 Sep 30  2020]  /etc/magic
+├── [-rw-r--r-- root     root     1.9K Apr 11  2018]  /etc/mail.rc
+├── [-rw-r--r-- root     root     5.0K Apr 28 20:31]  /etc/makedumpfile.conf.sample
+├── [-rw-r--r-- root     root     5.0K Oct 31  2018]  /etc/man_db.conf
+├── [-rw-r--r-- root     root     1.1K Sep 30  2020]  /etc/mke2fs.conf
+├── [drwxr-xr-x root     root       99 May 26 14:13]  /etc/modprobe.d
+│   ├── [-rw-r--r-- root     root      215 Apr 29  4:59]  /etc/modprobe.d/dccp-blacklist.conf
+│   ├── [-rw-r--r-- root     root      166 Apr 28 20:31]  /etc/modprobe.d/firewalld-sysctls.conf
+│   ├── [-rw-r--r-- root     root      746 Oct  1  2020]  /etc/modprobe.d/lockd.conf
+│   └── [-rw-r--r-- root     root      674 Mar 22  2019]  /etc/modprobe.d/tuned.conf
+├── [drwxr-xr-x root     root        6 Feb  2 23:34]  /etc/modules-load.d
+├── [-rw-r--r-- root     root        0 Jun  7  2013]  /etc/motd
+├── [lrwxrwxrwx root     root       17 Mar 16 23:04]  /etc/mtab -> /proc/self/mounts
+├── [-rw-r--r-- root     root      414 May 12  4:45]  /etc/multipath.conf
+├── [-rw-r--r-- root     root      386 May 12  4:45]  /etc/multipath.conf.oca
+├── [-rw-r--r-- root     root     3.9K Apr 16 20:38]  /etc/my.cnf
+├── [drwxr-xr-x root     root       85 May 30 22:42]  /etc/my.cnf.d
+│   ├── [-rw-r--r-- root     root      295 Jan 30  2019]  /etc/my.cnf.d/client.cnf
+│   ├── [-rw-r--r-- root     root      232 Jan 30  2019]  /etc/my.cnf.d/mysql-clients.cnf
+│   ├── [-rw-r--r-- root     root      725 Jan 30  2019]  /etc/my.cnf.d/server.cnf
+│   └── [-rw-r--r-- root     root      285 Jan 30  2019]  /etc/my.cnf.d/tokudb.cnf
+├── [-rw-r--r-- root     root      202 Apr 16 20:38]  /etc/my.cnf-original
+├── [-rw-r--r-- root     root     8.7K Jun 10  2014]  /etc/nanorc
+├── [-rw-r--r-- root     root      767 Aug  9  2019]  /etc/netconfig
+├── [drwxr-xr-x root     root      134 Mar 16 23:11]  /etc/NetworkManager
+│   ├── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/NetworkManager/conf.d
+│   ├── [drwxr-xr-x root     root      158 Apr 16 20:29]  /etc/NetworkManager/dispatcher.d
+│   │   ├── [-rwxr-xr-x root     root      175 May 22  2020]  /etc/NetworkManager/dispatcher.d/00-netreport
+│   │   ├── [-rwxr-xr-x root     root      100 Dec 15  2020]  /etc/NetworkManager/dispatcher.d/04-iscsi
+│   │   ├── [-rwxr-xr-x root     root     1.1K Sep 30  2020]  /etc/NetworkManager/dispatcher.d/11-dhclient
+│   │   ├── [-rwxr-xr-x root     root      428 Sep 19  2018]  /etc/NetworkManager/dispatcher.d/20-chrony
+│   │   ├── [-rwxr-xr-x root     root      719 Dec 18  2019]  /etc/NetworkManager/dispatcher.d/cloud-init-azure-hook
+│   │   ├── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/NetworkManager/dispatcher.d/no-wait.d
+│   │   ├── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/NetworkManager/dispatcher.d/pre-down.d
+│   │   └── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/NetworkManager/dispatcher.d/pre-up.d
+│   ├── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/NetworkManager/dnsmasq.d
+│   ├── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/NetworkManager/dnsmasq-shared.d
+│   ├── [-rw-r--r-- root     root     2.1K Nov 16  2020]  /etc/NetworkManager/NetworkManager.conf
+│   └── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/NetworkManager/system-connections
+├── [-rw-r--r-- root     root       58 Nov 16  2020]  /etc/networks
+├── [-rw-r--r-- root     root     1023 Oct  1  2020]  /etc/nfs.conf
+├── [-rw-r--r-- root     root     3.3K Oct  1  2020]  /etc/nfsmount.conf
+├── [drwxr-xr-x root     root      157 May 26 14:13]  /etc/nginx
+│   ├── [drwxr-xr-x root     root      141 May 26 14:13]  /etc/nginx/conf.d
+│   │   ├── [-rw-r--r-- root     root     1.8K Apr 18  8:09]  /etc/nginx/conf.d/ctsite1.ml.conf
+│   │   ├── [-rw-r--r-- root     root     1.8K Apr 27 18:01]  /etc/nginx/conf.d/ctsite.ml.conf
+│   │   ├── [-rw-r--r-- root     root        0 Apr 16 20:38]  /etc/nginx/conf.d/default.conf
+│   │   ├── [-rw-r--r-- root     root     1.0K May 25 20:30]  /etc/nginx/conf.d/default.conf.rpmnew
+│   │   └── [-rw-r--r-- root     root     3.1K Apr 16 21:20]  /etc/nginx/conf.d/www.conf
+│   ├── [-rw-r--r-- root     root     1007 May 25 20:40]  /etc/nginx/fastcgi_params
+│   ├── [-rw-r--r-- root     root     5.1K May 25 20:40]  /etc/nginx/mime.types
+│   ├── [lrwxrwxrwx root     root       29 May 26 14:13]  /etc/nginx/modules -> ../../usr/lib64/nginx/modules
+│   ├── [-rw-r--r-- root     root     1.5K Apr 16 20:38]  /etc/nginx/nginx.conf
+│   ├── [-rw-r--r-- root     root      648 May 25 20:30]  /etc/nginx/nginx.conf.rpmnew
+│   ├── [-rw-r--r-- root     root      636 May 25 20:40]  /etc/nginx/scgi_params
+│   └── [-rw-r--r-- root     root      664 May 25 20:40]  /etc/nginx/uwsgi_params
+├── [-rw-r--r-- root     root     1.9K Mar 16 23:05]  /etc/nsswitch.conf
+├── [-rw-r--r-- root     root     1.9K Sep 30  2020]  /etc/nsswitch.conf.bak
+├── [drwxr-xr-x root     root       38 Mar 16 23:06]  /etc/ntp
+│   ├── [-rw------- root     root       86 Nov 27  2019]  /etc/ntp/keys
+│   └── [-rw-r--r-- root     root       74 Nov 27  2019]  /etc/ntp/step-tickers
+├── [-rw-r--r-- root     root      913 Mar 16 23:20]  /etc/oci-hostname.conf
+├── [drwxr-xr-x root     root       36 May 26 14:12]  /etc/openldap
+│   ├── [drwxr-xr-x root     root       70 Apr 28 20:32]  /etc/openldap/certs
+│   │   ├── [-rw-r--r-- root     root      64K Mar 16 23:05]  /etc/openldap/certs/cert8.db
+│   │   ├── [-rw-r--r-- root     root      16K Mar 16 23:05]  /etc/openldap/certs/key3.db
+│   │   ├── [-r-------- root     root       45 Mar 16 23:05]  /etc/openldap/certs/password
+│   │   └── [-rw-r--r-- root     root      16K Mar 16 23:05]  /etc/openldap/certs/secmod.db
+│   └── [-rw-r--r-- root     root      363 Apr 28 20:32]  /etc/openldap/ldap.conf
+├── [drwxr-xr-x root     root        6 Apr 11  2018]  /etc/opt
+├── [drwxrwxr-x oracle-c oracle-c   57 May 14  4:40]  /etc/oracle-cloud-agent
+│   ├── [-rw-r--r-- oracle-c oracle-c 1.9K May 12  4:45]  /etc/oracle-cloud-agent/agent.yml
+│   ├── [drwxr-xr-x root     root      146 May 12  4:45]  /etc/oracle-cloud-agent/plugins
+│   │   ├── [drwxr-xr-x root     root       24 May 14  4:40]  /etc/oracle-cloud-agent/plugins/bastions
+│   │   │   └── [-rw-r--r-- root     root     1.1K May 12  4:45]  /etc/oracle-cloud-agent/plugins/bastions/config.yml
+│   │   ├── [drwxr-xr-x root     root       24 May 14  4:40]  /etc/oracle-cloud-agent/plugins/gomon
+│   │   │   └── [-rw-r--r-- root     root     2.0K May 12  4:44]  /etc/oracle-cloud-agent/plugins/gomon/config.yml
+│   │   ├── [drwxr-xr-x root     root       24 May 14  4:40]  /etc/oracle-cloud-agent/plugins/oci-blockautoconfig
+│   │   │   └── [-rw-r--r-- root     root      149 May 12  4:45]  /etc/oracle-cloud-agent/plugins/oci-blockautoconfig/config.yml
+│   │   ├── [drwxr-xr-x root     root       24 May 14  4:40]  /etc/oracle-cloud-agent/plugins/oci-vulnerabilityscan
+│   │   │   └── [-rw-r--r-- root     root      811 May 12  4:45]  /etc/oracle-cloud-agent/plugins/oci-vulnerabilityscan/config.yml
+│   │   ├── [drwxr-xr-x root     root       39 May 14  4:40]  /etc/oracle-cloud-agent/plugins/osms
+│   │   │   ├── [-rw-r--r-- root     root      776 May 12  4:45]  /etc/oracle-cloud-agent/plugins/osms/config.yml
+│   │   │   └── [-rw-r--r-- root     root     1.2K May 12  4:45]  /etc/oracle-cloud-agent/plugins/osms/up2date
+│   │   ├── [drwxr-xr-x root     root       24 May 14  4:40]  /etc/oracle-cloud-agent/plugins/runcommand
+│   │   │   └── [-rw-r--r-- root     root      111 May 12  4:45]  /etc/oracle-cloud-agent/plugins/runcommand/config.yml
+│   │   └── [drwxr-xr-x root     root       55 May 14  4:40]  /etc/oracle-cloud-agent/plugins/unifiedmonitoring
+│   │       ├── [-rw-r--r-- root     root      182 May 12  4:45]  /etc/oracle-cloud-agent/plugins/unifiedmonitoring/config.yml
+│   │       └── [-rw-r--r-- root     root     1011 May 12  4:45]  /etc/oracle-cloud-agent/plugins/unifiedmonitoring/rpm-gpg-pub-key-centos7
+│   └── [-rw-r--r-- root     root      786 May 12  4:37]  /etc/oracle-cloud-agent/updater.yml
+├── [lrwxrwxrwx root     root       21 Mar 16 23:11]  /etc/os-release -> ../usr/lib/os-release
+├── [drwxr-xr-x root     root     4.0K May 26 14:13]  /etc/pam.d
+│   ├── [-rw-r--r-- root     root      272 Oct 31  2018]  /etc/pam.d/atd
+│   ├── [-rw-r--r-- root     root      192 Feb  2 23:31]  /etc/pam.d/chfn
+│   ├── [-rw-r--r-- root     root      192 Feb  2 23:31]  /etc/pam.d/chsh
+│   ├── [-rw-r--r-- root     root      232 Apr  1  2020]  /etc/pam.d/config-util
+│   ├── [-rw-r--r-- root     root      287 Aug  9  2019]  /etc/pam.d/crond
+│   ├── [-rw-r--r-- root     root       71 May  5  1:40]  /etc/pam.d/exim
+│   ├── [lrwxrwxrwx root     root       19 Mar 16 23:10]  /etc/pam.d/fingerprint-auth -> fingerprint-auth-ac
+│   ├── [-rw-r--r-- root     root      702 Mar 16 23:10]  /etc/pam.d/fingerprint-auth-ac
+│   ├── [-rw-r--r-- root     root      796 Feb  2 23:31]  /etc/pam.d/login
+│   ├── [-rw-r--r-- root     root      154 Apr  1  2020]  /etc/pam.d/other
+│   ├── [-rw-r--r-- root     root      188 Apr  1  2020]  /etc/pam.d/passwd
+│   ├── [lrwxrwxrwx root     root       16 Mar 16 23:10]  /etc/pam.d/password-auth -> password-auth-ac
+│   ├── [-rw-r--r-- root     root     1.0K Mar 16 23:10]  /etc/pam.d/password-auth-ac
+│   ├── [-rw-r--r-- root     root      155 Apr  1  2020]  /etc/pam.d/polkit-1
+│   ├── [lrwxrwxrwx root     root       12 Mar 16 23:10]  /etc/pam.d/postlogin -> postlogin-ac
+│   ├── [-rw-r--r-- root     root      330 Mar 16 23:10]  /etc/pam.d/postlogin-ac
+│   ├── [-rw-r--r-- root     root      681 Feb  2 23:31]  /etc/pam.d/remote
+│   ├── [-rw-r--r-- root     root      143 Feb  2 23:31]  /etc/pam.d/runuser
+│   ├── [-rw-r--r-- root     root      138 Feb  2 23:31]  /etc/pam.d/runuser-l
+│   ├── [-rw-r--r-- root     root      145 Jun 10  2014]  /etc/pam.d/setup
+│   ├── [lrwxrwxrwx root     root       17 Mar 16 23:10]  /etc/pam.d/smartcard-auth -> smartcard-auth-ac
+│   ├── [-rw-r--r-- root     root      752 Mar 16 23:10]  /etc/pam.d/smartcard-auth-ac
+│   ├── [lrwxrwxrwx root     root       25 May 26 14:13]  /etc/pam.d/smtp -> /etc/alternatives/mta-pam
+│   ├── [-rw-r--r-- root     root      904 Aug  9  2019]  /etc/pam.d/sshd
+│   ├── [-rw-r--r-- root     root      540 Feb  2 23:31]  /etc/pam.d/su
+│   ├── [-rw-r--r-- root     root      200 Jan 27  4:56]  /etc/pam.d/sudo
+│   ├── [-rw-r--r-- root     root      178 Jan 27  4:56]  /etc/pam.d/sudo-i
+│   ├── [-rw-r--r-- root     root      137 Feb  2 23:31]  /etc/pam.d/su-l
+│   ├── [lrwxrwxrwx root     root       14 Mar 16 23:10]  /etc/pam.d/system-auth -> system-auth-ac
+│   ├── [-rw-r--r-- root     root     1.0K Mar 16 23:10]  /etc/pam.d/system-auth-ac
+│   ├── [-rw-r--r-- root     root      129 Feb  2 23:34]  /etc/pam.d/systemd-user
+│   └── [-rw-r--r-- root     root       84 Oct 31  2018]  /etc/pam.d/vlock
+├── [-rw-r--r-- root     root     1.8K May 26 14:51]  /etc/passwd
+├── [-rw-r--r-- root     root     1.8K Apr 16 20:37]  /etc/passwd-
+├── [drwxr-xr-x root     root     4.0K May 26 14:12]  /etc/php.d
+│   ├── [-rw-r--r-- root     root      391 Apr 16 20:38]  /etc/php.d/00-hocvps-custom.ini
+│   ├── [-rw-r--r-- root     root      360 Apr 16 20:38]  /etc/php.d/10-opcache.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php.d/20-bz2.ini
+│   ├── [-rw-r--r-- root     root       54 Apr 27 21:40]  /etc/php.d/20-calendar.ini
+│   ├── [-rw-r--r-- root     root       48 Apr 27 21:40]  /etc/php.d/20-ctype.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php.d/20-curl.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php.d/20-dom.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php.d/20-exif.ini
+│   ├── [-rw-r--r-- root     root       54 Apr 27 21:40]  /etc/php.d/20-fileinfo.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php.d/20-ftp.ini
+│   ├── [-rw-r--r-- root     root       42 Apr 27 21:40]  /etc/php.d/20-gd.ini
+│   ├── [-rw-r--r-- root     root       52 Apr 27 21:40]  /etc/php.d/20-gettext.ini
+│   ├── [-rw-r--r-- root     root       48 Apr 27 21:40]  /etc/php.d/20-iconv.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php.d/20-json.ini
+│   ├── [-rw-r--r-- root     root       54 Apr 27 21:40]  /etc/php.d/20-mbstring.ini
+│   ├── [-rw-r--r-- root     root       52 Apr 27 21:40]  /etc/php.d/20-mysqlnd.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php.d/20-pdo.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php.d/20-phar.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php.d/20-simplexml.ini
+│   ├── [-rw-r--r-- root     root       52 Apr 27 21:40]  /etc/php.d/20-sockets.ini
+│   ├── [-rw-r--r-- root     root       52 Apr 27 21:40]  /etc/php.d/20-sqlite3.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php.d/20-tokenizer.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php.d/20-xml.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php.d/20-xmlwriter.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php.d/20-xsl.ini
+│   ├── [-rw-r--r-- root     root       50 Dec  2  2020]  /etc/php.d/30-mcrypt.ini
+│   ├── [-rw-r--r-- root     root       50 Apr 27 21:40]  /etc/php.d/30-mysqli.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php.d/30-pdo_mysql.ini
+│   ├── [-rw-r--r-- root     root       58 Apr 27 21:40]  /etc/php.d/30-pdo_sqlite.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php.d/30-wddx.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php.d/30-xmlreader.ini
+│   ├── [-rw-r--r-- root     root       47 Nov 23  2020]  /etc/php.d/40-zip.ini
+│   └── [-rw-r--r-- root     root      179 Apr 16 20:38]  /etc/php.d/opcache-default.blacklist
+├── [-rw-r--r-- root     root      311 Apr 16 20:38]  /etc/php-fpm.conf
+├── [drwxr-xr-x root     root       22 Apr 27 21:40]  /etc/php-fpm.d
+│   └── [-rw-r--r-- root     root     1.7K Apr 16 20:38]  /etc/php-fpm.d/www.conf
+├── [-rw-r--r-- root     root      62K Apr 27 21:40]  /etc/php.ini
+├── [drwxr-xr-x root     root     4.0K May 26 14:12]  /etc/php-zts.d
+│   ├── [-rw-r--r-- root     root     4.7K Apr 27 21:40]  /etc/php-zts.d/10-opcache.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php-zts.d/20-bz2.ini
+│   ├── [-rw-r--r-- root     root       54 Apr 27 21:40]  /etc/php-zts.d/20-calendar.ini
+│   ├── [-rw-r--r-- root     root       48 Apr 27 21:40]  /etc/php-zts.d/20-ctype.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php-zts.d/20-curl.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php-zts.d/20-dom.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php-zts.d/20-exif.ini
+│   ├── [-rw-r--r-- root     root       54 Apr 27 21:40]  /etc/php-zts.d/20-fileinfo.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php-zts.d/20-ftp.ini
+│   ├── [-rw-r--r-- root     root       42 Apr 27 21:40]  /etc/php-zts.d/20-gd.ini
+│   ├── [-rw-r--r-- root     root       52 Apr 27 21:40]  /etc/php-zts.d/20-gettext.ini
+│   ├── [-rw-r--r-- root     root       48 Apr 27 21:40]  /etc/php-zts.d/20-iconv.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php-zts.d/20-json.ini
+│   ├── [-rw-r--r-- root     root       54 Apr 27 21:40]  /etc/php-zts.d/20-mbstring.ini
+│   ├── [-rw-r--r-- root     root       52 Apr 27 21:40]  /etc/php-zts.d/20-mysqlnd.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php-zts.d/20-pdo.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php-zts.d/20-phar.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php-zts.d/20-simplexml.ini
+│   ├── [-rw-r--r-- root     root       52 Apr 27 21:40]  /etc/php-zts.d/20-sockets.ini
+│   ├── [-rw-r--r-- root     root       52 Apr 27 21:40]  /etc/php-zts.d/20-sqlite3.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php-zts.d/20-tokenizer.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php-zts.d/20-xml.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php-zts.d/20-xmlwriter.ini
+│   ├── [-rw-r--r-- root     root       44 Apr 27 21:40]  /etc/php-zts.d/20-xsl.ini
+│   ├── [-rw-r--r-- root     root       50 Dec  2  2020]  /etc/php-zts.d/30-mcrypt.ini
+│   ├── [-rw-r--r-- root     root       50 Apr 27 21:40]  /etc/php-zts.d/30-mysqli.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php-zts.d/30-pdo_mysql.ini
+│   ├── [-rw-r--r-- root     root       58 Apr 27 21:40]  /etc/php-zts.d/30-pdo_sqlite.ini
+│   ├── [-rw-r--r-- root     root       46 Apr 27 21:40]  /etc/php-zts.d/30-wddx.ini
+│   ├── [-rw-r--r-- root     root       56 Apr 27 21:40]  /etc/php-zts.d/30-xmlreader.ini
+│   ├── [-rw-r--r-- root     root       47 Nov 23  2020]  /etc/php-zts.d/40-zip.ini
+│   └── [-rw-r--r-- root     root      645 Apr 27 21:40]  /etc/php-zts.d/opcache-default.blacklist
+├── [-rw-r--r-- root     root     2.8K Jun 10  2014]  /etc/pinforc
+├── [drwxr-xr-x root     root       21 Mar 16 23:05]  /etc/pkcs11
+│   └── [drwxr-xr-x root     root        6 Aug  5  2017]  /etc/pkcs11/modules
+├── [drwxr-xr-x root     root      101 Apr 16 20:28]  /etc/pki
+│   ├── [drwxr-xr-x root     root       61 Dec 17  2020]  /etc/pki/CA
+│   │   ├── [drwxr-xr-x root     root        6 Dec 17  2020]  /etc/pki/CA/certs
+│   │   ├── [drwxr-xr-x root     root        6 Dec 17  2020]  /etc/pki/CA/crl
+│   │   ├── [drwxr-xr-x root     root        6 Dec 17  2020]  /etc/pki/CA/newcerts
+│   │   └── [drwx------ root     root        6 Dec 17  2020]  /etc/pki/CA/private [error opening dir]
+│   ├── [drwxr-xr-x root     root       73 Mar 16 23:05]  /etc/pki/ca-trust
+│   │   ├── [-rw-r--r-- root     root      980 Nov 27  2019]  /etc/pki/ca-trust/ca-legacy.conf
+│   │   ├── [drwxr-xr-x root     root       58 Mar 16 23:05]  /etc/pki/ca-trust/extracted
+│   │   │   ├── [drwxr-xr-x root     root       35 Mar 16 23:05]  /etc/pki/ca-trust/extracted/java
+│   │   │   │   ├── [-r--r--r-- root     root     154K Mar 16 23:05]  /etc/pki/ca-trust/extracted/java/cacerts
+│   │   │   │   └── [-rw-r--r-- root     root      726 Nov 27  2019]  /etc/pki/ca-trust/extracted/java/README
+│   │   │   ├── [drwxr-xr-x root     root       47 Mar 16 23:05]  /etc/pki/ca-trust/extracted/openssl
+│   │   │   │   ├── [-r--r--r-- root     root     244K Mar 16 23:05]  /etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt
+│   │   │   │   └── [-rw-r--r-- root     root      787 Nov 27  2019]  /etc/pki/ca-trust/extracted/openssl/README
+│   │   │   ├── [drwxr-xr-x root     root      101 Mar 16 23:05]  /etc/pki/ca-trust/extracted/pem
+│   │   │   │   ├── [-r--r--r-- root     root     160K Mar 16 23:05]  /etc/pki/ca-trust/extracted/pem/email-ca-bundle.pem
+│   │   │   │   ├── [-r--r--r-- root     root        0 Mar 16 23:05]  /etc/pki/ca-trust/extracted/pem/objsign-ca-bundle.pem
+│   │   │   │   ├── [-rw-r--r-- root     root      898 Nov 27  2019]  /etc/pki/ca-trust/extracted/pem/README
+│   │   │   │   └── [-r--r--r-- root     root     211K Mar 16 23:05]  /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+│   │   │   └── [-rw-r--r-- root     root      560 Nov 27  2019]  /etc/pki/ca-trust/extracted/README
+│   │   ├── [-rw-r--r-- root     root      166 Nov 27  2019]  /etc/pki/ca-trust/README
+│   │   └── [drwxr-xr-x root     root       80 Mar 16 23:05]  /etc/pki/ca-trust/source
+│   │       ├── [drwxr-xr-x root     root        6 Jun 23  2020]  /etc/pki/ca-trust/source/anchors
+│   │       ├── [drwxr-xr-x root     root        6 Jun 23  2020]  /etc/pki/ca-trust/source/blacklist
+│   │       ├── [lrwxrwxrwx root     root       59 Mar 16 23:05]  /etc/pki/ca-trust/source/ca-bundle.legacy.crt -> /usr/share/pki/ca-trust-legacy/ca-bundle.legacy.default.crt
+│   │       └── [-rw-r--r-- root     root      932 Nov 27  2019]  /etc/pki/ca-trust/source/README
+│   ├── [drwxr-xr-x root     root       21 Mar 16 23:05]  /etc/pki/java
+│   │   └── [lrwxrwxrwx root     root       40 Mar 16 23:05]  /etc/pki/java/cacerts -> /etc/pki/ca-trust/extracted/java/cacerts
+│   ├── [drwxr-xr-x root     root      103 Jul  3 14:08]  /etc/pki/nssdb
+│   │   ├── [-rw-r--r-- root     root      64K Apr 27 23:11]  /etc/pki/nssdb/cert8.db
+│   │   ├── [-rw-r--r-- root     root     9.0K Mar 16 23:17]  /etc/pki/nssdb/cert9.db
+│   │   ├── [-rw-r--r-- root     root      16K Apr 27 23:11]  /etc/pki/nssdb/key3.db
+│   │   ├── [-rw-r--r-- root     root      11K Mar 16 23:17]  /etc/pki/nssdb/key4.db
+│   │   ├── [-rw-r--r-- root     root      451 Nov  6  2020]  /etc/pki/nssdb/pkcs11.txt
+│   │   └── [-rw-r--r-- root     root      16K Apr 27 23:11]  /etc/pki/nssdb/secmod.db
+│   ├── [drwxr-xr-x root     root       30 May 26 14:12]  /etc/pki/nss-legacy
+│   │   └── [-rw-r--r-- root     root      257 Nov  6  2020]  /etc/pki/nss-legacy/nss-rhel7.config
+│   ├── [drwxr-xr-x root     root     4.0K Apr 16 20:27]  /etc/pki/rpm-gpg
+│   │   ├── [-rw-r--r-- root     root     1.7K Nov 23  2020]  /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+│   │   ├── [-rw-r--r-- root     root     1004 Nov 23  2020]  /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-Debug-7
+│   │   ├── [-rw-r--r-- root     root     1.7K Nov 23  2020]  /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-Testing-7
+│   │   ├── [-rw-r--r-- root     root     1.6K Nov  1  2020]  /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+│   │   ├── [-rw-r--r-- root     root     1.4K Jul 15  2014]  /etc/pki/rpm-gpg/RPM-GPG-KEY-nginx
+│   │   ├── [-rw-r--r-- root     root     1.3K Mar 23  2017]  /etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+│   │   ├── [-rw-r--r-- root     root     3.0K Mar 23  2017]  /etc/pki/rpm-gpg/RPM-GPG-KEY-remi2017
+│   │   ├── [-rw-r--r-- root     root     3.1K Jan 16  2018]  /etc/pki/rpm-gpg/RPM-GPG-KEY-remi2018
+│   │   ├── [-rw-r--r-- root     root     3.1K Aug 19  2019]  /etc/pki/rpm-gpg/RPM-GPG-KEY-remi2019
+│   │   ├── [-rw-r--r-- root     root     3.1K Feb 17  2020]  /etc/pki/rpm-gpg/RPM-GPG-KEY-remi2020
+│   │   └── [-rw-r--r-- root     root     3.1K Jan  4 23:11]  /etc/pki/rpm-gpg/RPM-GPG-KEY-remi2021
+│   └── [drwxr-xr-x root     root       81 Mar 16 23:11]  /etc/pki/tls
+│       ├── [lrwxrwxrwx root     root       49 Mar 16 23:05]  /etc/pki/tls/cert.pem -> /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+│       ├── [drwxr-xr-x root     root      133 Apr 16 20:39]  /etc/pki/tls/certs
+│       │   ├── [lrwxrwxrwx root     root       49 Mar 16 23:05]  /etc/pki/tls/certs/ca-bundle.crt -> /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+│       │   ├── [lrwxrwxrwx root     root       55 Mar 16 23:05]  /etc/pki/tls/certs/ca-bundle.trust.crt -> /etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt
+│       │   ├── [-rw------- exim     exim     1.5K Apr 16 20:39]  /etc/pki/tls/certs/exim.pem
+│       │   ├── [-rwxr-xr-x root     root      610 Dec 17  2020]  /etc/pki/tls/certs/make-dummy-cert
+│       │   ├── [-rw-r--r-- root     root     2.5K Dec 17  2020]  /etc/pki/tls/certs/Makefile
+│       │   └── [-rwxr-xr-x root     root      829 Dec 17  2020]  /etc/pki/tls/certs/renew-dummy-cert
+│       ├── [drwxr-xr-x root     root       74 Mar 16 23:12]  /etc/pki/tls/misc
+│       │   ├── [-rwxr-xr-x root     root     5.1K Dec 17  2020]  /etc/pki/tls/misc/CA
+│       │   ├── [-rwxr-xr-x root     root      119 Dec 17  2020]  /etc/pki/tls/misc/c_hash
+│       │   ├── [-rwxr-xr-x root     root      152 Dec 17  2020]  /etc/pki/tls/misc/c_info
+│       │   ├── [-rwxr-xr-x root     root      112 Dec 17  2020]  /etc/pki/tls/misc/c_issuer
+│       │   └── [-rwxr-xr-x root     root      110 Dec 17  2020]  /etc/pki/tls/misc/c_name
+│       ├── [-rw-r--r-- root     root      11K Dec 17  2020]  /etc/pki/tls/openssl.cnf
+│       └── [drwxr-xr-x root     root       22 Apr 16 20:39]  /etc/pki/tls/private
+│           └── [-rw------- exim     exim     1.7K Apr 16 20:39]  /etc/pki/tls/private/exim.pem
+├── [drwxr-xr-x root     root       28 Mar 16 23:06]  /etc/plymouth
+│   └── [-rw-r--r-- root     root       72 Oct  1  2020]  /etc/plymouth/plymouthd.conf
+├── [drwxr-xr-x root     root       52 Mar 16 23:04]  /etc/pm
+│   ├── [drwxr-xr-x root     root        6 Apr 11  2018]  /etc/pm/config.d
+│   ├── [drwxr-xr-x root     root        6 Apr 11  2018]  /etc/pm/power.d
+│   └── [drwxr-xr-x root     root        6 Apr 11  2018]  /etc/pm/sleep.d
+├── [drwxr-xr-x root     root       72 Mar 16 23:05]  /etc/polkit-1
+│   ├── [drwxr-x--- root     polkitd    98 Mar 16 23:05]  /etc/polkit-1/localauthority [error opening dir]
+│   ├── [drwxr-xr-x root     root        6 Jun 10  2014]  /etc/polkit-1/localauthority.conf.d
+│   └── [drwx------ polkitd  root       65 Mar 16 23:05]  /etc/polkit-1/rules.d [error opening dir]
+├── [drwxr-xr-x root     root        6 Jun 10  2014]  /etc/popt.d
+├── [drwxr-xr-x root     root      123 Mar 16 23:12]  /etc/ppp
+│   ├── [-rwxr-xr-x root     root      386 May 22  2020]  /etc/ppp/ip-down
+│   ├── [-rwxr-xr-x root     root     3.1K May 22  2020]  /etc/ppp/ip-down.ipv6to4
+│   ├── [-rwxr-xr-x root     root      430 May 22  2020]  /etc/ppp/ip-up
+│   ├── [-rwxr-xr-x root     root     6.3K May 22  2020]  /etc/ppp/ip-up.ipv6to4
+│   ├── [-rwxr-xr-x root     root     1.6K May 22  2020]  /etc/ppp/ipv6-down
+│   ├── [-rwxr-xr-x root     root     3.1K May 22  2020]  /etc/ppp/ipv6-up
+│   └── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/ppp/peers
+├── [drwxr-xr-x root     root      117 May 14  4:40]  /etc/prelink.conf.d
+│   ├── [-rw-r--r-- root     root       57 Aug  2  2017]  /etc/prelink.conf.d/fipscheck.conf
+│   ├── [-rw-r--r-- root     root      220 Mar 17  1:24]  /etc/prelink.conf.d/grub2.conf
+│   ├── [-rw-r--r-- root     root      184 Nov  5  2020]  /etc/prelink.conf.d/nss-softokn-prelink.conf
+│   └── [-rw-r--r-- root     root      224 May 12  4:45]  /etc/prelink.conf.d/oracle-cloud-agent-prelink.conf
+├── [-rw-r--r-- root     root      233 Jun  7  2013]  /etc/printcap
+├── [-rw-r--r-- root     root     1.8K Apr  1  2020]  /etc/profile
+├── [drwxr-xr-x root     root     4.0K Jun 30 16:55]  /etc/profile.d
+│   ├── [-rw-r--r-- root     root      771 Nov 16  2020]  /etc/profile.d/256term.csh
+│   ├── [-rw-r--r-- root     root      841 Nov 16  2020]  /etc/profile.d/256term.sh
+│   ├── [-rw-r--r-- root     root     1.3K Oct  1  2020]  /etc/profile.d/abrt-console-notification.sh
+│   ├── [-rw-r--r-- root     root      660 Apr  1  2020]  /etc/profile.d/bash_completion.sh
+│   ├── [-rw-r--r-- root     root      196 Mar 24  2017]  /etc/profile.d/colorgrep.csh
+│   ├── [-rw-r--r-- root     root      201 Mar 24  2017]  /etc/profile.d/colorgrep.sh
+│   ├── [-rw-r--r-- root     root     1.7K Nov 16  2020]  /etc/profile.d/colorls.csh
+│   ├── [-rw-r--r-- root     root     1.6K Nov 16  2020]  /etc/profile.d/colorls.sh
+│   ├── [-rw-r--r-- root     root       80 Apr  1  2020]  /etc/profile.d/csh.local
+│   ├── [-rw-r--r-- root     root     1.7K Nov 16  2020]  /etc/profile.d/lang.csh
+│   ├── [-rw-r--r-- root     root     2.6K Nov 16  2020]  /etc/profile.d/lang.sh
+│   ├── [-rw-r--r-- root     root      123 Jul 31  2015]  /etc/profile.d/less.csh
+│   ├── [-rw-r--r-- root     root      121 Jul 31  2015]  /etc/profile.d/less.sh
+│   ├── [-rw-r--r-- root     root       81 Apr  1  2020]  /etc/profile.d/sh.local
+│   ├── [-rwxr-xr-x root     root     1.2K Jun 30 16:54]  /etc/profile.d/ssh-telegram.sh
+│   ├── [-rw-r--r-- root     root      105 Dec 15  2020]  /etc/profile.d/vim.csh
+│   ├── [-rw-r--r-- root     root      269 Dec 15  2020]  /etc/profile.d/vim.sh
+│   ├── [-rw-r--r-- root     root      164 Jan 28  2014]  /etc/profile.d/which2.csh
+│   └── [-rw-r--r-- root     root      169 Jan 28  2014]  /etc/profile.d/which2.sh
+├── [-rw-r--r-- root     root     6.4K Apr  1  2020]  /etc/protocols
+├── [drwxr-xr-x root     root       35 Mar 16 23:11]  /etc/python
+│   └── [-rw-r--r-- root     root      381 Nov 17  2020]  /etc/python/cert-verification.cfg
+├── [drwxr-xr-x root     root       50 Mar 16 23:06]  /etc/qemu-ga
+│   ├── [-rwxr-xr-x root     root     1.1K Apr 24  2018]  /etc/qemu-ga/fsfreeze-hook
+│   └── [drwxr-xr-x root     root        6 Aug  8  2019]  /etc/qemu-ga/fsfreeze-hook.d
+├── [lrwxrwxrwx root     root       10 Mar 16 23:12]  /etc/rc0.d -> rc.d/rc0.d
+├── [lrwxrwxrwx root     root       10 Mar 16 23:12]  /etc/rc1.d -> rc.d/rc1.d
+├── [lrwxrwxrwx root     root       10 Mar 16 23:12]  /etc/rc2.d -> rc.d/rc2.d
+├── [lrwxrwxrwx root     root       10 Mar 16 23:12]  /etc/rc3.d -> rc.d/rc3.d
+├── [lrwxrwxrwx root     root       10 Mar 16 23:12]  /etc/rc4.d -> rc.d/rc4.d
+├── [lrwxrwxrwx root     root       10 Mar 16 23:12]  /etc/rc5.d -> rc.d/rc5.d
+├── [lrwxrwxrwx root     root       10 Mar 16 23:12]  /etc/rc6.d -> rc.d/rc6.d
+├── [drwxr-xr-x root     root      127 Nov 16  2020]  /etc/rc.d
+│   ├── [drwxr-xr-x root     root      108 Apr 16 20:36]  /etc/rc.d/init.d
+│   │   ├── [-rw-r--r-- root     root      18K May 22  2020]  /etc/rc.d/init.d/functions
+│   │   ├── [-rwxr-xr-x root     root      652 Mar 16 23:20]  /etc/rc.d/init.d/iscsi-boot-volume
+│   │   ├── [-rwxr-xr-x root     root      11K Jan 30  2019]  /etc/rc.d/init.d/mysql
+│   │   ├── [-rwxr-xr-x root     root     4.5K May 22  2020]  /etc/rc.d/init.d/netconsole
+│   │   ├── [-rwxr-xr-x root     root     7.7K May 22  2020]  /etc/rc.d/init.d/network
+│   │   └── [-rw-r--r-- root     root     1.1K Feb  2 23:34]  /etc/rc.d/init.d/README
+│   ├── [drwxr-xr-x root     root       61 Apr 16 20:37]  /etc/rc.d/rc0.d
+│   │   ├── [lrwxrwxrwx root     root       15 Apr 16 20:37]  /etc/rc.d/rc0.d/K36mysql -> ../init.d/mysql
+│   │   ├── [lrwxrwxrwx root     root       20 Mar 16 23:05]  /etc/rc.d/rc0.d/K50netconsole -> ../init.d/netconsole
+│   │   └── [lrwxrwxrwx root     root       17 Mar 16 23:05]  /etc/rc.d/rc0.d/K90network -> ../init.d/network
+│   ├── [drwxr-xr-x root     root       61 Apr 16 20:37]  /etc/rc.d/rc1.d
+│   │   ├── [lrwxrwxrwx root     root       15 Apr 16 20:37]  /etc/rc.d/rc1.d/K36mysql -> ../init.d/mysql
+│   │   ├── [lrwxrwxrwx root     root       20 Mar 16 23:05]  /etc/rc.d/rc1.d/K50netconsole -> ../init.d/netconsole
+│   │   └── [lrwxrwxrwx root     root       17 Mar 16 23:05]  /etc/rc.d/rc1.d/K90network -> ../init.d/network
+│   ├── [drwxr-xr-x root     root       61 Apr 16 20:38]  /etc/rc.d/rc2.d
+│   │   ├── [lrwxrwxrwx root     root       20 Mar 16 23:05]  /etc/rc.d/rc2.d/K50netconsole -> ../init.d/netconsole
+│   │   ├── [lrwxrwxrwx root     root       17 Mar 16 23:05]  /etc/rc.d/rc2.d/S10network -> ../init.d/network
+│   │   └── [lrwxrwxrwx root     root       15 Apr 16 20:38]  /etc/rc.d/rc2.d/S64mysql -> ../init.d/mysql
+│   ├── [drwxr-xr-x root     root       61 Apr 16 20:38]  /etc/rc.d/rc3.d
+│   │   ├── [lrwxrwxrwx root     root       20 Mar 16 23:05]  /etc/rc.d/rc3.d/K50netconsole -> ../init.d/netconsole
+│   │   ├── [lrwxrwxrwx root     root       17 Mar 16 23:05]  /etc/rc.d/rc3.d/S10network -> ../init.d/network
+│   │   └── [lrwxrwxrwx root     root       15 Apr 16 20:38]  /etc/rc.d/rc3.d/S64mysql -> ../init.d/mysql
+│   ├── [drwxr-xr-x root     root       61 Apr 16 20:38]  /etc/rc.d/rc4.d
+│   │   ├── [lrwxrwxrwx root     root       20 Mar 16 23:05]  /etc/rc.d/rc4.d/K50netconsole -> ../init.d/netconsole
+│   │   ├── [lrwxrwxrwx root     root       17 Mar 16 23:05]  /etc/rc.d/rc4.d/S10network -> ../init.d/network
+│   │   └── [lrwxrwxrwx root     root       15 Apr 16 20:38]  /etc/rc.d/rc4.d/S64mysql -> ../init.d/mysql
+│   ├── [drwxr-xr-x root     root       61 Apr 16 20:38]  /etc/rc.d/rc5.d
+│   │   ├── [lrwxrwxrwx root     root       20 Mar 16 23:05]  /etc/rc.d/rc5.d/K50netconsole -> ../init.d/netconsole
+│   │   ├── [lrwxrwxrwx root     root       17 Mar 16 23:05]  /etc/rc.d/rc5.d/S10network -> ../init.d/network
+│   │   └── [lrwxrwxrwx root     root       15 Apr 16 20:38]  /etc/rc.d/rc5.d/S64mysql -> ../init.d/mysql
+│   ├── [drwxr-xr-x root     root       61 Apr 16 20:37]  /etc/rc.d/rc6.d
+│   │   ├── [lrwxrwxrwx root     root       15 Apr 16 20:37]  /etc/rc.d/rc6.d/K36mysql -> ../init.d/mysql
+│   │   ├── [lrwxrwxrwx root     root       20 Mar 16 23:05]  /etc/rc.d/rc6.d/K50netconsole -> ../init.d/netconsole
+│   │   └── [lrwxrwxrwx root     root       17 Mar 16 23:05]  /etc/rc.d/rc6.d/K90network -> ../init.d/network
+│   └── [-rw-r--r-- root     root      473 Feb  2 23:34]  /etc/rc.d/rc.local
+├── [lrwxrwxrwx root     root       13 Mar 16 23:11]  /etc/rc.local -> rc.d/rc.local
+├── [lrwxrwxrwx root     root       14 Mar 16 23:11]  /etc/redhat-release -> centos-release
+├── [-rw-r--r-- root     root     1.7K Jun 10  2014]  /etc/request-key.conf
+├── [drwxr-xr-x root     root       30 Mar 16 23:06]  /etc/request-key.d
+│   └── [-rw-r--r-- root     root      354 Oct  1  2020]  /etc/request-key.d/id_resolver.conf
+├── [-rw-r--r-- root     root      388 Apr 16 20:39]  /etc/resolv.conf
+├── [-rw-r--r-- root     root     1.6K Dec 25  2012]  /etc/rpc
+├── [drwxr-xr-x root     root       44 Mar 16 23:11]  /etc/rpm
+│   ├── [-rw-r--r-- root     root       66 Nov 23  2020]  /etc/rpm/macros.dist
+│   └── [-rw-r--r-- root     root     5.0K Sep 30  2020]  /etc/rpm/macros.perl
+├── [-rw-r--r-- root     root      458 Apr  1  2020]  /etc/rsyncd.conf
+├── [drwxr-xr-x root     root       50 Apr 16 20:29]  /etc/rsyslog.d
+│   ├── [-rw-r--r-- root     root      255 Dec 18  2019]  /etc/rsyslog.d/21-cloudinit.conf
+│   └── [-rw-r--r-- root     root       49 Feb  2 23:34]  /etc/rsyslog.d/listen.conf
+├── [-rw-r--r-- root     root     1008 Nov 16  2020]  /etc/rwtab
+├── [drwxr-xr-x root     root       39 Nov 16  2020]  /etc/rwtab.d
+│   ├── [-rw-r--r-- root     root       23 Sep 30  2020]  /etc/rwtab.d/gssproxy
+│   └── [-rw-r--r-- root     root       24 Apr  1  2020]  /etc/rwtab.d/logrotate
+├── [drwxr-xr-x root     root        6 Apr 16 20:28]  /etc/sasl2
+├── [drwxr-xr-x root     root       34 Mar 16 23:06]  /etc/scl
+│   ├── [lrwxrwxrwx root     root        8 Mar 16 23:06]  /etc/scl/conf -> prefixes
+│   └── [drwxr-xr-x root     root        6 Oct 31  2018]  /etc/scl/prefixes
+├── [-rw------- root     root      221 Apr  1  2020]  /etc/securetty
+├── [drwxr-xr-x root     root     4.0K Mar 16 23:05]  /etc/security
+│   ├── [-rw-r--r-- root     root     4.5K Apr  1  2020]  /etc/security/access.conf
+│   ├── [-rw-r--r-- root     root       82 Apr  1  2020]  /etc/security/chroot.conf
+│   ├── [drwxr-xr-x root     root       38 Mar 16 23:06]  /etc/security/console.apps
+│   │   ├── [-rw-r--r-- root     root       24 Aug  6  2019]  /etc/security/console.apps/config-util
+│   │   └── [-rw-r--r-- root     root       56 Jun 10  2014]  /etc/security/console.apps/setup
+│   ├── [-rw-r--r-- root     root      604 Apr  1  2020]  /etc/security/console.handlers
+│   ├── [-rw-r--r-- root     root      939 Apr  1  2020]  /etc/security/console.perms
+│   ├── [drwxr-xr-x root     root        6 Apr  1  2020]  /etc/security/console.perms.d
+│   ├── [-rw-r--r-- root     root     3.5K Apr  1  2020]  /etc/security/group.conf
+│   ├── [-rw-r--r-- root     root     2.6K Apr 16 20:38]  /etc/security/limits.conf
+│   ├── [drwxr-xr-x root     root       27 Mar 16 23:05]  /etc/security/limits.d
+│   │   └── [-rw-r--r-- root     root      191 Apr  1  2020]  /etc/security/limits.d/20-nproc.conf
+│   ├── [-rw-r--r-- root     root     1.4K Apr  1  2020]  /etc/security/namespace.conf
+│   ├── [drwxr-xr-x root     root        6 Apr  1  2020]  /etc/security/namespace.d
+│   ├── [-rwxr-xr-x root     root     1019 Apr  1  2020]  /etc/security/namespace.init
+│   ├── [-rw------- root     root        0 Apr  1  2020]  /etc/security/opasswd
+│   ├── [-rw-r--r-- root     root     2.9K Apr  1  2020]  /etc/security/pam_env.conf
+│   ├── [-rw-r--r-- root     root     1.7K Dec  7  2011]  /etc/security/pwquality.conf
+│   ├── [-rw-r--r-- root     root      419 Apr  1  2020]  /etc/security/sepermit.conf
+│   └── [-rw-r--r-- root     root     2.1K Apr  1  2020]  /etc/security/time.conf
+├── [drwxr-xr-x root     root       81 Apr 16 20:27]  /etc/selinux
+│   ├── [-rw-r--r-- root     root      542 Apr 16 20:27]  /etc/selinux/config
+│   ├── [drwx------ root     root        6 Apr 16 20:37]  /etc/selinux/final [error opening dir]
+│   ├── [-rw-r--r-- root     root     2.3K Oct 31  2018]  /etc/selinux/semanage.conf
+│   ├── [drwxr-xr-x root     root      215 Apr 16 20:37]  /etc/selinux/targeted
+│   │   ├── [drwx------ root     root      236 Apr 16 20:37]  /etc/selinux/targeted/active [error opening dir]
+│   │   ├── [-rw-r--r-- root     root     2.6K Nov 16  2020]  /etc/selinux/targeted/booleans.subs_dist
+│   │   ├── [drwxr-xr-x root     root     4.0K Mar 16 23:12]  /etc/selinux/targeted/contexts
+│   │   │   ├── [-rw-r--r-- root     root      262 Nov 16  2020]  /etc/selinux/targeted/contexts/customizable_types
+│   │   │   ├── [-rw-r--r-- root     root      195 Nov 16  2020]  /etc/selinux/targeted/contexts/dbus_contexts
+│   │   │   ├── [-rw-r--r-- root     root      254 Nov 16  2020]  /etc/selinux/targeted/contexts/default_contexts
+│   │   │   ├── [-rw-r--r-- root     root      148 Nov 16  2020]  /etc/selinux/targeted/contexts/default_type
+│   │   │   ├── [-rw-r--r-- root     root       29 Nov 16  2020]  /etc/selinux/targeted/contexts/failsafe_context
+│   │   │   ├── [drwxr-xr-x root     root      186 Apr 16 20:37]  /etc/selinux/targeted/contexts/files
+│   │   │   │   ├── [-rw-r--r-- root     root     376K Apr 16 20:37]  /etc/selinux/targeted/contexts/files/file_contexts
+│   │   │   │   ├── [-rw-r--r-- root     root     1.4M Apr 16 20:37]  /etc/selinux/targeted/contexts/files/file_contexts.bin
+│   │   │   │   ├── [-rw-r--r-- root     root      13K Apr 16 20:37]  /etc/selinux/targeted/contexts/files/file_contexts.homedirs
+│   │   │   │   ├── [-rw-r--r-- root     root      45K Apr 16 20:37]  /etc/selinux/targeted/contexts/files/file_contexts.homedirs.bin
+│   │   │   │   ├── [-rw-r--r-- root     root        0 Apr 16 16:39]  /etc/selinux/targeted/contexts/files/file_contexts.subs
+│   │   │   │   ├── [-rw-r--r-- root     root      514 Nov 16  2020]  /etc/selinux/targeted/contexts/files/file_contexts.subs_dist
+│   │   │   │   └── [-rw-r--r-- root     root      139 Nov 16  2020]  /etc/selinux/targeted/contexts/files/media
+│   │   │   ├── [-rw-r--r-- root     root       30 Nov 16  2020]  /etc/selinux/targeted/contexts/initrc_context
+│   │   │   ├── [-rw-r--r-- root     root      333 Nov 16  2020]  /etc/selinux/targeted/contexts/lxc_contexts
+│   │   │   ├── [-rw-r--r-- root     root       33 Nov 16  2020]  /etc/selinux/targeted/contexts/removable_context
+│   │   │   ├── [-rw-r--r-- root     root       74 Nov 16  2020]  /etc/selinux/targeted/contexts/securetty_types
+│   │   │   ├── [-rw-r--r-- root     root     1.1K Nov 16  2020]  /etc/selinux/targeted/contexts/sepgsql_contexts
+│   │   │   ├── [-rw-r--r-- root     root       53 Nov 16  2020]  /etc/selinux/targeted/contexts/snapperd_contexts
+│   │   │   ├── [-rw-r--r-- root     root       57 Nov 16  2020]  /etc/selinux/targeted/contexts/systemd_contexts
+│   │   │   ├── [-rw-r--r-- root     root       35 Nov 16  2020]  /etc/selinux/targeted/contexts/userhelper_context
+│   │   │   ├── [drwxr-xr-x root     root      114 Mar 16 23:12]  /etc/selinux/targeted/contexts/users
+│   │   │   │   ├── [-rw-r--r-- root     root      253 Nov 16  2020]  /etc/selinux/targeted/contexts/users/guest_u
+│   │   │   │   ├── [-rw-r--r-- root     root      389 Nov 16  2020]  /etc/selinux/targeted/contexts/users/root
+│   │   │   │   ├── [-rw-r--r-- root     root      514 Nov 16  2020]  /etc/selinux/targeted/contexts/users/staff_u
+│   │   │   │   ├── [-rw-r--r-- root     root      496 Nov 16  2020]  /etc/selinux/targeted/contexts/users/sysadm_u
+│   │   │   │   ├── [-rw-r--r-- root     root      578 Nov 16  2020]  /etc/selinux/targeted/contexts/users/unconfined_u
+│   │   │   │   ├── [-rw-r--r-- root     root      353 Nov 16  2020]  /etc/selinux/targeted/contexts/users/user_u
+│   │   │   │   └── [-rw-r--r-- root     root      307 Nov 16  2020]  /etc/selinux/targeted/contexts/users/xguest_u
+│   │   │   ├── [-rw-r--r-- root     root       62 Nov 16  2020]  /etc/selinux/targeted/contexts/virtual_domain_context
+│   │   │   ├── [-rw-r--r-- root     root       71 Nov 16  2020]  /etc/selinux/targeted/contexts/virtual_image_context
+│   │   │   └── [-rw-r--r-- root     root     2.9K Nov 16  2020]  /etc/selinux/targeted/contexts/x_contexts
+│   │   ├── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/selinux/targeted/logins
+│   │   ├── [drwxr-xr-x root     root       20 Mar 16 23:06]  /etc/selinux/targeted/modules
+│   │   │   └── [drwxr-xr-x root     root       44 Apr 16 16:38]  /etc/selinux/targeted/modules/active
+│   │   │       ├── [drwxr-xr-x root     root       30 Mar 16 23:20]  /etc/selinux/targeted/modules/active/modules
+│   │   │       │   └── [-rw-r--r-- root     root     1.5K Mar 16 23:20]  /etc/selinux/targeted/modules/active/modules/dhcp_hostname.pp
+│   │   │       └── [-rw-r--r-- root     root      282 Apr 16 16:38]  /etc/selinux/targeted/modules/active/README.migrated
+│   │   ├── [drwxr-xr-x root     root       23 Apr 16 20:37]  /etc/selinux/targeted/policy
+│   │   │   └── [-rw-r--r-- root     root     3.7M Apr 16 20:37]  /etc/selinux/targeted/policy/policy.31
+│   │   ├── [-rw------- root     root        0 Nov 16  2020]  /etc/selinux/targeted/semanage.read.LOCK
+│   │   ├── [-rw------- root     root        0 Nov 16  2020]  /etc/selinux/targeted/semanage.trans.LOCK
+│   │   ├── [-rw-r--r-- root     root      607 Nov 16  2020]  /etc/selinux/targeted/setrans.conf
+│   │   └── [-rw-r--r-- root     root      106 Apr 16 20:37]  /etc/selinux/targeted/seusers
+│   └── [drwxr-xr-x root     root        6 Oct 31  2018]  /etc/selinux/tmp
+├── [-rw-r--r-- root     root     655K Jun  7  2013]  /etc/services
+├── [-rw-r--r-- root     root      216 Apr  1  2020]  /etc/sestatus.conf
+├── [drwxr-xr-x root     root     4.0K Mar 16 23:06]  /etc/setuptool.d
+│   ├── [-rw-r--r-- root     root       42 Jun 10  2014]  /etc/setuptool.d/98netconfig
+│   ├── [-rw-r--r-- root     root       69 Jun 10  2014]  /etc/setuptool.d/98system-config-authentication
+│   ├── [-rw-r--r-- root     root       47 Jun 10  2014]  /etc/setuptool.d/98system-config-display
+│   ├── [-rw-r--r-- root     root       62 Jun 10  2014]  /etc/setuptool.d/98system-config-keyboard
+│   ├── [-rw-r--r-- root     root       50 Jun 10  2014]  /etc/setuptool.d/99authconfig
+│   ├── [-rw-r--r-- root     root       43 Jun 10  2014]  /etc/setuptool.d/99kbdconfig
+│   ├── [-rw-r--r-- root     root       42 Jun 10  2014]  /etc/setuptool.d/99mouseconfig
+│   ├── [-rw-r--r-- root     root       33 Jun 10  2014]  /etc/setuptool.d/99ntsysv
+│   ├── [-rw-r--r-- root     root       46 Jun 10  2014]  /etc/setuptool.d/99printconf-tui
+│   ├── [-rw-r--r-- root     root       45 Jun 10  2014]  /etc/setuptool.d/99sndconfig
+│   ├── [-rw-r--r-- root     root       59 Jun 10  2014]  /etc/setuptool.d/99system-config-firewall-tui
+│   ├── [-rw-r--r-- root     root       58 Jun 10  2014]  /etc/setuptool.d/99system-config-network-tui
+│   ├── [-rw-r--r-- root     root       44 Jun 10  2014]  /etc/setuptool.d/99timeconfig
+│   └── [-rw-r--r-- root     root       40 Jun 10  2014]  /etc/setuptool.d/99Xconfigurator
+├── [---------- root     root      977 May 26 14:52]  /etc/shadow
+├── [---------- root     root      854 Apr 16 20:37]  /etc/shadow-
+├── [-rw-r--r-- root     root       63 Mar 16 23:06]  /etc/shells
+├── [drwxr-xr-x root     root       62 Mar 16 23:04]  /etc/skel
+├── [drwxr-xr-x root     root       74 Mar 16 23:06]  /etc/smartmontools
+│   ├── [-rw-r--r-- root     root     6.6K Apr  1  2020]  /etc/smartmontools/smartd.conf
+│   ├── [drwxr-xr-x root     root        6 Apr  1  2020]  /etc/smartmontools/smartd_warning.d
+│   └── [-rwxr-xr-x root     root     5.5K Apr  1  2020]  /etc/smartmontools/smartd_warning.sh
+├── [-rw-r--r-- root     root      138 Apr 28 20:35]  /etc/sos.conf
+├── [drwxr-xr-x root     root      225 Apr 16 20:38]  /etc/ssh
+│   ├── [-rw-r--r-- root     root     568K Aug  9  2019]  /etc/ssh/moduli
+│   ├── [-rw-r--r-- root     root     2.2K Aug  9  2019]  /etc/ssh/ssh_config
+│   ├── [-rw------- root     root     3.8K Apr 16 20:38]  /etc/ssh/sshd_config
+│   ├── [-rw-r----- root     ssh_keys  227 Apr 16 16:39]  /etc/ssh/ssh_host_ecdsa_key
+│   ├── [-rw-r--r-- root     root      162 Apr 16 16:39]  /etc/ssh/ssh_host_ecdsa_key.pub
+│   ├── [-rw-r----- root     ssh_keys  387 Apr 16 16:39]  /etc/ssh/ssh_host_ed25519_key
+│   ├── [-rw-r--r-- root     root       82 Apr 16 16:39]  /etc/ssh/ssh_host_ed25519_key.pub
+│   ├── [-rw-r----- root     ssh_keys 1.6K Apr 16 16:39]  /etc/ssh/ssh_host_rsa_key
+│   └── [-rw-r--r-- root     root      382 Apr 16 16:39]  /etc/ssh/ssh_host_rsa_key.pub
+├── [drwxr-xr-x root     root       19 Mar 16 23:05]  /etc/ssl
+│   └── [lrwxrwxrwx root     root       16 Mar 16 23:05]  /etc/ssl/certs -> ../pki/tls/certs
+├── [-rw-r--r-- root     root      212 Nov 16  2020]  /etc/statetab
+├── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/statetab.d
+├── [-rw-r--r-- root     root       35 May 26 14:51]  /etc/subgid
+├── [-rw-r--r-- root     root       17 Apr 16 16:39]  /etc/subgid-
+├── [-rw-r--r-- root     root       35 May 26 14:51]  /etc/subuid
+├── [-rw-r--r-- root     root       17 Apr 16 16:39]  /etc/subuid-
+├── [-rw-r----- root     root     1.7K Sep 30  2020]  /etc/sudo.conf
+├── [-r--r----- root     root     4.2K Sep 30  2020]  /etc/sudoers
+├── [drwxr-x--- root     root      104 May 14  4:40]  /etc/sudoers.d [error opening dir]
+├── [-rw-r----- root     root     3.1K Sep 30  2020]  /etc/sudo-ldap.conf
+├── [drwxr-xr-x root     root     4.0K May 26 14:13]  /etc/sysconfig
+│   ├── [-rw-r--r-- root     root      102 Mar 16 23:36]  /etc/sysconfig/anaconda
+│   ├── [-rw-r--r-- root     root      403 Oct 31  2018]  /etc/sysconfig/atd
+│   ├── [-rw-r--r-- root     root      483 Mar 16 23:10]  /etc/sysconfig/authconfig
+│   ├── [drwxr-xr-x root     root       43 Mar 16 23:05]  /etc/sysconfig/cbq
+│   │   ├── [-rw-r--r-- root     root       11 Sep 30  2020]  /etc/sysconfig/cbq/avpkt
+│   │   └── [-rw-r--r-- root     root       79 Sep 30  2020]  /etc/sysconfig/cbq/cbq-0000.example
+│   ├── [-rw-r--r-- root     root       46 Aug  8  2019]  /etc/sysconfig/chronyd
+│   ├── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/sysconfig/console
+│   ├── [-rw-r--r-- root     root      150 Apr 29  5:00]  /etc/sysconfig/cpupower
+│   ├── [-rw------- root     root      110 Aug  9  2019]  /etc/sysconfig/crond
+│   ├── [-rw------- root     root     1.4K Apr 11  2018]  /etc/sysconfig/ebtables-config
+│   ├── [-rw-r--r-- root     root       41 May  5  1:40]  /etc/sysconfig/exim
+│   ├── [-rw-r--r-- root     root       73 Apr 28 20:31]  /etc/sysconfig/firewalld
+│   ├── [lrwxrwxrwx root     root       15 Apr 16 20:29]  /etc/sysconfig/grub -> ../default/grub
+│   ├── [-rw-r--r-- root     root      798 Nov 16  2020]  /etc/sysconfig/init
+│   ├── [-rw------- root     root      635 Oct  1  2020]  /etc/sysconfig/ip6tables
+│   ├── [-rw------- root     root     2.1K Oct  1  2020]  /etc/sysconfig/ip6tables-config
+│   ├── [-rw------- root     root      783 Apr 16 20:38]  /etc/sysconfig/iptables
+│   ├── [-rw------- root     root     2.1K Oct  1  2020]  /etc/sysconfig/iptables-config
+│   ├── [-rw------- root     root      550 Apr 16 20:38]  /etc/sysconfig/iptables.save
+│   ├── [-rw-r--r-- root     root      903 Aug  6  2019]  /etc/sysconfig/irqbalance
+│   ├── [-rw-r--r-- root     root     1.7K Apr 28 20:31]  /etc/sysconfig/kdump
+│   ├── [-rw-r--r-- root     root      180 Mar 16 23:10]  /etc/sysconfig/kernel
+│   ├── [-rw-r--r-- root     root      200 Oct 30  2018]  /etc/sysconfig/man-db
+│   ├── [drwxr-xr-x root     root        6 Nov 16  2020]  /etc/sysconfig/modules
+│   ├── [-rw-r--r-- root     root      634 Nov 16  2020]  /etc/sysconfig/netconsole
+│   ├── [-rw-r--r-- root     root       22 Mar 16 23:11]  /etc/sysconfig/network
+│   ├── [drwxr-xr-x root     root     4.0K Jul  9 11:01]  /etc/sysconfig/network-scripts
+│   │   ├── [-rw-r--r-- root     root      181 Jul  9 11:01]  /etc/sysconfig/network-scripts/ifcfg-ens3
+│   │   ├── [-rw-r--r-- root     root      254 May 22  2020]  /etc/sysconfig/network-scripts/ifcfg-lo
+│   │   ├── [lrwxrwxrwx root     root       24 Mar 16 23:12]  /etc/sysconfig/network-scripts/ifdown -> ../../../usr/sbin/ifdown
+│   │   ├── [-rwxr-xr-x root     root      654 May 22  2020]  /etc/sysconfig/network-scripts/ifdown-bnep
+│   │   ├── [-rwxr-xr-x root     root     6.4K May 22  2020]  /etc/sysconfig/network-scripts/ifdown-eth
+│   │   ├── [-rwxr-xr-x root     root      781 May 22  2020]  /etc/sysconfig/network-scripts/ifdown-ippp
+│   │   ├── [-rwxr-xr-x root     root     4.4K May 22  2020]  /etc/sysconfig/network-scripts/ifdown-ipv6
+│   │   ├── [lrwxrwxrwx root     root       11 Mar 16 23:12]  /etc/sysconfig/network-scripts/ifdown-isdn -> ifdown-ippp
+│   │   ├── [-rwxr-xr-x root     root     2.1K May 22  2020]  /etc/sysconfig/network-scripts/ifdown-post
+│   │   ├── [-rwxr-xr-x root     root     1.0K May 22  2020]  /etc/sysconfig/network-scripts/ifdown-ppp
+│   │   ├── [-rwxr-xr-x root     root      870 May 22  2020]  /etc/sysconfig/network-scripts/ifdown-routes
+│   │   ├── [-rwxr-xr-x root     root     1.4K May 22  2020]  /etc/sysconfig/network-scripts/ifdown-sit
+│   │   ├── [-rwxr-xr-x root     root     1.6K Dec  9  2018]  /etc/sysconfig/network-scripts/ifdown-Team
+│   │   ├── [-rwxr-xr-x root     root     1.5K Dec  9  2018]  /etc/sysconfig/network-scripts/ifdown-TeamPort
+│   │   ├── [-rwxr-xr-x root     root     1.4K May 22  2020]  /etc/sysconfig/network-scripts/ifdown-tunnel
+│   │   ├── [lrwxrwxrwx root     root       22 Mar 16 23:12]  /etc/sysconfig/network-scripts/ifup -> ../../../usr/sbin/ifup
+│   │   ├── [-rwxr-xr-x root     root      12K May 22  2020]  /etc/sysconfig/network-scripts/ifup-aliases
+│   │   ├── [-rwxr-xr-x root     root      910 May 22  2020]  /etc/sysconfig/network-scripts/ifup-bnep
+│   │   ├── [-rwxr-xr-x root     root      13K May 22  2020]  /etc/sysconfig/network-scripts/ifup-eth
+│   │   ├── [-rwxr-xr-x root     root      12K May 22  2020]  /etc/sysconfig/network-scripts/ifup-ippp
+│   │   ├── [-rwxr-xr-x root     root      12K May 22  2020]  /etc/sysconfig/network-scripts/ifup-ipv6
+│   │   ├── [lrwxrwxrwx root     root        9 Mar 16 23:12]  /etc/sysconfig/network-scripts/ifup-isdn -> ifup-ippp
+│   │   ├── [-rwxr-xr-x root     root      650 May 22  2020]  /etc/sysconfig/network-scripts/ifup-plip
+│   │   ├── [-rwxr-xr-x root     root     1.0K May 22  2020]  /etc/sysconfig/network-scripts/ifup-plusb
+│   │   ├── [-rwxr-xr-x root     root     4.9K May 22  2020]  /etc/sysconfig/network-scripts/ifup-post
+│   │   ├── [-rwxr-xr-x root     root     4.1K May 22  2020]  /etc/sysconfig/network-scripts/ifup-ppp
+│   │   ├── [-rwxr-xr-x root     root     2.0K May 22  2020]  /etc/sysconfig/network-scripts/ifup-routes
+│   │   ├── [-rwxr-xr-x root     root     3.2K May 22  2020]  /etc/sysconfig/network-scripts/ifup-sit
+│   │   ├── [-rwxr-xr-x root     root     1.7K Dec  9  2018]  /etc/sysconfig/network-scripts/ifup-Team
+│   │   ├── [-rwxr-xr-x root     root     1.8K Dec  9  2018]  /etc/sysconfig/network-scripts/ifup-TeamPort
+│   │   ├── [-rwxr-xr-x root     root     2.7K May 22  2020]  /etc/sysconfig/network-scripts/ifup-tunnel
+│   │   ├── [-rwxr-xr-x root     root     1.8K May 22  2020]  /etc/sysconfig/network-scripts/ifup-wireless
+│   │   ├── [-rwxr-xr-x root     root     5.3K May 22  2020]  /etc/sysconfig/network-scripts/init.ipv6-global
+│   │   ├── [-rw-r--r-- root     root      20K May 22  2020]  /etc/sysconfig/network-scripts/network-functions
+│   │   └── [-rw-r--r-- root     root      30K May 22  2020]  /etc/sysconfig/network-scripts/network-functions-ipv6
+│   ├── [-rw-r--r-- root     root     1.6K Oct  1  2020]  /etc/sysconfig/nfs
+│   ├── [-rw-r--r-- root     root      111 Nov 27  2019]  /etc/sysconfig/ntpdate
+│   ├── [-rw-r--r-- root     root      536 Apr 27 21:40]  /etc/sysconfig/php-fpm
+│   ├── [-rw-r--r-- root     root      911 Aug  6  2019]  /etc/sysconfig/qemu-ga
+│   ├── [-rw-r--r-- root     root     2.8K Sep 30  2020]  /etc/sysconfig/raid-check
+│   ├── [-rw-r--r-- root     root       15 Aug  4  2017]  /etc/sysconfig/rdisc
+│   ├── [-rw-r--r-- root     root      905 Nov 16  2020]  /etc/sysconfig/readonly-root
+│   ├── [-rw-r--r-- root     root       73 Apr  1  2020]  /etc/sysconfig/rpcbind
+│   ├── [-rw-r--r-- root     root      395 Aug  6  2019]  /etc/sysconfig/rpc-rquotad
+│   ├── [-rw-r--r-- root     root       12 Apr  1  2020]  /etc/sysconfig/rsyncd
+│   ├── [-rw-r--r-- root     root        0 Jun 10  2014]  /etc/sysconfig/run-parts
+│   ├── [lrwxrwxrwx root     root       17 Mar 16 23:05]  /etc/sysconfig/selinux -> ../selinux/config
+│   ├── [-rw-r--r-- root     root      125 Nov 28  2019]  /etc/sysconfig/smartmontools
+│   ├── [-rw-r----- root     root      506 Aug  9  2019]  /etc/sysconfig/sshd
+│   ├── [-rw-r--r-- root     root      474 Apr  1  2020]  /etc/sysconfig/sysstat
+│   ├── [-rw-r--r-- root     root     6.1K Apr  1  2020]  /etc/sysconfig/sysstat.ioconf
+│   └── [-rw-r--r-- root     root      610 Mar 16 22:26]  /etc/sysconfig/wpa_supplicant
+├── [-rw-r--r-- root     root      449 Nov 16  2020]  /etc/sysctl.conf
+├── [drwxr-xr-x root     root       55 Mar 16 23:20]  /etc/sysctl.d
+│   ├── [lrwxrwxrwx root     root       14 Mar 16 23:12]  /etc/sysctl.d/99-sysctl.conf -> ../sysctl.conf
+│   └── [-rw-r--r-- root     root       28 Mar 16 23:20]  /etc/sysctl.d/scsi-log-level.conf
+├── [drwxr-xr-x root     root       77 Apr 16 20:37]  /etc/syslog-ng
+│   ├── [drwxr-xr-x root     root        6 Dec 31  2015]  /etc/syslog-ng/conf.d
+│   ├── [drwxr-xr-x root     root        6 Dec 31  2015]  /etc/syslog-ng/patterndb.d
+│   ├── [-rw-r--r-- root     root     1.5K Dec 31  2015]  /etc/syslog-ng/scl.conf
+│   └── [-rw-r--r-- root     root     2.3K Dec 31  2015]  /etc/syslog-ng/syslog-ng.conf
+├── [drwxr-xr-x root     root      151 Mar 16 23:11]  /etc/systemd
+│   ├── [-rw-r--r-- root     root      720 Feb  2 23:34]  /etc/systemd/bootchart.conf
+│   ├── [-rw-r--r-- root     root      615 Feb  2 23:34]  /etc/systemd/coredump.conf
+│   ├── [-rw-r--r-- root     root      983 Feb  2 23:34]  /etc/systemd/journald.conf
+│   ├── [-rw-r--r-- root     root      957 Feb  2 23:34]  /etc/systemd/logind.conf
+│   ├── [drwxr-xr-x root     root     4.0K May 27  9:33]  /etc/systemd/system
+│   │   ├── [drwxr-xr-x root     root      106 Apr 16 20:38]  /etc/systemd/system/basic.target.wants
+│   │   │   ├── [lrwxrwxrwx root     root       41 Apr 16 20:38]  /etc/systemd/system/basic.target.wants/ip6tables.service -> /usr/lib/systemd/system/ip6tables.service
+│   │   │   ├── [lrwxrwxrwx root     root       40 Apr 16 20:38]  /etc/systemd/system/basic.target.wants/iptables.service -> /usr/lib/systemd/system/iptables.service
+│   │   │   ├── [lrwxrwxrwx root     root       41 Mar 16 23:06]  /etc/systemd/system/basic.target.wants/microcode.service -> /usr/lib/systemd/system/microcode.service
+│   │   │   └── [lrwxrwxrwx root     root       42 Mar 16 23:05]  /etc/systemd/system/basic.target.wants/rhel-dmesg.service -> /usr/lib/systemd/system/rhel-dmesg.service
+│   │   ├── [drwxr-xr-x root     root      154 Apr 16 20:29]  /etc/systemd/system/cloud-init.target.wants
+│   │   │   ├── [lrwxrwxrwx root     root       44 Apr 16 20:29]  /etc/systemd/system/cloud-init.target.wants/cloud-config.service -> /usr/lib/systemd/system/cloud-config.service
+│   │   │   ├── [lrwxrwxrwx root     root       43 Apr 16 20:29]  /etc/systemd/system/cloud-init.target.wants/cloud-final.service -> /usr/lib/systemd/system/cloud-final.service
+│   │   │   ├── [lrwxrwxrwx root     root       48 Apr 16 20:29]  /etc/systemd/system/cloud-init.target.wants/cloud-init-local.service -> /usr/lib/systemd/system/cloud-init-local.service
+│   │   │   ├── [lrwxrwxrwx root     root       42 Apr 16 20:29]  /etc/systemd/system/cloud-init.target.wants/cloud-init.service -> /usr/lib/systemd/system/cloud-init.service
+│   │   │   └── [lrwxrwxrwx root     root       51 Mar 16 23:20]  /etc/systemd/system/cloud-init.target.wants/initramfs-cloudinit.service -> /usr/lib/systemd/system/initramfs-cloudinit.service
+│   │   ├── [lrwxrwxrwx root     root       41 May 27  9:33]  /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service -> /usr/lib/systemd/system/firewalld.service
+│   │   ├── [lrwxrwxrwx root     root       57 Mar 16 23:06]  /etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service -> /usr/lib/systemd/system/NetworkManager-dispatcher.service
+│   │   ├── [lrwxrwxrwx root     root       37 Mar 16 23:10]  /etc/systemd/system/default.target -> /lib/systemd/system/multi-user.target
+│   │   ├── [drwxr-xr-x root     root       87 Mar 16 23:05]  /etc/systemd/system/default.target.wants
+│   │   │   ├── [lrwxrwxrwx root     root       57 Mar 16 23:05]  /etc/systemd/system/default.target.wants/systemd-readahead-collect.service -> /usr/lib/systemd/system/systemd-readahead-collect.service
+│   │   │   └── [lrwxrwxrwx root     root       56 Mar 16 23:05]  /etc/systemd/system/default.target.wants/systemd-readahead-replay.service -> /usr/lib/systemd/system/systemd-readahead-replay.service
+│   │   ├── [drwxr-xr-x root     root       38 Mar 16 23:06]  /etc/systemd/system/dev-virtio\\x2dports-org.qemu.guest_agent.0.device.wants
+│   │   │   └── [lrwxrwxrwx root     root       48 Mar 16 23:06]  /etc/systemd/system/dev-virtio\\x2dports-org.qemu.guest_agent.0.device.wants/qemu-guest-agent.service -> /usr/lib/systemd/system/qemu-guest-agent.service
+│   │   ├── [drwxr-xr-x root     root       32 Mar 16 23:05]  /etc/systemd/system/getty.target.wants
+│   │   │   └── [lrwxrwxrwx root     root       38 Mar 16 23:05]  /etc/systemd/system/getty.target.wants/getty@tty1.service -> /usr/lib/systemd/system/getty@.service
+│   │   ├── [-rw-r--r-- root     root      244 Mar 16 23:20]  /etc/systemd/system/iscsi-boot-volume.service
+│   │   ├── [drwxr-xr-x root     root       33 Mar 16 23:20]  /etc/systemd/system/iscsid.service.d
+│   │   │   └── [-rw-r--r-- root     root       25 Mar 16 23:20]  /etc/systemd/system/iscsid.service.d/iscsid_restart.conf
+│   │   ├── [drwxr-xr-x root     root       35 Mar 16 23:05]  /etc/systemd/system/local-fs.target.wants
+│   │   │   └── [lrwxrwxrwx root     root       45 Mar 16 23:05]  /etc/systemd/system/local-fs.target.wants/rhel-readonly.service -> /usr/lib/systemd/system/rhel-readonly.service
+│   │   ├── [drwxr-xr-x root     root     4.0K May 27  9:33]  /etc/systemd/system/multi-user.target.wants
+│   │   │   ├── [lrwxrwxrwx root     root       41 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/abrt-ccpp.service -> /usr/lib/systemd/system/abrt-ccpp.service
+│   │   │   ├── [lrwxrwxrwx root     root       37 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/abrtd.service -> /usr/lib/systemd/system/abrtd.service
+│   │   │   ├── [lrwxrwxrwx root     root       41 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/abrt-oops.service -> /usr/lib/systemd/system/abrt-oops.service
+│   │   │   ├── [lrwxrwxrwx root     root       43 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/abrt-vmcore.service -> /usr/lib/systemd/system/abrt-vmcore.service
+│   │   │   ├── [lrwxrwxrwx root     root       41 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/abrt-xorg.service -> /usr/lib/systemd/system/abrt-xorg.service
+│   │   │   ├── [lrwxrwxrwx root     root       35 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/atd.service -> /usr/lib/systemd/system/atd.service
+│   │   │   ├── [lrwxrwxrwx root     root       38 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/auditd.service -> /usr/lib/systemd/system/auditd.service
+│   │   │   ├── [lrwxrwxrwx root     root       39 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/chronyd.service -> /usr/lib/systemd/system/chronyd.service
+│   │   │   ├── [lrwxrwxrwx root     root       37 Mar 16 23:05]  /etc/systemd/system/multi-user.target.wants/crond.service -> /usr/lib/systemd/system/crond.service
+│   │   │   ├── [lrwxrwxrwx root     root       36 Apr 16 20:37]  /etc/systemd/system/multi-user.target.wants/exim.service -> /usr/lib/systemd/system/exim.service
+│   │   │   ├── [lrwxrwxrwx root     root       40 Apr 16 20:38]  /etc/systemd/system/multi-user.target.wants/fail2ban.service -> /usr/lib/systemd/system/fail2ban.service
+│   │   │   ├── [lrwxrwxrwx root     root       41 May 27  9:33]  /etc/systemd/system/multi-user.target.wants/firewalld.service -> /usr/lib/systemd/system/firewalld.service
+│   │   │   ├── [lrwxrwxrwx root     root       42 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/irqbalance.service -> /usr/lib/systemd/system/irqbalance.service
+│   │   │   ├── [lrwxrwxrwx root     root       45 Mar 16 23:20]  /etc/systemd/system/multi-user.target.wants/iscsi-boot-volume.service -> /etc/systemd/system/iscsi-boot-volume.service
+│   │   │   ├── [lrwxrwxrwx root     root       37 Mar 16 23:05]  /etc/systemd/system/multi-user.target.wants/kdump.service -> /usr/lib/systemd/system/kdump.service
+│   │   │   ├── [lrwxrwxrwx root     root       46 Mar 16 23:05]  /etc/systemd/system/multi-user.target.wants/libstoragemgmt.service -> /usr/lib/systemd/system/libstoragemgmt.service
+│   │   │   ├── [lrwxrwxrwx root     root       41 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/mdmonitor.service -> /usr/lib/systemd/system/mdmonitor.service
+│   │   │   ├── [lrwxrwxrwx root     root       46 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/NetworkManager.service -> /usr/lib/systemd/system/NetworkManager.service
+│   │   │   ├── [lrwxrwxrwx root     root       41 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/nfs-client.target -> /usr/lib/systemd/system/nfs-client.target
+│   │   │   ├── [lrwxrwxrwx root     root       37 Apr 16 20:38]  /etc/systemd/system/multi-user.target.wants/nginx.service -> /usr/lib/systemd/system/nginx.service
+│   │   │   ├── [lrwxrwxrwx root     root       46 Mar 16 23:17]  /etc/systemd/system/multi-user.target.wants/oracle-cloud-agent.service -> /etc/systemd/system/oracle-cloud-agent.service
+│   │   │   ├── [lrwxrwxrwx root     root       54 Mar 16 23:17]  /etc/systemd/system/multi-user.target.wants/oracle-cloud-agent-updater.service -> /etc/systemd/system/oracle-cloud-agent-updater.service
+│   │   │   ├── [lrwxrwxrwx root     root       39 Apr 16 20:38]  /etc/systemd/system/multi-user.target.wants/php-fpm.service -> /usr/lib/systemd/system/php-fpm.service
+│   │   │   ├── [lrwxrwxrwx root     root       40 Mar 16 23:05]  /etc/systemd/system/multi-user.target.wants/remote-fs.target -> /usr/lib/systemd/system/remote-fs.target
+│   │   │   ├── [lrwxrwxrwx root     root       46 Mar 16 23:05]  /etc/systemd/system/multi-user.target.wants/rhel-configure.service -> /usr/lib/systemd/system/rhel-configure.service
+│   │   │   ├── [lrwxrwxrwx root     root       36 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/rngd.service -> /usr/lib/systemd/system/rngd.service
+│   │   │   ├── [lrwxrwxrwx root     root       39 Mar 16 23:05]  /etc/systemd/system/multi-user.target.wants/rpcbind.service -> /usr/lib/systemd/system/rpcbind.service
+│   │   │   ├── [lrwxrwxrwx root     root       38 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/smartd.service -> /usr/lib/systemd/system/smartd.service
+│   │   │   ├── [lrwxrwxrwx root     root       36 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/sshd.service -> /usr/lib/systemd/system/sshd.service
+│   │   │   ├── [lrwxrwxrwx root     root       41 Apr 16 20:37]  /etc/systemd/system/multi-user.target.wants/syslog-ng.service -> /usr/lib/systemd/system/syslog-ng.service
+│   │   │   ├── [lrwxrwxrwx root     root       39 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/sysstat.service -> /usr/lib/systemd/system/sysstat.service
+│   │   │   ├── [lrwxrwxrwx root     root       37 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/tuned.service -> /usr/lib/systemd/system/tuned.service
+│   │   │   └── [lrwxrwxrwx root     root       35 Mar 16 23:06]  /etc/systemd/system/multi-user.target.wants/vdo.service -> /usr/lib/systemd/system/vdo.service
+│   │   ├── [lrwxrwxrwx root     root        9 Mar 16 23:20]  /etc/systemd/system/NetworkManager.service -> /dev/null
+│   │   ├── [lrwxrwxrwx root     root        9 Mar 16 23:20]  /etc/systemd/system/NetworkManager-wait-online.service -> /dev/null
+│   │   ├── [drwxr-xr-x root     root       48 Mar 16 23:06]  /etc/systemd/system/network-online.target.wants
+│   │   │   └── [lrwxrwxrwx root     root       58 Mar 16 23:06]  /etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service -> /usr/lib/systemd/system/NetworkManager-wait-online.service
+│   │   ├── [-rw-r--r-- root     root     1.3K May 12  4:45]  /etc/systemd/system/oracle-cloud-agent.service
+│   │   ├── [-rw-r--r-- root     root      905 May 12  4:37]  /etc/systemd/system/oracle-cloud-agent-updater.service
+│   │   ├── [drwxr-xr-x root     root        6 Apr 27 21:40]  /etc/systemd/system/php-fpm.service.d
+│   │   ├── [drwxr-xr-x root     root       52 Mar 16 23:06]  /etc/systemd/system/remote-fs.target.wants
+│   │   │   ├── [lrwxrwxrwx root     root       37 Mar 16 23:06]  /etc/systemd/system/remote-fs.target.wants/iscsi.service -> /usr/lib/systemd/system/iscsi.service
+│   │   │   └── [lrwxrwxrwx root     root       41 Mar 16 23:06]  /etc/systemd/system/remote-fs.target.wants/nfs-client.target -> /usr/lib/systemd/system/nfs-client.target
+│   │   ├── [drwxr-xr-x root     root       95 Mar 16 23:06]  /etc/systemd/system/sockets.target.wants
+│   │   │   ├── [lrwxrwxrwx root     root       39 Mar 16 23:05]  /etc/systemd/system/sockets.target.wants/dm-event.socket -> /usr/lib/systemd/system/dm-event.socket
+│   │   │   ├── [lrwxrwxrwx root     root       37 Mar 16 23:06]  /etc/systemd/system/sockets.target.wants/iscsid.socket -> /usr/lib/systemd/system/iscsid.socket
+│   │   │   ├── [lrwxrwxrwx root     root       39 Mar 16 23:06]  /etc/systemd/system/sockets.target.wants/iscsiuio.socket -> /usr/lib/systemd/system/iscsiuio.socket
+│   │   │   └── [lrwxrwxrwx root     root       38 Mar 16 23:05]  /etc/systemd/system/sockets.target.wants/rpcbind.socket -> /usr/lib/systemd/system/rpcbind.socket
+│   │   ├── [drwxr-xr-x root     root     4.0K Mar 16 23:06]  /etc/systemd/system/sysinit.target.wants
+│   │   │   ├── [lrwxrwxrwx root     root       48 Mar 16 23:06]  /etc/systemd/system/sysinit.target.wants/blk-availability.service -> /usr/lib/systemd/system/blk-availability.service
+│   │   │   ├── [lrwxrwxrwx root     root       49 Mar 16 23:05]  /etc/systemd/system/sysinit.target.wants/dmraid-activation.service -> /usr/lib/systemd/system/dmraid-activation.service
+│   │   │   ├── [lrwxrwxrwx root     root       44 Mar 16 23:06]  /etc/systemd/system/sysinit.target.wants/iscsi-onboot.service -> /usr/lib/systemd/system/iscsi-onboot.service
+│   │   │   ├── [lrwxrwxrwx root     root       43 Mar 16 23:05]  /etc/systemd/system/sysinit.target.wants/lvm2-lvmetad.socket -> /usr/lib/systemd/system/lvm2-lvmetad.socket
+│   │   │   ├── [lrwxrwxrwx root     root       44 Mar 16 23:05]  /etc/systemd/system/sysinit.target.wants/lvm2-lvmpolld.socket -> /usr/lib/systemd/system/lvm2-lvmpolld.socket
+│   │   │   ├── [lrwxrwxrwx root     root       44 Mar 16 23:05]  /etc/systemd/system/sysinit.target.wants/lvm2-monitor.service -> /usr/lib/systemd/system/lvm2-monitor.service
+│   │   │   ├── [lrwxrwxrwx root     root       53 Mar 16 23:05]  /etc/systemd/system/sysinit.target.wants/rhel-autorelabel-mark.service -> /usr/lib/systemd/system/rhel-autorelabel-mark.service
+│   │   │   ├── [lrwxrwxrwx root     root       48 Mar 16 23:05]  /etc/systemd/system/sysinit.target.wants/rhel-autorelabel.service -> /usr/lib/systemd/system/rhel-autorelabel.service
+│   │   │   ├── [lrwxrwxrwx root     root       47 Mar 16 23:05]  /etc/systemd/system/sysinit.target.wants/rhel-domainname.service -> /usr/lib/systemd/system/rhel-domainname.service
+│   │   │   ├── [lrwxrwxrwx root     root       49 Mar 16 23:05]  /etc/systemd/system/sysinit.target.wants/rhel-import-state.service -> /usr/lib/systemd/system/rhel-import-state.service
+│   │   │   └── [lrwxrwxrwx root     root       48 Mar 16 23:05]  /etc/systemd/system/sysinit.target.wants/rhel-loadmodules.service -> /usr/lib/systemd/system/rhel-loadmodules.service
+│   │   ├── [lrwxrwxrwx root     root       41 Apr 16 20:37]  /etc/systemd/system/syslog.service -> /usr/lib/systemd/system/syslog-ng.service
+│   │   └── [drwxr-xr-x root     root       44 Mar 16 23:05]  /etc/systemd/system/system-update.target.wants
+│   │       └── [lrwxrwxrwx root     root       54 Mar 16 23:05]  /etc/systemd/system/system-update.target.wants/systemd-readahead-drop.service -> /usr/lib/systemd/system/systemd-readahead-drop.service
+│   ├── [-rw-r--r-- root     root     1.5K Feb  2 23:34]  /etc/systemd/system.conf
+│   ├── [drwxr-xr-x root     root        6 Feb  2 23:34]  /etc/systemd/user
+│   └── [-rw-r--r-- root     root     1.1K Feb  2 23:34]  /etc/systemd/user.conf
+├── [lrwxrwxrwx root     root       14 Mar 16 23:11]  /etc/system-release -> centos-release
+├── [-rw-r--r-- root     root       23 Nov 23  2020]  /etc/system-release-cpe
+├── [drwxr-xr-x root     root        6 Sep  7  2017]  /etc/terminfo
+├── [drwxr-xr-x root     root        6 Feb  2 23:34]  /etc/tmpfiles.d
+├── [-rw-r--r-- root     root      750 Apr 29 21:06]  /etc/trusted-key.key
+├── [drwxr-xr-x root     root      109 Mar 16 23:12]  /etc/tuned
+│   ├── [-rw-r--r-- root     root       14 Apr 16 20:39]  /etc/tuned/active_profile
+│   ├── [-rw-r--r-- root     root     1.1K Mar 22  2019]  /etc/tuned/bootcmdline
+│   ├── [-rw-r--r-- root     root        5 Apr 16 20:39]  /etc/tuned/profile_mode
+│   ├── [drwxr-xr-x root     root        6 Feb  2 23:30]  /etc/tuned/recommend.d
+│   └── [-rw-r--r-- root     root     1.3K Feb  2 23:30]  /etc/tuned/tuned-main.conf
+├── [drwxr-xr-x root     root       54 Apr 16 16:38]  /etc/udev
+│   ├── [-r--r--r-- root     root     8.5M Apr 16 16:38]  /etc/udev/hwdb.bin
+│   ├── [drwxr-xr-x root     root       82 Mar 16 23:20]  /etc/udev/rules.d
+│   │   ├── [-rw-r--r-- root     root      118 Oct  1  2020]  /etc/udev/rules.d/69-vdo-start-by-dev.rules
+│   │   └── [-rw-r--r-- root     root      619 Mar 16 23:20]  /etc/udev/rules.d/99-systemoci-persistent-names.rules
+│   └── [-rw-r--r-- root     root       49 Feb  2 23:34]  /etc/udev/udev.conf
+├── [-rw-r--r-- root     root      557 Apr 11  2018]  /etc/updatedb.conf
+├── [-rw-r--r-- root     root     1.5K Apr 11  2018]  /etc/usb_modeswitch.conf
+├── [-rw-r--r-- root     root       37 Mar 16 23:10]  /etc/vconsole.conf
+├── [-rw-r--r-- root     root     1.9K Dec 15  2020]  /etc/vimrc
+├── [-rw-r--r-- root     root     1.9K Dec 15  2020]  /etc/virc
+├── [-rw-r--r-- root     root     4.4K May 16  2019]  /etc/wgetrc
+├── [drwxr-xr-x root     root       33 Apr 16 20:29]  /etc/wpa_supplicant
+│   └── [-rw------- root     root       67 Mar 16 22:26]  /etc/wpa_supplicant/wpa_supplicant.conf
+├── [drwxr-xr-x root     root       57 Mar 16 23:05]  /etc/X11
+│   ├── [drwxr-xr-x root     root        6 Apr 11  2018]  /etc/X11/applnk
+│   ├── [drwxr-xr-x root     root        6 Apr 11  2018]  /etc/X11/fontpath.d
+│   └── [drwxr-xr-x root     root       30 Feb  2 23:34]  /etc/X11/xorg.conf.d
+│       └── [-rw-r--r-- root     root      232 Mar 16 23:04]  /etc/X11/xorg.conf.d/00-keyboard.conf
+├── [drwxr-xr-x root     root       38 Mar 16 23:05]  /etc/xdg
+│   ├── [drwxr-xr-x root     root        6 Apr 11  2018]  /etc/xdg/autostart
+│   └── [drwxr-xr-x root     root       18 Mar 16 23:11]  /etc/xdg/systemd
+│       └── [lrwxrwxrwx root     root       18 Mar 16 23:11]  /etc/xdg/systemd/user -> ../../systemd/user
+├── [drwxr-xr-x root     root        6 Apr 11  2018]  /etc/xinetd.d
+├── [drwxr-xr-x root     root      100 Mar 16 23:05]  /etc/yum
+│   ├── [drwxr-xr-x root     root        6 Oct  2  2020]  /etc/yum/fssnap.d
+│   ├── [drwxr-xr-x root     root       77 May 14  4:40]  /etc/yum/pluginconf.d
+│   │   ├── [-rw-r--r-- root     root      279 May 12  2020]  /etc/yum/pluginconf.d/fastestmirror.conf
+│   │   ├── [-rw-r--r-- root     root      372 Mar 16 23:04]  /etc/yum/pluginconf.d/langpacks.conf
+│   │   └── [-rw-r--r-- root     root       46 May 12  4:45]  /etc/yum/pluginconf.d/osmsplugin.conf
+│   ├── [drwxr-xr-x root     root       26 Mar 16 23:11]  /etc/yum/protected.d
+│   │   └── [-rw-r--r-- root     root        8 Feb  2 23:34]  /etc/yum/protected.d/systemd.conf
+│   ├── [drwxr-xr-x root     root       37 Mar 16 23:11]  /etc/yum/vars
+│   │   ├── [-rw-r--r-- root     root        7 Nov 23  2020]  /etc/yum/vars/contentdir
+│   │   └── [-rw-r--r-- root     root        6 Nov 23  2020]  /etc/yum/vars/infra
+│   └── [-rw-r--r-- root     root      444 Oct  2  2020]  /etc/yum/version-groups.conf
+├── [-rw-r--r-- root     root      970 Oct  2  2020]  /etc/yum.conf
+└── [drwxr-xr-x root     root     4.0K Apr 16 20:27]  /etc/yum.repos.d
+    ├── [-rw-r--r-- root     root     1.6K Nov 23  2020]  /etc/yum.repos.d/CentOS-Base.repo
+    ├── [-rw-r--r-- root     root     1.3K Nov 23  2020]  /etc/yum.repos.d/CentOS-CR.repo
+    ├── [-rw-r--r-- root     root      649 Nov 23  2020]  /etc/yum.repos.d/CentOS-Debuginfo.repo
+    ├── [-rw-r--r-- root     root      314 Nov 23  2020]  /etc/yum.repos.d/CentOS-fasttrack.repo
+    ├── [-rw-r--r-- root     root      630 Nov 23  2020]  /etc/yum.repos.d/CentOS-Media.repo
+    ├── [-rw-r--r-- root     root     1.3K Nov 23  2020]  /etc/yum.repos.d/CentOS-Sources.repo
+    ├── [-rw-r--r-- root     root     8.3K Nov 23  2020]  /etc/yum.repos.d/CentOS-Vault.repo
+    ├── [-rw-r--r-- root     root      616 Nov 23  2020]  /etc/yum.repos.d/CentOS-x86_64-kernel.repo
+    ├── [-rw-r--r-- root     root     1.0K Nov  1  2020]  /etc/yum.repos.d/epel.repo
+    ├── [-rw-r--r-- root     root     1.1K Nov  1  2020]  /etc/yum.repos.d/epel-testing.repo
+    ├── [-rw-r--r-- root     root      259 Oct 19  2018]  /etc/yum.repos.d/MariaDB.repo
+    ├── [-rw-r--r-- root     root      113 Jul 15  2014]  /etc/yum.repos.d/nginx.repo
+    ├── [-rw-r--r-- root     root      446 Jan  4 23:14]  /etc/yum.repos.d/remi-glpi91.repo
+    ├── [-rw-r--r-- root     root      446 Jan  4 23:14]  /etc/yum.repos.d/remi-glpi92.repo
+    ├── [-rw-r--r-- root     root      446 Jan  4 23:14]  /etc/yum.repos.d/remi-glpi93.repo
+    ├── [-rw-r--r-- root     root      446 Jan  4 23:14]  /etc/yum.repos.d/remi-glpi94.repo
+    ├── [-rw-r--r-- root     root      855 Jan  4 23:14]  /etc/yum.repos.d/remi-modular.repo
+    ├── [-rw-r--r-- root     root      456 Jan  4 23:14]  /etc/yum.repos.d/remi-php54.repo
+    ├── [-rw-r--r-- root     root     1.3K Jan  4 23:14]  /etc/yum.repos.d/remi-php70.repo
+    ├── [-rw-r--r-- root     root     1.3K Jan  4 23:14]  /etc/yum.repos.d/remi-php71.repo
+    ├── [-rw-r--r-- root     root     1.3K Jan  4 23:14]  /etc/yum.repos.d/remi-php72.repo
+    ├── [-rw-r--r-- root     root     1.3K Apr 16 20:35]  /etc/yum.repos.d/remi-php73.repo
+    ├── [-rw-r--r-- root     root     1.3K Jan  4 23:14]  /etc/yum.repos.d/remi-php74.repo
+    ├── [-rw-r--r-- root     root     1.3K Jan  4 23:14]  /etc/yum.repos.d/remi-php80.repo
+    ├── [-rw-r--r-- root     root     2.5K Apr 16 20:35]  /etc/yum.repos.d/remi.repo
+    └── [-rw-r--r-- root     root      750 Jan  4 23:14]  /etc/yum.repos.d/remi-safe.repo
+
+240 directories, 1018 files
