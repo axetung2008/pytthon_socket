@@ -56,21 +56,24 @@ class TreeNode:
 # if __name__ == '__main__':
 #     build_product_tree()
 f = open("direc_tree.txt", "r")
-def build_tree(text):
-	root = TreeNode(text)
+# def build_tree(text):
+# 	root = TreeNode(text)
+
+dic = {}
 
 for x in f:
 
-# 	# print(x)
-# 	# a = re.findall("\Aâ”œâ”€â”€",x)
-# 	# if a:
-# 	# 	print(x)
+# # 	# print(x)
+# # 	# a = re.findall("\Aâ”œâ”€â”€",x)
+# # 	# if a:
+# # 	# 	print(x)
 	try:
 
 		a = x.split("]  /")
-		arr = a[1].split("/")
-		build_tree(arr[0])
-
+		# arr = a[1].split("/")
+		path = a[1]
+		root = path.split("/")[0]
+		
 	
 	except IndexError as e:
 		pass
