@@ -55,12 +55,22 @@ class TreeNode:
 
 # if __name__ == '__main__':
 #     build_product_tree()
+
+
 f = open("direc_tree.txt", "r")
-# def build_tree(text):
-# 	root = TreeNode(text)
 
-dic = {}
+first_line = f.readline()
+newline = re.sub("/","",first_line)
+root = re.sub("\n","",newline)
 
+
+dic_id = {}
+dic_parent_id = {}
+direc_tree = {}
+index = 1
+
+dic_parent_id[root]=-1
+dic_id[0]=root
 for x in f:
 
 # # 	# print(x)
@@ -71,10 +81,11 @@ for x in f:
 
 		a = x.split("]  /")
 		# arr = a[1].split("/")
-		path = a[1]
-		root = path.split("/")[0]
-		
-	
+		path = re.sub("\n","",a[1])
+
+		dic_id[index]=path
+		dic_parent_id[path]=0 
+		index = index + 1
 	except IndexError as e:
 		pass
 	
@@ -85,6 +96,10 @@ for x in f:
 	# if a:
 	# 	print
 
+# while True:
+# 	for x,y in 
+for x,y in dic_id.items():
+	
 
 # con trực tiếp â””â”€â”€
 # con của con â”‚Â Â  â”œâ”€â”€
