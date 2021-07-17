@@ -97,9 +97,11 @@ for x in f:
 	# 	print
 
 # while True:
-# 	for x,y in 
+# 	for x,y in
+
 for x,y in dic_id.items():
-	
+	print(y)
+
 
 # con trực tiếp â””â”€â”€
 # con của con â”‚Â Â  â”œâ”€â”€
