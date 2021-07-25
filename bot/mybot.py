@@ -4,6 +4,8 @@ import subprocess
 
 bot = telebot.TeleBot("1880360296:AAFzuqt9LHjps6czoU0-WA4i2VNarR7cjkk", parse_mode=None)
 chat_id = 1537849994
+
+
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
 	bot.reply_to(message, "/ram ==== display the total amount of memory"

@@ -30,11 +30,12 @@ print("\n****************************************************************")
 
 open_ports = []
 # Ask user to input the ip address they want to scan.
-while True:
-    ip_add_entered = input("\nPlease enter the ip address that you want to scan: ")
-    if ip_add_pattern.search(ip_add_entered):
-        print(f"{ip_add_entered} is a valid ip address")
-        break
+# while True:
+#     ip_add_entered = input("\nPlease enter the ip address that you want to scan: ")
+#     if ip_add_pattern.search(ip_add_entered):
+#         print(f"{ip_add_entered} is a valid ip address")
+#         break
+ip_add_entered = "168.138.53.103"
 
 while True:
     # You can scan 0-65535 ports. This scanner is basic and doesn't use multithreading so scanning all 
